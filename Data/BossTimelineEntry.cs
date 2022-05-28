@@ -1,6 +1,6 @@
 public class BossTimelineEntry
 {
-    public string AbilityName { get; set; }
+    public string Name { get; set; }
 
     public TimeSpan? CastTime { get; set; }
 

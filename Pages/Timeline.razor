@@ -2,23 +2,81 @@
 
 @inject BossDataProvider DataProvider
 
-<h1>
-@this.bossTimeline.FullName
-</h1>
+@if (this.bossTimeline == null)
+{
+    <p><em>Loading</em></p>
+}
+else 
+{    
+    <h1>
+        @this.bossTimeline.FullName
+    </h1>
 
-<div>
-Loaded @this.bossTimeline.Abilities.Count() abilities and @this.bossTimeline.Timeline.Count() actions for boss @this.bossTimeline.ShortName.
-</div>
+    <div>
+        Loaded @this.bossTimeline.Abilities.Count() abilities and @this.bossTimeline.Timeline.Count() actions for boss @this.bossTimeline.ShortName.
+    </div>
+
+    <button class="btn btn-secondary" @onclick="ToggleDetailedTimeline">
+        @this.ButtonText
+    </button>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Time</th>
+                <th scope="col">Ability</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (this.showDetailedTimeline)
+            {
+                @foreach (TimeSpan second in Enumerable.Range(0, Convert.ToInt32(this.bossTimeline.Timeline.Last().EffectTime.TotalSeconds))
+                    .Select(multiplier => TimeSpan.Zero.Add(TimeSpan.FromSeconds(1 * multiplier))))
+                {
+                    BossTimelineEntry entry = this.bossTimeline.Timeline.Find(e => e.EffectTime == second);
+                    <tr scope="row">
+                        <td>@second.ToString(@"mm\:ss")</td>
+                        <td>@entry?.Name</td>
+                    </tr>
+                }
+            }
+            else 
+            {
+                @foreach (var entry in this.bossTimeline.Timeline)
+                {
+                    <tr>
+                        <td scope="row">@entry.EffectTime.ToString(@"mm\:ss")</td>
+                        <td scope="row">@entry.Name</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+}
 
 @code {
     private BossTimeline bossTimeline;
 
+    private bool showDetailedTimeline = false;
+
     [Parameter] public string BossName { get; set; }
+
+    public string ButtonText => this.showDetailedTimeline ? "Show basic timeline" : "Show detailed timeline";
 
     protected override async Task OnInitializedAsync()
     {
         this.bossTimeline = await this.DataProvider.GetBossTimelineAsync(this.BossName);
+    }
 
-        base.OnInitializedAsync();
+    private void ToggleDetailedTimeline()
+    {
+        if (this.showDetailedTimeline)
+        {
+            this.showDetailedTimeline = false;
+        }
+        else 
+        {
+            this.showDetailedTimeline = true;
+        }
     }
 }
