@@ -1,3 +1,5 @@
+using System.Text.Json.Serialization;
+
 public class JobAbility
 {
     public string Name { get; set; }
@@ -8,5 +10,6 @@ public class JobAbility
 
     public double Mitigation { get; set; }
 
+    [JsonConverter(typeof(JsonStringEnumConverter))]
     public JobAbilityType Type { get; set; }
 }

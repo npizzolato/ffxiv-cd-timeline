@@ -21,6 +21,19 @@ else
         @this.ButtonText
     </button>
 
+    <div>
+        Add a job to the timeline: <select class="custom-select" @bind="this.selectedJob">
+            <option value="">Select job</option>
+            @for (int i = 0; i < this.availableJobs.Count; i++)
+            {
+                <option value="@this.availableJobs[i]">@this.availableJobs[i]</option>
+            }
+        </select> 
+        <button class="btn btn-secondary" @onclick="AddJobAsync">
+            Add @this.selectedJob
+        </button>
+    </div>
+
     <table class="table table-striped">
         <thead>
             <tr>
@@ -72,9 +85,11 @@ else
 
 @code {
     private BossTimeline bossTimeline;
+    private List<string> availableJobs;
     private List<Job> jobs = new List<Job>();
 
     private bool showDetailedTimeline = false;
+    private string selectedJob;
 
     [Parameter] public string BossName { get; set; }
 
@@ -83,6 +98,7 @@ else
     protected override async Task OnInitializedAsync()
     {
         this.bossTimeline = await this.BossDataProvider.GetBossTimelineAsync(this.BossName);
+        this.availableJobs = this.JobDataProvider.GetJobs().ToList();
     }
 
     private void ToggleDetailedTimeline()
@@ -95,5 +111,11 @@ else
         {
             this.showDetailedTimeline = true;
         }
+    }
+
+    private async Task AddJobAsync()
+    {
+        var jobData = await this.JobDataProvider.GetJobDataAsync(this.selectedJob);
+        this.jobs.Add(jobData);
     }
 }
