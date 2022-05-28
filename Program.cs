@@ -8,5 +8,6 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 builder.Services.AddScoped<BossDataProvider>();
+builder.Services.AddScoped<JobDataProvider>();
 
 await builder.Build().RunAsync();

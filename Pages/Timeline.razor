@@ -1,6 +1,7 @@
 @page "/timeline/{bossName}"
 
-@inject BossDataProvider DataProvider
+@inject BossDataProvider BossDataProvider
+@inject JobDataProvider JobDataProvider
 
 @if (this.bossTimeline == null)
 {
@@ -71,6 +72,7 @@ else
 
 @code {
     private BossTimeline bossTimeline;
+    private List<Job> jobs = new List<Job>();
 
     private bool showDetailedTimeline = false;
 
@@ -80,7 +82,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        this.bossTimeline = await this.DataProvider.GetBossTimelineAsync(this.BossName);
+        this.bossTimeline = await this.BossDataProvider.GetBossTimelineAsync(this.BossName);
     }
 
     private void ToggleDetailedTimeline()

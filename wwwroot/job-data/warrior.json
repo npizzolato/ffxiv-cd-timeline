@@ -1,0 +1,25 @@
+{
+    "name": "Warrior",
+    "abilities": [
+        {
+            "name": "Vengence",
+            "duration": "00:00:15",
+            "cooldown": "00:02:00",
+            "mitigation": 0.30,
+            "type": "TankMitigation"
+        },
+        {
+            "name": "Shake It Off",
+            "cooldown": "00:01:30",
+            "mitigation": 0.15,
+            "type": "PartyMitigation"
+        },
+        {
+            "name": "Reprisal",
+            "duration": "00:00:10",
+            "cooldown": "00:01:00",
+            "mitigation": 0.10,
+            "type": "PartyMitigation"
+        }
+    ]
+}
