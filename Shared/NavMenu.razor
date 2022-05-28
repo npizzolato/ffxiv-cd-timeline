@@ -2,7 +2,7 @@
 
 <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">BasicBlazorWasm</a>
+        <a class="navbar-brand" href="">FfxivCdTimeline</a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -49,7 +49,7 @@
         collapseNavMenu = !collapseNavMenu;
     }
 
-    protected override async Task OnInitializedAsync()
+    protected override void OnInitialized()
     {
         this.supportedBosses = this.DataProvider.GetBosses();
         base.OnInitialized();
