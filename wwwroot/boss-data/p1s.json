@@ -1,5 +1,6 @@
 {
-    "bossName": "P1S",
+    "shortName": "P1S",
+    "fullName": "Pandamonium Asphodelos: The First Circle",
     "abilities": [
         {
             "name": "Warder's Wrath",
@@ -74,187 +75,187 @@
     ],
     "timeline": [
         {
-            "effectTime": "0:13",
+            "effectTime": "00:00:13",
             "name": "Heavy Hand"
         },
         {
-            "effectTime": "0:22",
+            "effectTime": "00:00:22",
             "name": "Aetherial Shackles"
         },
         {
-            "effectTime": "0:31",
+            "effectTime": "00:00:31",
             "name": "Warder's Wrath"
         },
         {
-            "effectTime": "0:58",
+            "effectTime": "00:00:58",
             "name": "Gaoler's Flail (in/out or side/side)"
         },
         {
-            "effectTime": "1:11",
+            "effectTime": "00:01:11",
             "name": "Pitiless Flail (Grace or Purgation)"
         },
         {
-            "effectTime": "1:30",
+            "effectTime": "00:01:30",
             "name": "Gaoler's Flail (opposite of the previous one)"
         },
         {
-            "effectTime": "1:44",
+            "effectTime": "00:01:44",
             "name": "Warder's Wrath"
         },
         {
-            "effectTime": "1:58",
+            "effectTime": "00:01:58",
             "name": "Intemperance - Floor change"
         },
         {
-            "effectTime": "2:14",
+            "effectTime": "00:02:14",
             "name": "Intemperant Torment (1st cube)"
         },
         {
-            "effectTime": "2:21",
+            "effectTime": "00:02:21",
             "name": "Warder's Wrath"
         },
         {
-            "effectTime": "2:26",
+            "effectTime": "00:02:26",
             "name": "2nd cube"
         },
         {
-            "effectTime": "2:31",
+            "effectTime": "00:02:31",
             "name": "Warder's Wrath"
         },
         {
-            "effectTime": "2:37",
+            "effectTime": "00:02:37",
             "name": "3rd cube"
         },
         {
-            "effectTime": "2:47",
+            "effectTime": "00:02:47",
             "name": "Pitiless Flail"
         },
         {
-            "effectTime": "3:08",
+            "effectTime": "00:03:08",
             "name": "Shining Cells - Floor change"
         },
         {
-            "effectTime": "3:28",
+            "effectTime": "00:03:28",
             "name": "Aetherflail (combination of left/right and in/out)"
         },
         {
-            "effectTime": "3:43",
+            "effectTime": "00:03:43",
             "name": "Pitiless Flail"
         },
         {
-            "effectTime": "4:03",
+            "effectTime": "00:04:03",
             "name": "Aetherflail (opposite of the previous one)"
         },
         {
-            "effectTime": "4:14",
+            "effectTime": "00:04:14",
             "name": " Shackles of Time"
         },
         {
-            "effectTime": "4:25",
+            "effectTime": "00:04:25",
             "name": "Heavy Hand"
         },
         {
-            "effectTime": "4:38",
+            "effectTime": "00:04:38",
             "name": "Slam Shut"
         },
         {
-            "effectTime": "4:54",
+            "effectTime": "00:04:54",
             "name": "Fourfold Shackles"
         },
         {
-            "effectTime": "5:28",
+            "effectTime": "00:05:28",
             "name": "Warder's Wrath"
         },
         {
-            "effectTime": "5:41",
+            "effectTime": "00:05:41",
             "name": "Intemperance - Floor change"
         },
         {
-            "effectTime": "5:57",
+            "effectTime": "00:05:57",
             "name": "Intemperant Torment (1st cube)"
         },
         {
-            "effectTime": "6:01",
+            "effectTime": "00:06:01",
             "name": "Gaoler's Flail cast"
         },
         {
-            "effectTime": "6:09",
+            "effectTime": "00:06:09",
             "name": "2nd cube"
         },
         {
-            "effectTime": "6:13",
+            "effectTime": "00:06:13",
             "name": "Gaoler's Flail resolves"
         },
         {
-            "effectTime": "6:20",
+            "effectTime": "00:06:20",
             "name": "3rd cube"
         },
         {
-            "effectTime": "6:29",
+            "effectTime": "00:06:29",
             "name": "Warder's Wrath"
         },
         {
-            "effectTime": "6:47",
+            "effectTime": "00:06:47",
             "name": "Shining Cells"
         },
         {
-            "effectTime": "6:58",
+            "effectTime": "00:06:58",
             "name": "Aetherial Shackles"
         },
         {
-            "effectTime": "7:09",
+            "effectTime": "00:07:09",
             "name": "Aetherchain"
         },
         {
-            "effectTime": "7:17",
+            "effectTime": "00:07:17",
             "name": "Aetherchain"
         },
         {
-            "effectTime": "7:27",
+            "effectTime": "00:07:27",
             "name": "Warder's Wrath"
         },
         {
-            "effectTime": "7:35",
+            "effectTime": "00:07:35",
             "name": " Shackles of Time cast"
         },
         {
-            "effectTime": "7:46",
+            "effectTime": "00:07:46",
             "name": "Pitiless Flail"
         },
         {
-            "effectTime": "7:54",
+            "effectTime": "00:07:54",
             "name": "Shackles of Time resolve"
         },
         {
-            "effectTime": "8:04",
+            "effectTime": "00:08:04",
             "name": "Warder's Wrath"
         },
         {
-            "effectTime": "8:25",
+            "effectTime": "00:08:25",
             "name": "Aetherflail"
         },
         {
-            "effectTime": "8:43",
+            "effectTime": "00:08:43",
             "name": "Aetherflail (opposite to previous one)"
         },
         {
-            "effectTime": "9:01",
+            "effectTime": "00:09:01",
             "name": "Aetherflail (in/out or side/side)"
         },
         {
-            "effectTime": "0:19",
+            "effectTime": "00:00:19",
             "name": "Warder's Wrath"
         },
         {
-            "effectTime": "9:28",
+            "effectTime": "00:09:28",
             "name": "Warder's Wrath"
         },
         {
-            "effectTime": "9:37",
+            "effectTime": "00:09:37",
             "name": "Warder's Wrath"
         },
         {
-            "effectTime": "10:00",
+            "effectTime": "00:10:00",
             "name": "Lethe ( ENRAGE )"
         }
     ]

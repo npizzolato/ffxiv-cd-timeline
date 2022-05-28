@@ -1,7 +1,24 @@
 @page "/timeline/{bossName}"
 
-Timeline for @this.BossName ...
+@inject BossDataProvider DataProvider
+
+<h1>
+@this.bossTimeline.FullName
+</h1>
+
+<div>
+Loaded @this.bossTimeline.Abilities.Count() abilities and @this.bossTimeline.Timeline.Count() actions for boss @this.bossTimeline.ShortName.
+</div>
 
 @code {
+    private BossTimeline bossTimeline;
+
     [Parameter] public string BossName { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        this.bossTimeline = await this.DataProvider.GetBossTimelineAsync(this.BossName);
+
+        base.OnInitializedAsync();
+    }
 }

@@ -14,7 +14,7 @@ public class BossDataProvider
 
     private Dictionary<string, string> NameToFileMap = new Dictionary<string, string>
     {
-        ["P1S"] = "BossData/p1s.json"
+        ["P1S"] = "boss-data/p1s.json"
     };
 
     public IEnumerable<string> GetBosses()
