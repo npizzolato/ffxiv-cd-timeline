@@ -34,9 +34,17 @@ else
                     .Select(multiplier => TimeSpan.Zero.Add(TimeSpan.FromSeconds(1 * multiplier))))
                 {
                     BossTimelineEntry entry = this.bossTimeline.Timeline.Find(e => e.EffectTime == second);
+                    var helpText = entry == null ? null : this.bossTimeline.Abilities.Find(a => a.Name.Equals(entry.Name))?.Description;
+
                     <tr scope="row">
                         <td>@second.ToString(@"mm\:ss")</td>
-                        <td>@entry?.Name</td>
+                        <td scope="row">
+                            @entry?.Name
+                            @if (!string.IsNullOrEmpty(helpText))
+                            {
+                                <Tooltip Text=@helpText><i class="bi bi-info-circle" style='padding-left:5px'></i></Tooltip>
+                            }
+                        </td>
                     </tr>
                 }
             }
@@ -44,9 +52,16 @@ else
             {
                 @foreach (var entry in this.bossTimeline.Timeline)
                 {
+                    var helpText = this.bossTimeline.Abilities.Find(a => a.Name.Equals(entry.Name))?.Description;
                     <tr>
                         <td scope="row">@entry.EffectTime.ToString(@"mm\:ss")</td>
-                        <td scope="row">@entry.Name</td>
+                        <td scope="row">
+                            @entry.Name
+                            @if (!string.IsNullOrEmpty(helpText))
+                            {
+                                <Tooltip Text=@helpText><i class="bi bi-info-circle" style='padding-left:5px'></i></Tooltip>
+                            }
+                        </td>
                     </tr>
                 }
             }
