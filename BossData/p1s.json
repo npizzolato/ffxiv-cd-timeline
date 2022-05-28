@@ -1,0 +1,261 @@
+{
+    "bossName": "P1S",
+    "abilities": [
+        {
+            "name": "Warder's Wrath",
+            "description": "Standard low-damage raidwide",
+            "category": "RaidDamage"
+        },
+        {
+            "name": "Heavy Hand",
+            "description": "Very weak tank buster on MT",
+            "category": "TankDamage"
+        },
+        {
+            "name": "Gaoler's Flail",
+            "description": "Avoidable damage (in/out or left/right)",
+            "category": "PatternAoe"
+        },
+        {
+            "name": "AetherChain",
+            "description": "Ground Explosion (red or blue)",
+            "category": "PatternAoe"
+        },
+        {
+            "name": "AetherFlail",
+            "description": "Combination attack with AetherChain and Gaoler's Flail",
+            "category": "PatternAoe"
+        },
+        {
+            "name": "Pitiless Flail of Purgation",
+            "description": "Tankbuster with knockback + True Flare (proximity-based raid damage)",
+            "category": "TankDamage"
+        },
+        {
+            "name": "Pitliess Flail of Grace",
+            "description": "Tankbuster with knockback + True Holy (shared damage)",
+            "category": "TankDamage"
+        },
+        {
+            "name": "Shining Cells",
+            "description": "Heavy raidwide",
+            "category": "RaidDamage"
+        },
+        {
+            "name": "Slam Shut",
+            "description": "Heavy raidwide",
+            "category": "RaidDamage"
+        },
+        {
+            "name": "Aetherial Shackles",
+            "description": "Blue + Red chain debuff, light damage",
+            "category": "Mechanics"
+        },
+        {
+            "name": "Fourfold Shackles",
+            "description": "4x Aetherial Shackles, light damage x4",
+            "category": "Mechanics"
+        },
+        {
+            "name": "Intemperance",
+            "description": "Crystal mechanics, light damage when resolved correctly",
+            "category": "Mechanics"
+        },
+        {
+            "name": "Intemperate Torment",
+            "description": "First crystal activation",
+            "category": "PatternAoe"
+        },
+        {
+            "name": "Shackles of Time",
+            "description": "Ground explosion debuff",
+            "category": "Mechanics"
+        }
+    ],
+    "timeline": [
+        {
+            "effectTime": "0:13",
+            "name": "Heavy Hand"
+        },
+        {
+            "effectTime": "0:22",
+            "name": "Aetherial Shackles"
+        },
+        {
+            "effectTime": "0:31",
+            "name": "Warder's Wrath"
+        },
+        {
+            "effectTime": "0:58",
+            "name": "Gaoler's Flail (in/out or side/side)"
+        },
+        {
+            "effectTime": "1:11",
+            "name": "Pitiless Flail (Grace or Purgation)"
+        },
+        {
+            "effectTime": "1:30",
+            "name": "Gaoler's Flail (opposite of the previous one)"
+        },
+        {
+            "effectTime": "1:44",
+            "name": "Warder's Wrath"
+        },
+        {
+            "effectTime": "1:58",
+            "name": "Intemperance - Floor change"
+        },
+        {
+            "effectTime": "2:14",
+            "name": "Intemperant Torment (1st cube)"
+        },
+        {
+            "effectTime": "2:21",
+            "name": "Warder's Wrath"
+        },
+        {
+            "effectTime": "2:26",
+            "name": "2nd cube"
+        },
+        {
+            "effectTime": "2:31",
+            "name": "Warder's Wrath"
+        },
+        {
+            "effectTime": "2:37",
+            "name": "3rd cube"
+        },
+        {
+            "effectTime": "2:47",
+            "name": "Pitiless Flail"
+        },
+        {
+            "effectTime": "3:08",
+            "name": "Shining Cells - Floor change"
+        },
+        {
+            "effectTime": "3:28",
+            "name": "Aetherflail (combination of left/right and in/out)"
+        },
+        {
+            "effectTime": "3:43",
+            "name": "Pitiless Flail"
+        },
+        {
+            "effectTime": "4:03",
+            "name": "Aetherflail (opposite of the previous one)"
+        },
+        {
+            "effectTime": "4:14",
+            "name": " Shackles of Time"
+        },
+        {
+            "effectTime": "4:25",
+            "name": "Heavy Hand"
+        },
+        {
+            "effectTime": "4:38",
+            "name": "Slam Shut"
+        },
+        {
+            "effectTime": "4:54",
+            "name": "Fourfold Shackles"
+        },
+        {
+            "effectTime": "5:28",
+            "name": "Warder's Wrath"
+        },
+        {
+            "effectTime": "5:41",
+            "name": "Intemperance - Floor change"
+        },
+        {
+            "effectTime": "5:57",
+            "name": "Intemperant Torment (1st cube)"
+        },
+        {
+            "effectTime": "6:01",
+            "name": "Gaoler's Flail cast"
+        },
+        {
+            "effectTime": "6:09",
+            "name": "2nd cube"
+        },
+        {
+            "effectTime": "6:13",
+            "name": "Gaoler's Flail resolves"
+        },
+        {
+            "effectTime": "6:20",
+            "name": "3rd cube"
+        },
+        {
+            "effectTime": "6:29",
+            "name": "Warder's Wrath"
+        },
+        {
+            "effectTime": "6:47",
+            "name": "Shining Cells"
+        },
+        {
+            "effectTime": "6:58",
+            "name": "Aetherial Shackles"
+        },
+        {
+            "effectTime": "7:09",
+            "name": "Aetherchain"
+        },
+        {
+            "effectTime": "7:17",
+            "name": "Aetherchain"
+        },
+        {
+            "effectTime": "7:27",
+            "name": "Warder's Wrath"
+        },
+        {
+            "effectTime": "7:35",
+            "name": " Shackles of Time cast"
+        },
+        {
+            "effectTime": "7:46",
+            "name": "Pitiless Flail"
+        },
+        {
+            "effectTime": "7:54",
+            "name": "Shackles of Time resolve"
+        },
+        {
+            "effectTime": "8:04",
+            "name": "Warder's Wrath"
+        },
+        {
+            "effectTime": "8:25",
+            "name": "Aetherflail"
+        },
+        {
+            "effectTime": "8:43",
+            "name": "Aetherflail (opposite to previous one)"
+        },
+        {
+            "effectTime": "9:01",
+            "name": "Aetherflail (in/out or side/side)"
+        },
+        {
+            "effectTime": "0:19",
+            "name": "Warder's Wrath"
+        },
+        {
+            "effectTime": "9:28",
+            "name": "Warder's Wrath"
+        },
+        {
+            "effectTime": "9:37",
+            "name": "Warder's Wrath"
+        },
+        {
+            "effectTime": "10:00",
+            "name": "Lethe ( ENRAGE )"
+        }
+    ]
+}
