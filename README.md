@@ -26,6 +26,6 @@ This website is built on asp.net Blazor. Follow [these instructions](https://dot
 
 ### Running Tests
 
-lol
+![](https://i.kym-cdn.com/entries/icons/mobile/000/030/710/dd0.jpg)
 
-I'll get around to writing tests at some point.
+Surely I'll get around to writing tests at some point... lol
