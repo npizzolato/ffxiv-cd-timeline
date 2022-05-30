@@ -79,7 +79,7 @@ else
                                 var status = this.timeline.JobAbilityTimelines[job.Id][ability.Name].AvailabilityTimeline[second];
                                 bool isCasting = this.timeline.JobAbilityTimelines[job.Id][ability.Name].AbilityUses.Any(use => use.CastTime == second);
 
-                                <td scope="row">
+                                <td scope="row" class="@status">
                                     @if (status == JobAbilityStatus.Available || isCasting)
                                     {
                                         <input type="checkbox" @onchange="(eventArgs) => HandleJobAbilityEntryChanged(eventArgs.Value, second, job, ability)"></input>
@@ -87,7 +87,7 @@ else
                                     }
                                     else 
                                     {
-                                        <div>@status</div>
+                                        <!-- <p>@status</p> --> <!-- Useful for seeing the underlying status -->
                                     }
                                 </td>
                             }
@@ -180,4 +180,38 @@ else
     {
         this.timeline.JobAbilityTimelines[job.Id][ability.Name].RemoveAbiityUse(entryTime);
     }
+
+    private string GetStyle(JobAbilityStatus status)
+    {
+        if (status == JobAbilityStatus.Unavailable)
+        {
+            return "background-color: palevioletred";
+        }
+
+        return "";
+    }
 }
+
+<!-- 
+    I'm supposed to be able to use CSS Isolation (https://docs.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation?view=aspnetcore-6.0) 
+    to define this in a Timeline.razor.css file, but that doesn't seem to be working. The class is applied correctly but there isn't any css applied. 
+    Sticking with this approach for now to unblock. 
+-->
+<style>
+<!-- OnCooldown color taken from xivanalysis. Complementary colors taken from https://www.canva.com/colors/color-wheel/ -->
+td.Unavailable {
+    background-color: #FBEEF1;
+}
+
+.Unavailable{
+    background-color: #FBEEF1;
+}
+
+td.Active {
+    background-color: #F1FBEE;
+}
+
+td.OnCooldown {
+    background-color: #EEF1FB;
+}
+</style>
