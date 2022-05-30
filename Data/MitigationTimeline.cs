@@ -1,6 +1,7 @@
 public class MitigationTimeline
 {
     private readonly TimeSpan lastAbilityTimeline;
+    
     public MitigationTimeline(BossTimeline bossTimeline)
     {
         this.BossTimeline = bossTimeline;
