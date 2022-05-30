@@ -1,0 +1,10 @@
+public enum JobAbilityStatus
+{
+    Available,
+
+    Active,
+
+    OnCooldown,
+
+    Unavailable
+}
