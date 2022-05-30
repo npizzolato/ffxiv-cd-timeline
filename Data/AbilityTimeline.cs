@@ -15,66 +15,78 @@ public class AbilityTimeline
 {
     private readonly TimeSpan length;
     private readonly JobAbility ability;
+    private IDictionary<TimeSpan, JobAbilityStatus> timeline { get; }
+    private List<JobTimelineEntry> abilityUses = new List<JobTimelineEntry>();
 
     public AbilityTimeline(TimeSpan length, JobAbility ability)
     {
         this.length = length;
         this.ability = ability;
-        this.AvailabilityTimeline = new Dictionary<TimeSpan, JobAbilityStatus>();
+        this.timeline = new Dictionary<TimeSpan, JobAbilityStatus>();
 
         foreach (TimeSpan second in Enumerable.Range(0, Convert.ToInt32(length.TotalSeconds))
                 .Select(multiplier => TimeSpan.Zero.Add(TimeSpan.FromSeconds(1 * multiplier))))
                 {
-                    this.AvailabilityTimeline[second] = JobAbilityStatus.Available;
+                    this.timeline[second] = JobAbilityStatus.Available;
                 }
     }
 
-    public List<JobTimelineEntry> AbilityUses = new List<JobTimelineEntry>();
-
-    public IDictionary<TimeSpan, JobAbilityStatus> AvailabilityTimeline { get; }
-
-
     public void AddAbilityUse(TimeSpan useTime)
     {
-        if (!this.AvailabilityTimeline.ContainsKey(useTime))
+        if (!this.timeline.ContainsKey(useTime))
         {
             throw new ArgumentException($"The timeline does not support abilities used at time {useTime}.");
         }
 
-        if (this.AvailabilityTimeline[useTime] != JobAbilityStatus.Available)
+        if (this.timeline[useTime] != JobAbilityStatus.Available)
         {
-            throw new ArgumentException($"Job ability {this.ability.Name} is not available to use at time {useTime}. It's current status is {this.AvailabilityTimeline[useTime]}");
+            throw new ArgumentException($"Job ability {this.ability.Name} is not available to use at time {useTime}. It's current status is {this.timeline[useTime]}");
         }
 
-        this.AbilityUses.Add(new JobTimelineEntry()
+        this.abilityUses.Add(new JobTimelineEntry()
         {
             AbilityName = this.ability.Name,
             CastTime = useTime,
         });
 
-        this.AbilityUses = this.AbilityUses.OrderBy(use => use.CastTime).ToList();
+        this.abilityUses = this.abilityUses.OrderBy(use => use.CastTime).ToList();
 
         this.UpdateAbilityTimeline();
     }
 
     public void RemoveAbiityUse(TimeSpan useTime)
     {
-        JobTimelineEntry entry = this.AbilityUses.Find(use => use.CastTime == useTime);
+        JobTimelineEntry entry = this.abilityUses.Find(use => use.CastTime == useTime);
 
         if (entry != null)
         {
-            this.AbilityUses.Remove(entry);
+            this.abilityUses.Remove(entry);
             this.UpdateAbilityTimeline();
         }
     }
 
+    public bool IsCastingAt(TimeSpan time)
+    {
+        return this.abilityUses.Any(use => use.CastTime == time);
+    }
+
+    public JobAbilityStatus GetAbilityStatus(TimeSpan time)
+    {
+        if (!this.timeline.ContainsKey(time))
+        {
+            throw new ArgumentException($"The timeline does not support abilities used at time {time}.");
+        }
+
+        return this.timeline[time];
+    }
+
     private void UpdateAbilityTimeline()
     {
-        foreach (TimeSpan second in this.AvailabilityTimeline.Keys)
+        foreach (TimeSpan second in this.timeline.Keys)
         {
             JobAbilityStatus status = JobAbilityStatus.Available;
 
-            TimeSpan? mostRecentUse = this.AbilityUses.LastOrDefault(use => use.CastTime <= second)?.CastTime;
+            TimeSpan? mostRecentUse = this.abilityUses.LastOrDefault(use => use.CastTime <= second)?.CastTime;
 
             if (mostRecentUse != null)
             {
@@ -95,7 +107,7 @@ public class AbilityTimeline
             // If it's still technically available, check if a later use makes the ability effectively unavailable for use right now.
             if (status == JobAbilityStatus.Available)
             {
-                TimeSpan? nextUse = this.AbilityUses.FirstOrDefault(use => use.CastTime > second)?.CastTime;
+                TimeSpan? nextUse = this.abilityUses.FirstOrDefault(use => use.CastTime > second)?.CastTime;
 
                 if (nextUse.HasValue && second + this.ability.Cooldown > nextUse.Value)
                 {
@@ -103,7 +115,7 @@ public class AbilityTimeline
                 }
             }
 
-            this.AvailabilityTimeline[second] = status;
+            this.timeline[second] = status;
         }
     }
 }

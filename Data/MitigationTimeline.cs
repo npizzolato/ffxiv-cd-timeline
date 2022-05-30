@@ -2,6 +2,8 @@
 public class MitigationTimeline
 {
     private readonly TimeSpan lastAbilityTimeline;
+    private Dictionary<string, Dictionary<string, AbilityTimeline>> jobAbilityTimelines { get; } = 
+        new Dictionary<string, Dictionary<string, AbilityTimeline>>();
 
     public MitigationTimeline(BossTimeline bossTimeline)
     {
@@ -12,8 +14,6 @@ public class MitigationTimeline
     public BossTimeline BossTimeline { get; }
 
     public List<JobInstance> Jobs { get; } = new List<JobInstance>();
-
-    public Dictionary<string, Dictionary<string, AbilityTimeline>> JobAbilityTimelines { get; } = new Dictionary<string, Dictionary<string, AbilityTimeline>>();
 
     public JobInstance AddJob(Job job)
     {
@@ -33,9 +33,14 @@ public class MitigationTimeline
             jobAbilityTimeline[ability.Name] = abilityTimeline;
         }
 
-        this.JobAbilityTimelines.Add(jobInstance.Id, jobAbilityTimeline);
+        this.jobAbilityTimelines.Add(jobInstance.Id, jobAbilityTimeline);
 
         return jobInstance;
+    }
+
+    public AbilityTimeline GetAbilityTimeline(JobInstance job, string abilityName)
+    {
+        return this.jobAbilityTimelines[job.Id][abilityName];
     }
 
     public IEnumerable<TimeSpan> GetTimelineRange()

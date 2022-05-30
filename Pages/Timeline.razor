@@ -76,8 +76,8 @@ else
                         {
                             @foreach (var ability in job.JobData.Abilities)
                             {
-                                var status = this.timeline.JobAbilityTimelines[job.Id][ability.Name].AvailabilityTimeline[second];
-                                bool isCasting = this.timeline.JobAbilityTimelines[job.Id][ability.Name].AbilityUses.Any(use => use.CastTime == second);
+                                var status = this.timeline.GetAbilityTimeline(job, ability.Name).GetAbilityStatus(second);
+                                bool isCasting = this.timeline.GetAbilityTimeline(job, ability.Name).IsCastingAt(second);
 
                                 <td scope="row" class="@status">
                                     @if (status == JobAbilityStatus.Available || isCasting)
@@ -173,12 +173,12 @@ else
 
     private void AddJobAbilityEntry(TimeSpan entryTime, JobInstance job, JobAbility ability)
     {
-        this.timeline.JobAbilityTimelines[job.Id][ability.Name].AddAbilityUse(entryTime);
+        this.timeline.GetAbilityTimeline(job, ability.Name).AddAbilityUse(entryTime);
     }
 
     private void RemoveJobAbilityEntry(TimeSpan entryTime, JobInstance job, JobAbility ability)
     {
-        this.timeline.JobAbilityTimelines[job.Id][ability.Name].RemoveAbiityUse(entryTime);
+        this.timeline.GetAbilityTimeline(job, ability.Name).RemoveAbiityUse(entryTime);
     }
 
     private string GetStyle(JobAbilityStatus status)
