@@ -45,7 +45,12 @@ public class MitigationTimeline
 
     public IEnumerable<TimeSpan> GetTimelineRange()
     {
-        return Enumerable.Range(0, Convert.ToInt32(this.BossTimeline.Timeline.Last().EffectTime.TotalSeconds))
+        return Enumerable.Range(0, Convert.ToInt32(this.BossTimeline.Timeline.Last().EffectTime.TotalSeconds + 1))
             .Select(multiplier => TimeSpan.Zero.Add(TimeSpan.FromSeconds(1 * multiplier)));
+    }
+
+    public IEnumerable<TimeSpan> GetImportantTimelinePoints()
+    {
+        return this.BossTimeline.Timeline.Select(e => e.EffectTime);
     }
 }

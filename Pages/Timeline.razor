@@ -56,62 +56,44 @@ else
             </tr>
         </thead>
         <tbody>
-            @if (this.showDetailedTimeline)
-            {
-                @foreach (TimeSpan second in this.timeline.GetTimelineRange())
-                {
-                    BossTimelineEntry entry = this.timeline.BossTimeline.Timeline.Find(e => e.EffectTime == second);
-                    var helpText = entry == null ? null : this.timeline.BossTimeline.Abilities.Find(a => a.Name.Equals(entry.Name))?.Description;
-
-                    <tr scope="row">
-                        <td>@second.ToString(@"mm\:ss")</td>
-                        <td scope="row">
-                            @entry?.Name
-                            @if (!string.IsNullOrEmpty(helpText))
-                            {
-                                <Tooltip Text=@helpText><i class="bi bi-info-circle" style='padding-left:5px'></i></Tooltip>
-                            }
-                        </td>
-                        @foreach (var job in this.timeline.Jobs)
-                        {
-                            @foreach (var ability in job.JobData.Abilities)
-                            {
-                                var status = this.timeline.GetAbilityTimeline(job, ability.Name).GetAbilityStatus(second);
-                                bool isCasting = this.timeline.GetAbilityTimeline(job, ability.Name).IsCastingAt(second);
-
-                                <td scope="row" class="@status">
-                                    @if (status == JobAbilityStatus.Available || isCasting)
-                                    {
-                                        <input type="checkbox" @onchange="(eventArgs) => HandleJobAbilityEntryChanged(eventArgs.Value, second, job, ability)"></input>
-                                        <!-- <p>@status</p> --> <!-- Useful for seeing the underlying status -->
-                                    }
-                                    else 
-                                    {
-                                        <!-- <p>@status</p> --> <!-- Useful for seeing the underlying status -->
-                                    }
-                                </td>
-                            }
-                        }
-                    </tr>
-                }
+            @{
+                var range = this.showDetailedTimeline ? this.timeline.GetTimelineRange() : this.timeline.GetImportantTimelinePoints();
             }
-            else 
+            @foreach (TimeSpan second in range)
             {
-                <!-- This needs to be updated to filter on all timespans with entries in the timeline (boss abilities and job abilities) -->
-                @foreach (var entry in this.timeline.BossTimeline.Timeline)
-                {
-                    var helpText = this.timeline.BossTimeline.Abilities.Find(a => a.Name.Equals(entry.Name))?.Description;
-                    <tr>
-                        <td scope="row">@entry.EffectTime.ToString(@"mm\:ss")</td>
-                        <td scope="row">
-                            @entry.Name
-                            @if (!string.IsNullOrEmpty(helpText))
-                            {
-                                <Tooltip Text=@helpText><i class="bi bi-info-circle" style='padding-left:5px'></i></Tooltip>
-                            }
-                        </td>
-                    </tr>
-                }
+                BossTimelineEntry entry = this.timeline.BossTimeline.Timeline.Find(e => e.EffectTime == second);
+                var helpText = entry == null ? null : this.timeline.BossTimeline.Abilities.Find(a => a.Name.Equals(entry.Name))?.Description;
+
+                <tr scope="row">
+                    <td>@second.ToString(@"mm\:ss")</td>
+                    <td scope="row">
+                        @entry?.Name
+                        @if (!string.IsNullOrEmpty(helpText))
+                        {
+                            <Tooltip Text=@helpText><i class="bi bi-info-circle" style='padding-left:5px'></i></Tooltip>
+                        }
+                    </td>
+                    @foreach (var job in this.timeline.Jobs)
+                    {
+                        @foreach (var ability in job.JobData.Abilities)
+                        {
+                            var status = this.timeline.GetAbilityTimeline(job, ability.Name).GetAbilityStatus(second);
+                            bool isCasting = this.timeline.GetAbilityTimeline(job, ability.Name).IsCastingAt(second);
+
+                            <td scope="row" class="@status">
+                                @if (status == JobAbilityStatus.Available || isCasting)
+                                {
+                                    <input type="checkbox" @onchange="(eventArgs) => HandleJobAbilityEntryChanged(eventArgs.Value, second, job, ability)"></input>
+                                    <!-- <p>@status</p> --> <!-- Useful for seeing the underlying status -->
+                                }
+                                else 
+                                {
+                                    <!-- <p>@status</p> --> <!-- Useful for seeing the underlying status -->
+                                }
+                            </td>
+                        }
+                    }
+                </tr>
             }
         </tbody>
     </table>

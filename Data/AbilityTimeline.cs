@@ -24,7 +24,7 @@ public class AbilityTimeline
         this.ability = ability;
         this.timeline = new Dictionary<TimeSpan, JobAbilityStatus>();
 
-        foreach (TimeSpan second in Enumerable.Range(0, Convert.ToInt32(length.TotalSeconds))
+        foreach (TimeSpan second in Enumerable.Range(0, Convert.ToInt32(length.TotalSeconds + 1))
                 .Select(multiplier => TimeSpan.Zero.Add(TimeSpan.FromSeconds(1 * multiplier))))
                 {
                     this.timeline[second] = JobAbilityStatus.Available;
