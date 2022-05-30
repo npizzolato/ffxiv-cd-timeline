@@ -1,3 +1,4 @@
+// Represents the status of a job availability on the timeline. 
 public enum JobAbilityStatus
 {
     Available,
@@ -9,11 +10,11 @@ public enum JobAbilityStatus
     Unavailable
 }
 
+// Represents the timeline for the use and availability of a single ability for a single class. 
 public class AbilityTimeline
 {
     private readonly TimeSpan length;
     private readonly JobAbility ability;
-    private List<JobTimelineEntry> abilityUses = new List<JobTimelineEntry>();
 
     public AbilityTimeline(TimeSpan length, JobAbility ability)
     {
@@ -28,7 +29,10 @@ public class AbilityTimeline
                 }
     }
 
+    public List<JobTimelineEntry> AbilityUses = new List<JobTimelineEntry>();
+
     public IDictionary<TimeSpan, JobAbilityStatus> AvailabilityTimeline { get; }
+
 
     public void AddAbilityUse(TimeSpan useTime)
     {
@@ -42,24 +46,24 @@ public class AbilityTimeline
             throw new ArgumentException($"Job ability {this.ability.Name} is not available to use at time {useTime}. It's current status is {this.AvailabilityTimeline[useTime]}");
         }
 
-        this.abilityUses.Add(new JobTimelineEntry()
+        this.AbilityUses.Add(new JobTimelineEntry()
         {
             AbilityName = this.ability.Name,
             CastTime = useTime,
         });
 
-        this.abilityUses = this.abilityUses.OrderBy(use => use.CastTime).ToList();
+        this.AbilityUses = this.AbilityUses.OrderBy(use => use.CastTime).ToList();
 
         this.UpdateAbilityTimeline();
     }
 
     public void RemoveAbiityUse(TimeSpan useTime)
     {
-        JobTimelineEntry entry = this.abilityUses.Find(use => use.CastTime == useTime);
+        JobTimelineEntry entry = this.AbilityUses.Find(use => use.CastTime == useTime);
 
         if (entry != null)
         {
-            this.abilityUses.Remove(entry);
+            this.AbilityUses.Remove(entry);
             this.UpdateAbilityTimeline();
         }
     }
@@ -70,7 +74,7 @@ public class AbilityTimeline
         {
             JobAbilityStatus status = JobAbilityStatus.Available;
 
-            TimeSpan? mostRecentUse = this.abilityUses.LastOrDefault(use => use.CastTime < second)?.CastTime;
+            TimeSpan? mostRecentUse = this.AbilityUses.LastOrDefault(use => use.CastTime < second)?.CastTime;
 
             if (mostRecentUse != null)
             {
@@ -87,7 +91,7 @@ public class AbilityTimeline
             // If it's still technically available, check if a later use makes the ability effectively unavailable for use right now.
             if (status == JobAbilityStatus.Available)
             {
-                TimeSpan? nextUse = this.abilityUses.FirstOrDefault(use => use.CastTime > second)?.CastTime;
+                TimeSpan? nextUse = this.AbilityUses.FirstOrDefault(use => use.CastTime > second)?.CastTime;
 
                 if (nextUse.HasValue && second + this.ability.Cooldown > nextUse.Value)
                 {

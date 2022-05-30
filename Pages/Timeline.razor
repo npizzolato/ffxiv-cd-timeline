@@ -39,16 +39,16 @@ else
             <tr>
                 <th scope="col" rowspan="2">Time</th>
                 <th scope="col" rowspan="2">Ability</th>
-                @foreach (var job in this.jobs)
+                @foreach (var job in this.timeline.Jobs)
                 {
-                    var columnSpan = job.Abilities.Count;
-                    <th scope="col" colspan="@columnSpan" style="text-align:center">@job.Name</th>
+                    var columnSpan = job.JobData.Abilities.Count;
+                    <th scope="col" colspan="@columnSpan" style="text-align:center">@job.JobData.Name</th>
                 }
             </tr>
             <tr>
-                @foreach (var job in this.jobs)
+                @foreach (var job in this.timeline.Jobs)
                 {
-                    @foreach (var ability in job.Abilities.OrderBy(a => a.Type))
+                    @foreach (var ability in job.JobData.Abilities.OrderBy(a => a.Type))
                     {
                         <th scope="col">@ability.Name</th>
                     }
@@ -58,8 +58,7 @@ else
         <tbody>
             @if (this.showDetailedTimeline)
             {
-                @foreach (TimeSpan second in Enumerable.Range(0, Convert.ToInt32(this.timeline.BossTimeline.Timeline.Last().EffectTime.TotalSeconds))
-                    .Select(multiplier => TimeSpan.Zero.Add(TimeSpan.FromSeconds(1 * multiplier))))
+                @foreach (TimeSpan second in this.timeline.GetTimelineRange())
                 {
                     BossTimelineEntry entry = this.timeline.BossTimeline.Timeline.Find(e => e.EffectTime == second);
                     var helpText = entry == null ? null : this.timeline.BossTimeline.Abilities.Find(a => a.Name.Equals(entry.Name))?.Description;
@@ -73,14 +72,14 @@ else
                                 <Tooltip Text=@helpText><i class="bi bi-info-circle" style='padding-left:5px'></i></Tooltip>
                             }
                         </td>
-                        @foreach (var job in this.jobs)
+                        @foreach (var job in this.timeline.Jobs)
                         {
-                            @foreach (var ability in job.Abilities)
+                            @foreach (var ability in job.JobData.Abilities)
                             {
                                 var currentSecond = second;
                                 var currentJob = job;
                                 var currentAbility = ability;
-                                <td scope="row"><input type="checkbox" @onchange="(eventArgs) => HandleJobAbilityEntryChanged(eventArgs.Value, currentSecond, currentJob, currentAbility)"></input></td>
+                                <td scope="row"><input type="checkbox" @onchange="(eventArgs) => HandleJobAbilityEntryChanged(eventArgs.Value, currentSecond, currentJob.JobData, currentAbility)"></input></td>
                             }
                         }
                     </tr>
@@ -88,6 +87,7 @@ else
             }
             else 
             {
+                <!-- This needs to be updated to filter on all timespans with entries in the timeline (boss abilities and job abilities) -->
                 @foreach (var entry in this.timeline.BossTimeline.Timeline)
                 {
                     var helpText = this.timeline.BossTimeline.Abilities.Find(a => a.Name.Equals(entry.Name))?.Description;
@@ -112,7 +112,6 @@ else
 
     private BossTimeline bossTimeline;
     private List<string> availableJobs;
-    private List<Job> jobs = new List<Job>();
 
     private bool showDetailedTimeline = false;
     private string selectedJob;
@@ -145,7 +144,7 @@ else
     private async Task AddJobAsync()
     {
         var jobData = await this.JobDataProvider.GetJobDataAsync(this.selectedJob);
-        this.jobs.Add(jobData);
+        this.timeline.AddJob(jobData);
     }
     
     private void HandleJobAbilityEntryChanged(object checkedValue, TimeSpan entryTime, Job job, JobAbility ability)

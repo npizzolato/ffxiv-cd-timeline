@@ -1,3 +1,4 @@
+// Represents the timeline for ability use by a boss/enemy.
 public class BossTimeline 
 {
     public string ShortName { get; set; }

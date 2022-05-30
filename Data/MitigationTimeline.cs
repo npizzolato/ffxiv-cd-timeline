@@ -1,7 +1,8 @@
+// Represents the state of all the mitigation for a single fight.
 public class MitigationTimeline
 {
     private readonly TimeSpan lastAbilityTimeline;
-    
+
     public MitigationTimeline(BossTimeline bossTimeline)
     {
         this.BossTimeline = bossTimeline;
@@ -35,5 +36,11 @@ public class MitigationTimeline
         this.JobAbilityTimelines.Add(jobInstance.Id, jobAbilityTimeline);
 
         return jobInstance;
+    }
+
+    public IEnumerable<TimeSpan> GetTimelineRange()
+    {
+        return Enumerable.Range(0, Convert.ToInt32(this.BossTimeline.Timeline.Last().EffectTime.TotalSeconds))
+            .Select(multiplier => TimeSpan.Zero.Add(TimeSpan.FromSeconds(1 * multiplier)));
     }
 }

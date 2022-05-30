@@ -1,3 +1,4 @@
+// Represnts a single entry in the timeline for a boss's ability use.
 public class BossTimelineEntry
 {
     public string Name { get; set; }

@@ -1,5 +1,6 @@
 using System.Text.Json.Serialization;
 
+// Represents an individual ability used by a boss/enemy. 
 public class BossAbility
 {
     public string Name { get; set; }

@@ -1,5 +1,6 @@
 using System.Text.Json.Serialization;
 
+// Represents the metadata for a single ability used by a job.
 public class JobAbility
 {
     public string Name { get; set; }
