@@ -76,10 +76,20 @@ else
                         {
                             @foreach (var ability in job.JobData.Abilities)
                             {
-                                var currentSecond = second;
-                                var currentJob = job;
-                                var currentAbility = ability;
-                                <td scope="row"><input type="checkbox" @onchange="(eventArgs) => HandleJobAbilityEntryChanged(eventArgs.Value, currentSecond, currentJob.JobData, currentAbility)"></input></td>
+                                var status = this.timeline.JobAbilityTimelines[job.Id][ability.Name].AvailabilityTimeline[second];
+                                bool isCasting = this.timeline.JobAbilityTimelines[job.Id][ability.Name].AbilityUses.Any(use => use.CastTime == second);
+
+                                <td scope="row">
+                                    @if (status == JobAbilityStatus.Available || isCasting)
+                                    {
+                                        <input type="checkbox" @onchange="(eventArgs) => HandleJobAbilityEntryChanged(eventArgs.Value, second, job, ability)"></input>
+                                        <!-- <p>@status</p> --> <!-- Useful for seeing the underlying status -->
+                                    }
+                                    else 
+                                    {
+                                        <div>@status</div>
+                                    }
+                                </td>
                             }
                         }
                     </tr>
@@ -147,9 +157,9 @@ else
         this.timeline.AddJob(jobData);
     }
     
-    private void HandleJobAbilityEntryChanged(object checkedValue, TimeSpan entryTime, Job job, JobAbility ability)
+    private void HandleJobAbilityEntryChanged(object checkedValue, TimeSpan entryTime, JobInstance job, JobAbility ability)
     {
-        Console.WriteLine($"{checkedValue}: {entryTime} | {job.Name} | {ability.Name}");
+        Console.WriteLine($"{checkedValue}: {entryTime} | {job.Id} | {job.JobData.Name} | {ability.Name}");
 
         if ((bool)checkedValue)
         {
@@ -161,23 +171,13 @@ else
         }
     }
 
-    private void AddJobAbilityEntry(TimeSpan entryTime, Job job, JobAbility ability)
+    private void AddJobAbilityEntry(TimeSpan entryTime, JobInstance job, JobAbility ability)
     {
-        job.AbilityTimeline.Add(
-            new JobTimelineEntry()
-            {
-                CastTime = entryTime,
-                AbilityName = ability.Name
-            });
+        this.timeline.JobAbilityTimelines[job.Id][ability.Name].AddAbilityUse(entryTime);
     }
 
-    private void RemoveJobAbilityEntry(TimeSpan entryTime, Job job, JobAbility ability)
+    private void RemoveJobAbilityEntry(TimeSpan entryTime, JobInstance job, JobAbility ability)
     {
-        JobTimelineEntry entry = job.AbilityTimeline.FirstOrDefault(e => e.CastTime == entryTime && e.AbilityName.Equals(ability.Name));
-        
-        if (entry != null)
-        {
-            job.AbilityTimeline.Remove(entry);
-        }
+        this.timeline.JobAbilityTimelines[job.Id][ability.Name].RemoveAbiityUse(entryTime);
     }
 }

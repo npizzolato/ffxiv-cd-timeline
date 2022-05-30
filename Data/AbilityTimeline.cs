@@ -74,11 +74,15 @@ public class AbilityTimeline
         {
             JobAbilityStatus status = JobAbilityStatus.Available;
 
-            TimeSpan? mostRecentUse = this.AbilityUses.LastOrDefault(use => use.CastTime < second)?.CastTime;
+            TimeSpan? mostRecentUse = this.AbilityUses.LastOrDefault(use => use.CastTime <= second)?.CastTime;
 
             if (mostRecentUse != null)
             {
-                if (this.ability.Duration.HasValue && mostRecentUse + this.ability.Duration.Value >= second)
+                if (mostRecentUse == second)
+                {
+                    status = JobAbilityStatus.Active;
+                }
+                else if (this.ability.Duration.HasValue && mostRecentUse + this.ability.Duration.Value > second)
                 {
                     status = JobAbilityStatus.Active;
                 }
