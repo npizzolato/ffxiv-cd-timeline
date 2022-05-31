@@ -13,4 +13,6 @@ public class JobAbility
 
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public JobAbilityType Type { get; set; }
+
+    public int Charge { get; set; } = 1;
 }
