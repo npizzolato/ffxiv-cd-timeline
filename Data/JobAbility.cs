@@ -15,4 +15,5 @@ public class JobAbility
     public JobAbilityType Type { get; set; }
 
     public int Charge { get; set; } = 1;
+    // hi
 }
