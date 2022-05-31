@@ -14,6 +14,7 @@ public class JobDataProvider
 
     private Dictionary<string, string> NameToFileMap = new Dictionary<string, string>
     {
+        ["Sage"] = "job-data/sage.json",
         ["Warrior"] = "job-data/warrior.json"
         ["Gunbreaker"] = "job-data/gunbreaker.json"
     };
