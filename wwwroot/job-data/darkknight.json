@@ -52,7 +52,7 @@
         {
             "name": "Oblation",
             "duration": "00:00:10",
-            "cooldown": "00:00:60",
+            "cooldown": "00:01:00",
             "mitigation": 0.10,
             "type":"TankMitigation",
             "charge": 2

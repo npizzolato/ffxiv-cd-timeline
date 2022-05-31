@@ -52,7 +52,7 @@
         {
             "name": "Aurora",
             "duration": "00:00:18",
-            "cooldown": "00:00:60",
+            "cooldown": "00:01:00",
             "mitigation": 0,
             "type":"TankMitigation",
             "charge": 2
