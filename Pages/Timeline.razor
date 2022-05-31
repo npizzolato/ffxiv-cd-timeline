@@ -48,7 +48,7 @@ else
             <tr>
                 @foreach (var job in this.timeline.Jobs)
                 {
-                    @foreach (var ability in job.JobData.Abilities.OrderBy(a => a.Type))
+                    @foreach (var ability in job.JobData.Abilities)
                     {
                         <th scope="col">@ability.Name</th>
                     }
