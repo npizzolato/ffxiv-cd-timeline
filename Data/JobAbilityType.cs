@@ -6,5 +6,7 @@ public enum JobAbilityType
 
     PartyMitigation,
 
-    Utility
+    Utility,
+
+    PersonalMitigation
 }

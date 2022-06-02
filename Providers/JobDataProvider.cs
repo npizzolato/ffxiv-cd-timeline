@@ -1,5 +1,3 @@
-using System.Net.Http.Json;
-using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 public class JobDataProvider 
@@ -16,11 +14,14 @@ public class JobDataProvider
     private Dictionary<string, string> NameToFileMap = new Dictionary<string, string>
     {
         ["Astrologian"] = "job-data/astrologian.json",
+        ["Black Mage"] = "job-data/blackmage.json",
         ["Dark Knight"] = "job-data/darkknight.json",
         ["Gunbreaker"] = "job-data/gunbreaker.json",
         ["Paladin"] = "job-data/paladin.json",
+        ["Red Mage"] = "job-data/redmage.json",
         ["Sage"] = "job-data/sage.json",
         ["Scholar"] = "job-data/scholar.json",
+        ["Summoner"] = "job-data/summoner.json",
         ["Warrior"] = "job-data/warrior.json",
         ["White Mage"] = "job-data/whitemage.json"
     };

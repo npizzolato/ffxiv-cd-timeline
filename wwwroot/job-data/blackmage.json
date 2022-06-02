@@ -1,0 +1,19 @@
+{
+    "name": "Black Mage",
+    "abilities": [
+        {
+            "name": "Addle",
+            "duration": "00:00:10",
+            "cooldown": "00:01:30",
+            "mitigation": 0.10,
+            "type": "PartyMitigation"
+        },
+        {
+            "name": "Manaward",
+            "duration": "00:00:20",
+            "cooldown": "00:02:00",
+            "mitigation": 0.30,
+            "type": "PersonalMitigation"
+        }
+    ]
+}
