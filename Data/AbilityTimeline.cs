@@ -80,6 +80,11 @@ public class AbilityTimeline
         return this.timeline[time];
     }
 
+    public IEnumerable<TimeSpan> GetCastTimes()
+    {
+        return this.abilityUses.Select(use => use.CastTime);
+    }
+
     private void UpdateAbilityTimeline()
     {
         foreach (TimeSpan second in this.timeline.Keys)

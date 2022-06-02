@@ -51,6 +51,21 @@ public class MitigationTimeline
 
     public IEnumerable<TimeSpan> GetImportantTimelinePoints()
     {
-        return this.BossTimeline.Timeline.Select(e => e.EffectTime);
+        IEnumerable<TimeSpan> bossCastTimes = this.BossTimeline.Timeline.Select(e => e.EffectTime);
+
+        HashSet<TimeSpan> abilityCastTimes = new HashSet<TimeSpan>();
+
+        foreach (KeyValuePair<string, Dictionary<string, AbilityTimeline>> jobTimeline in this.jobAbilityTimelines)
+        {
+            foreach (AbilityTimeline abilityTimeline in jobTimeline.Value.Values)
+            {
+                foreach (TimeSpan castTime in abilityTimeline.GetCastTimes())
+                {
+                    abilityCastTimes.Add(castTime);
+                }
+            }
+        }
+
+        return abilityCastTimes.Union(bossCastTimes).OrderBy(t => t);
     }
 }
