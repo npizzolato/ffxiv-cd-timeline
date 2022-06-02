@@ -83,7 +83,7 @@ else
                             <td scope="row" class="@status">
                                 @if (status == JobAbilityStatus.Available || isCasting)
                                 {
-                                    <input type="checkbox" @onchange="(eventArgs) => HandleJobAbilityEntryChanged(eventArgs.Value, second, job, ability)"></input>
+                                    <input type="checkbox" checked="@isCasting" @onchange="(eventArgs) => HandleJobAbilityEntryChanged(eventArgs.Value, second, job, ability)"></input>
                                     <!-- <p>@status</p> --> <!-- Useful for seeing the underlying status -->
                                 }
                                 else 
