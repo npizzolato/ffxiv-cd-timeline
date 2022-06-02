@@ -1,4 +1,5 @@
-using System.Text.Json.Serialization;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 // Represents an individual ability used by a boss/enemy. 
 public class BossAbility
@@ -7,6 +8,6 @@ public class BossAbility
 
     public string Description { get; set; }
 
-    [JsonConverter(typeof(JsonStringEnumConverter))]
+    [JsonConverter(typeof(StringEnumConverter))]
     public AbilityCategory Category { get; set; }
 }

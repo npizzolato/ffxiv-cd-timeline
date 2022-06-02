@@ -1,5 +1,4 @@
-using System.Net.Http.Json;
-using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 public class BossDataProvider 
 {    
@@ -22,7 +21,7 @@ public class BossDataProvider
         return this.NameToFileMap.Keys;
     }
 
-    public Task<BossTimeline> GetBossTimelineAsync(string bossName)
+    public async Task<BossTimeline> GetBossTimelineAsync(string bossName)
     {
         if (string.IsNullOrEmpty(bossName))
         {
@@ -34,6 +33,8 @@ public class BossDataProvider
             throw new ArgumentException($"Boss name {bossName} is not supported.");
         }
 
-        return this.client.GetFromJsonAsync<BossTimeline>(this.NameToFileMap[bossName]);
+        HttpResponseMessage response = await this.client.GetAsync(this.NameToFileMap[bossName]);
+        string content = await response.Content.ReadAsStringAsync();
+        return JsonConvert.DeserializeObject<BossTimeline>(content);
     }
 }

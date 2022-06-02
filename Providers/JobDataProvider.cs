@@ -1,5 +1,6 @@
 using System.Net.Http.Json;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 public class JobDataProvider 
 {    
@@ -41,9 +42,8 @@ public class JobDataProvider
             throw new ArgumentException($"Job name {jobName} is not supported.");
         }
 
-        var response = await this.client.GetAsync(this.NameToFileMap[jobName]);
-        var content = await response.Content.ReadAsStringAsync();
-        return Newtonsoft.Json.JsonConvert.DeserializeObject<Job>(content);
-        //return this.client.GetFromJsonAsync<Job>(this.NameToFileMap[jobName]);
+        HttpResponseMessage response = await this.client.GetAsync(this.NameToFileMap[jobName]);
+        string content = await response.Content.ReadAsStringAsync();
+        return JsonConvert.DeserializeObject<Job>(content);
     }
 }

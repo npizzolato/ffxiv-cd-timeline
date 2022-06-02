@@ -1,3 +1,6 @@
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
 // Represents the metadata for a single ability used by a job.
 public class JobAbility
 {
@@ -9,7 +12,7 @@ public class JobAbility
 
     public double Mitigation { get; set; }
 
-    [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
+    [JsonConverter(typeof(StringEnumConverter))]
     public JobAbilityType Type { get; set; }
 
     public int Charge { get; set; } = 1;
