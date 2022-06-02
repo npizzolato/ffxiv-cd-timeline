@@ -19,7 +19,8 @@ public class JobDataProvider
         ["Paladin"] = "job-data/paladin.json",
         ["Sage"] = "job-data/sage.json",
         ["Scholar"] = "job-data/scholar.json",
-        ["Warrior"] = "job-data/warrior.json"
+        ["Warrior"] = "job-data/warrior.json",
+        ["White Mage"] = "job-data/whitemage.json"
     };
 
     public IEnumerable<string> GetJobs()
