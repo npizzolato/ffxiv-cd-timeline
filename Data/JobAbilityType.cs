@@ -4,5 +4,7 @@ public enum JobAbilityType
 {
     TankMitigation,
 
-    PartyMitigation
+    PartyMitigation,
+
+    Utility
 }

@@ -14,6 +14,7 @@ public class JobDataProvider
 
     private Dictionary<string, string> NameToFileMap = new Dictionary<string, string>
     {
+        ["Astrologian"] = "job-data/astrologian.json",
         ["Dark Knight"] = "job-data/darkknight.json",
         ["Gunbreaker"] = "job-data/gunbreaker.json",
         ["Paladin"] = "job-data/paladin.json",
@@ -28,7 +29,7 @@ public class JobDataProvider
         return this.NameToFileMap.Keys;
     }
 
-    public Task<Job> GetJobDataAsync(string jobName)
+    public async Task<Job> GetJobDataAsync(string jobName)
     {
         if (string.IsNullOrEmpty(jobName))
         {
@@ -40,6 +41,9 @@ public class JobDataProvider
             throw new ArgumentException($"Job name {jobName} is not supported.");
         }
 
-        return this.client.GetFromJsonAsync<Job>(this.NameToFileMap[jobName]);
+        var response = await this.client.GetAsync(this.NameToFileMap[jobName]);
+        var content = await response.Content.ReadAsStringAsync();
+        return Newtonsoft.Json.JsonConvert.DeserializeObject<Job>(content);
+        //return this.client.GetFromJsonAsync<Job>(this.NameToFileMap[jobName]);
     }
 }
