@@ -38,12 +38,12 @@ else
 
     <div>
         <button class="btn btn-primary" @onclick="Save">
-            Save Mit Plan
+            Generate link to mit plan
         </button>
 
         @if (this.mitPlanLink != null)
         {
-            <a href="@this.mitPlanLink">Click me!</a>
+            <a href="@this.mitPlanLink" class="link-primary">Copy this link!</a>
         }
     </div>
 
@@ -176,6 +176,7 @@ else
 
     private void Save()
     {
+        this.mitPlanLink = null;
         string savedTimeline = this.TimelineSaver.SaveTimeline(this.timeline);
         this.mitPlanLink =$"/timeline/{this.BossName}/{HttpUtility.UrlEncode(savedTimeline)}";
     }
