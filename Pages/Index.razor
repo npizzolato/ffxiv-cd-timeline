@@ -10,18 +10,20 @@
     Supported fights:
 </p>
 
-<ul>
-    @foreach (string boss in this.supportedBosses)
+<ul class="list-unstyled">
+    @foreach (BossMetadata boss in this.supportedBosses)
     {
-        var link = $"timeline/{boss}";
-        <li>
-            <a href=@link>@boss</a>
+        var link = $"timeline/{boss.ShortName}";
+        <li style="padding-bottom:10px">
+            <a href=@link class="card" style="background-image: url('@boss.Image'); background-size: 100% 100%; width: 15rem; height: 7rem;">
+                <h3 class=display-10 style="color: white; position: absolute; right:5px; bottom:0px">@boss.ShortName</h3>
+            </a>
         </li>
     }
 </ul>
 
 @code {
-    private IEnumerable<string> supportedBosses;
+    private IEnumerable<BossMetadata> supportedBosses;
 
     protected override void OnInitialized()
     {

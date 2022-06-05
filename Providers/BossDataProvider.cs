@@ -1,25 +1,24 @@
+using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 
 public class BossDataProvider 
 {    
     private readonly HttpClient client;
+    private readonly IOptions<BossDataProviderOptions> options;
 
-    public BossDataProvider(HttpClient client)
+    public BossDataProvider(HttpClient client, IOptions<BossDataProviderOptions> options)
     {
         if (client == null) throw new ArgumentNullException(nameof(client));
+        if (options == null) throw new ArgumentNullException(nameof(options));
 
         this.client = client;
+        this.options = options;
     }
 
-    private Dictionary<string, string> NameToFileMap = new Dictionary<string, string>
+    public IEnumerable<BossMetadata> GetBosses()
     {
-        ["P1S"] = "boss-data/p1s.json",
-        ["UWU"] = "boss-data/uwu.json"
-    };
-
-    public IEnumerable<string> GetBosses()
-    {
-        return this.NameToFileMap.Keys;
+        Console.WriteLine($"Loading {this.options.Value.Bosses.Count()} bosses.");
+        return this.options.Value.Bosses;
     }
 
     public async Task<BossTimeline> GetBossTimelineAsync(string bossName)
@@ -28,14 +27,21 @@ public class BossDataProvider
         {
             throw new ArgumentNullException(nameof(bossName));
         }
+        
+        BossMetadata metadata = this.options.Value.Bosses.FirstOrDefault(b => b.ShortName.Equals(bossName));
 
-        if (!this.NameToFileMap.ContainsKey(bossName))
+        if (metadata == null)
         {
             throw new ArgumentException($"Boss name {bossName} is not supported.");
         }
 
-        HttpResponseMessage response = await this.client.GetAsync(this.NameToFileMap[bossName]);
+        HttpResponseMessage response = await this.client.GetAsync(metadata.DetailsFile);
         string content = await response.Content.ReadAsStringAsync();
         return JsonConvert.DeserializeObject<BossTimeline>(content);
     }
+}
+
+public class BossDataProviderOptions
+{
+    public List<BossMetadata> Bosses { get; set; }
 }

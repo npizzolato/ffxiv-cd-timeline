@@ -13,6 +13,7 @@ Console.WriteLine($"Startup: {builder.Configuration.GetDebugView()}");
 Console.WriteLine($"Startup: Loaded {options.JobDataFileMaps.Count} levels.");
 
 builder.Services.Configure<JobDataProviderOptions>(builder.Configuration.GetSection("jobDataProviderOptions"));
+builder.Services.Configure<BossDataProviderOptions>(builder.Configuration.GetSection("bossDataProviderOptions"));
 
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 builder.Services.AddScoped<BossDataProvider>();
