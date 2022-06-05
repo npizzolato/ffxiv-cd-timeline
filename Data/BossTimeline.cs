@@ -5,6 +5,8 @@ public class BossTimeline
 
     public string FullName { get; set; }
 
+    public int Level { get; set; }
+
     public List<BossAbility> Abilities { get; set; }
 
     public List<BossTimelineEntry> Timeline { get; set; }

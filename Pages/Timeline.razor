@@ -117,7 +117,7 @@ else
 
         this.timeline = new MitigationTimeline(bossTimeline);
 
-        this.availableJobs = this.JobDataProvider.GetJobs().ToList();
+        this.availableJobs = this.JobDataProvider.GetJobs(bossTimeline.Level).ToList();
     }
 
     private void ToggleDetailedTimeline()
@@ -134,7 +134,7 @@ else
 
     private async Task AddJobAsync()
     {
-        var jobData = await this.JobDataProvider.GetJobDataAsync(this.selectedJob);
+        var jobData = await this.JobDataProvider.GetJobDataAsync(this.selectedJob, this.timeline.BossTimeline.Level);
         this.timeline.AddJob(jobData);
     }
     
