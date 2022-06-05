@@ -1,9 +1,31 @@
 ﻿@page "/"
 
+@inject BossDataProvider BossDataProvider
+
 <PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1 class="display-4">FFXIV Mitigation Planner</h1>
 
-Welcome to your new app.
+<p class="lead">
+    Supported fights:
+</p>
 
-<!-- This will eventually need to be updated to point people to creating new timelines on the left -->
+<ul>
+    @foreach (string boss in this.supportedBosses)
+    {
+        var link = $"timeline/{boss}";
+        <li>
+            <a href=@link>@boss</a>
+        </li>
+    }
+</ul>
+
+@code {
+    private IEnumerable<string> supportedBosses;
+
+    protected override void OnInitialized()
+    {
+        this.supportedBosses = this.BossDataProvider.GetBosses();
+        base.OnInitialized();
+    }
+}
