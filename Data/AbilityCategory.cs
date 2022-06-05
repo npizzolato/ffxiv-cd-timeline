@@ -15,5 +15,7 @@ public enum AbilityCategory
 
     Mechanics,
 
-    Adds
+    Adds,
+
+    AvoidableDamage
 }

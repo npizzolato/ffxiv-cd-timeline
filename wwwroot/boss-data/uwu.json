@@ -1,0 +1,178 @@
+{
+    "shortName": "UWU",
+    "fullName": "The Weapon's Refrain (Ultimate)",
+    "level": 70,
+    "abilities": [
+        {
+            "name": "Slipstream",
+            "description": "Frontal Cleave, 2.5s cast; must be dodged",
+            "category": "AvoidableDamage"
+        },
+        {
+            "name": "Mistral Song",
+            "description": "Green marker, wide line AOE to target, tankbuster damage to first target hit",
+            "category": "TankDamage"
+        },
+        {
+            "name": "Spiny + Satin Plumes",
+            "description": "Spiny plume does TB damage and inflicts thermal low. Satin plumes must be burned.",
+            "category": "Adds"
+        },
+        {
+            "name": "Satin Plumes",
+            "description": "Satin plumes must be burned.",
+            "category": "Adds"
+        },
+        {
+            "name": "Downburst",
+            "description": "Untelegraphed frontal cleave. Tankbuster damage. Becomes shared damage after Woken.",
+            "category": "TankDamage"
+        },
+        {
+            "name": "Feather Rain",
+            "description": "Small near-instance AOEs on party after Garuda shrieks",
+            "category": "AvoidableDamage"
+        },
+        {
+            "name": "Mistral Shriek",
+            "description": "Moderate raidwide damage",
+            "category": "RaidDamage"
+        },
+        {
+            "name": "Friction",
+            "description": "Moderate AOE damage on random target and inflicts Thermal Low",
+            "category": "RaidDamage"
+        },
+        {
+            "name": "Aerial Blast",
+            "description": "Heavy raidwide damage",
+            "category": "RaidDamage"
+        },
+        {
+            "name": "Eye of the Storm",
+            "description": "Damage and knockback on any players near the edge of the arena",
+            "category": "AvoidableDamage"
+        },
+        {
+            "name": "Wicked Wheel",
+            "description": "Telegraphed melee AOE",
+            "category": "AvoidableDamage"
+        },
+        {
+            "name": "Mesohigh",
+            "description": "Green tether; deals fatal damage if target is now afflicted by Thermal Low. Cleanses Thermal Low.",
+            "category": "TankDamage"
+        },
+        {
+            "name": "Wicked Tornado",
+            "description": "Donut AOE, always follows Wicked Wheel after Garuda is Woken",
+            "category": "AvoidableDamage"
+        }
+    ],
+    "timeline": [
+        {
+            "effectTime": "00:00:05",
+            "name": "Slipstream"
+        },
+        {
+            "effectTime": "00:00:05",
+            "name": "Mistral Song"
+        },
+        {
+            "effectTime": "00:00:18",
+            "name": "Spiny + Satin Plumes"
+        },
+        {
+            "effectTime": "00:00:20",
+            "name": "Slipstream"
+        },
+        {
+            "effectTime": "00:00:27",
+            "name": "Downburst"
+        },
+        {
+            "effectTime": "00:00:33",
+            "name": "Feather Rain"
+        },
+        {
+            "effectTime": "00:00:37",
+            "name": "Mistral Shriek"
+        },
+        {
+            "effectTime": "00:00:48",
+            "name": "Friction"
+        },
+        {
+            "effectTime": "00:00:54",
+            "name": "Friction"
+        },
+        {
+            "effectTime": "00:01:08",
+            "name": "Feather Rain"
+        },
+        {
+            "effectTime": "00:01:12",
+            "name": "Aerial Blast"
+        },
+        {
+            "effectTime": "00:01:28",
+            "name": "Feather Rain"
+        },
+        {
+            "effectTime": "00:01:32",
+            "name": "Mistral Song"
+        },
+        {
+            "effectTime": "00:01:34",
+            "name": "Eye of the Storm"
+        },
+        {
+            "effectTime": "00:01:35",
+            "name": "Wicked Wheel"
+        },
+        {
+            "effectTime": "00:01:40",
+            "name": "Feather Rain"
+        },
+        {
+            "effectTime": "00:01:49",
+            "name": "Satin Plumes"
+        },
+        {
+            "effectTime": "00:01:57",
+            "name": "Slipstream"
+        },
+        {
+            "effectTime": "00:01:58",
+            "name": "Eye of the Storm"
+        },
+        {
+            "effectTime": "00:01:58",
+            "name": "Mesohigh"
+        },
+        {
+            "effectTime": "00:02:05",
+            "name": "Feather Rain"
+        },
+        {
+            "effectTime": "00:02:17",
+            "name": "Slipstream"
+        },
+        {
+            "effectTime": "00:02:25",
+            "name": "Wicked Wheel"
+        },
+        {
+            "effectTime": "00:02:30",
+            "name": "Wicked Tornado"
+        },
+        {
+            "effectTime": "00:02:33",
+            "name": "Downburst"
+        },
+        {
+            "effectTime": "00:02:38",
+            "name": "Slipstream"
+        }
+    ]
+}
