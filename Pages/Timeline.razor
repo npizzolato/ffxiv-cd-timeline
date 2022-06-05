@@ -3,6 +3,7 @@
 
 @inject BossDataProvider BossDataProvider
 @inject JobDataProvider JobDataProvider
+@inject TimelineSaver TimelineSaver
 
 @if (this.timeline == null)
 {
@@ -175,17 +176,13 @@ else
 
     private void Save()
     {
-        string timelineJson = JsonConvert.SerializeObject(this.timeline);
-        byte[] data = System.Text.Encoding.UTF8.GetBytes(timelineJson);
-        string saveCode = System.Convert.ToBase64String(data);
-        this.mitPlanLink =$"/timeline/{this.BossName}/{saveCode}";
+        string savedTimeline = this.TimelineSaver.SaveTimeline(this.timeline);
+        this.mitPlanLink =$"/timeline/{this.BossName}/{savedTimeline}";
     }
     
     private void LoadSavedMitPlan()
     {
-        byte[] data = System.Convert.FromBase64String(this.SavedMitPlan);
-        string base64Decoded = System.Text.ASCIIEncoding.ASCII.GetString(data);
-        this.timeline = JsonConvert.DeserializeObject<MitigationTimeline>(base64Decoded);
+        this.timeline = this.TimelineSaver.LoadTimeline(this.SavedMitPlan);
     }
     
     private void HandleJobAbilityEntryChanged(object checkedValue, TimeSpan entryTime, JobInstance job, JobAbility ability)
