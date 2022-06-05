@@ -1,38 +1,37 @@
 {
-    "name": "Paladin",
+    "name": "Gunbreaker",
     "abilities": [
         {
-            "name": "Intervention",
-            "duration": "00:00:08",
-            "cooldown": "00:00:10",
+            "name": "Camouflage",
+            "duration": "00:00:10",
+            "cooldown": "00:01:30",
             "mitigation": 0.10,
             "type": "TankMitigation"
         },
         {
-            "name": "Sentinel",
+            "name": "Nebula",
             "duration": "00:00:15",
             "cooldown": "00:02:00",
             "mitigation": 0.30,
             "type": "TankMitigation"
         },
         {
-            "name": "Hallowed Ground",
+            "name": "Superbolide",
             "duration": "00:00:10",
-            "cooldown": "00:07:00",
+            "cooldown": "00:06:00",
             "mitigation": 1.0,
             "type": "TankMitigation"
         },
         {
-            "name": "Passage of Arms",
-            "duration": "00:00:03",
-            "cooldown": "00:02:00",
-            "mitigation": 0.15,
+            "name": "Heart of Light",
+            "cooldown": "00:01:30",
+            "mitigation": 0.10,
             "type": "PartyMitigation"
         },
         {
-            "name": "Holy Sheltron",
-            "duration": "00:00:08",
-            "cooldown": "00:00:05",
+            "name": "Heart of Stone",
+            "duration": "00:00:07",
+            "cooldown": "00:00:25",
             "mitigation": 0.15,
             "type": "TankMitigation"
         },
@@ -51,17 +50,11 @@
             "type": "PartyMitigation"
         },
         {
-            "name": "Cover",
-            "duration": "00:00:12",
-            "cooldown": "00:02:00",
-            "mitigation": 1,
+            "name": "Aurora",
+            "duration": "00:00:18",
+            "cooldown": "00:01:00",
+            "mitigation": 0,
             "type":"TankMitigation"
-        },
-        {
-            "name": "Divine Veil",
-            "duration": "00:00:30",
-            "cooldown": "00:01:30",
-            "type":"PartyMitigation"
         }
     ]
 }

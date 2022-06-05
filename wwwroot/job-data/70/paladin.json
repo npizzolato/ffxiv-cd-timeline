@@ -30,10 +30,9 @@
             "type": "PartyMitigation"
         },
         {
-            "name": "Holy Sheltron",
-            "duration": "00:00:08",
+            "name": "Sheltron",
+            "duration": "00:00:04",
             "cooldown": "00:00:05",
-            "mitigation": 0.15,
             "type": "TankMitigation"
         },
         {
@@ -56,12 +55,6 @@
             "cooldown": "00:02:00",
             "mitigation": 1,
             "type":"TankMitigation"
-        },
-        {
-            "name": "Divine Veil",
-            "duration": "00:00:30",
-            "cooldown": "00:01:30",
-            "type":"PartyMitigation"
         }
     ]
 }

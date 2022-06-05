@@ -1,0 +1,47 @@
+{
+    "name": "Dark Knight",
+    "abilities": [
+        {
+            "name": "Dark Mind",
+            "duration": "00:00:10",
+            "cooldown": "00:01:00",
+            "mitigation": 0.20,
+            "type": "TankMitigation"
+        },
+        {
+            "name": "Shadow Wall",
+            "duration": "00:00:15",
+            "cooldown": "00:02:00",
+            "mitigation": 0.30,
+            "type": "TankMitigation"
+        },
+        {
+            "name": "Living Dead",
+            "duration": "00:00:20",
+            "cooldown": "00:05:00",
+            "mitigation": 1.0,
+            "type": "TankMitigation"
+        },
+        {
+            "name": "The Blackest Night",
+            "duration": "00:00:07",
+            "cooldown": "00:00:15",
+            "mitigation": 0.25,
+            "type": "TankMitigation"
+        },
+        {
+            "name": "Rampart",
+            "duration": "00:00:20",
+            "cooldown": "00:01:30",
+            "mitigation": 0.20,
+            "type": "TankMitigation"
+        },
+        {
+            "name": "Reprisal",
+            "duration": "00:00:10",
+            "cooldown": "00:01:00",
+            "mitigation": 0.10,
+            "type": "PartyMitigation"
+        }
+    ]
+}
