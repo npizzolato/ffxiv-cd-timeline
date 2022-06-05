@@ -6,27 +6,44 @@
         {
             "name": "Warder's Wrath",
             "description": "Standard low-damage raidwide",
-            "category": "RaidDamage"
+            "category": "RaidDamage",
+            "damageType": "Physical"
         },
         {
             "name": "Heavy Hand",
             "description": "Very weak tank buster on MT",
-            "category": "TankDamage"
+            "category": "TankDamage",
+            "damageType": "Physical"
+        },
+        {
+            "name": "Aetherial Shackles",
+            "description": "Blue + Red chain debuffs. Light damage",
+            "category": "RaidDamage"
         },
         {
             "name": "Gaoler's Flail",
             "description": "Avoidable damage (in/out or left/right)",
-            "category": "PatternAoe"
+            "category": "AvoidableDamage"
+        },
+        {
+            "name": "Gaoler's Flail 2nd Movement",
+            "description": "Avoidable damage (in/out or left/right)",
+            "category": "AvoidableDamage"
         },
         {
             "name": "AetherChain",
             "description": "Ground Explosion (red or blue)",
-            "category": "PatternAoe"
+            "category": "AvoidableDamage"
         },
         {
             "name": "AetherFlail",
             "description": "Combination attack with AetherChain and Gaoler's Flail",
-            "category": "PatternAoe"
+            "category": "AvoidableDamage"
+        },
+        {
+            "name": "AetherFlail 2nd Movement",
+            "description": "Combination attack with AetherChain and Gaoler's Flail",
+            "category": "AvoidableDamage"
         },
         {
             "name": "Pitiless Flail of Purgation",
@@ -39,14 +56,28 @@
             "category": "TankDamage"
         },
         {
+            "name": "Pitliess Flail of Purgation/Grace",
+            "description": "Tankbuster with knockback + either True Flare (proximity-based raid damage) or True Holy (shared damage)",
+            "category": "TankDamage",
+            "damageType": "Physical"
+        },
+        {
+            "name": "True Flare/Holy",
+            "description": "True Flare (proximity-based raid damage) or True Holy (shared damage)",
+            "category": "RaidDamage",
+            "damageType": "Magical"
+        },
+        {
             "name": "Shining Cells",
             "description": "Heavy raidwide",
-            "category": "RaidDamage"
+            "category": "RaidDamage",
+            "damageType": "Magical"
         },
         {
             "name": "Slam Shut",
             "description": "Heavy raidwide",
-            "category": "RaidDamage"
+            "category": "RaidDamage",
+            "damageType": "Magical"
         },
         {
             "name": "Aetherial Shackles",
@@ -61,17 +92,37 @@
         {
             "name": "Intemperance",
             "description": "Crystal mechanics, light damage when resolved correctly",
-            "category": "Mechanics"
+            "category": "RaidDamage"
         },
         {
             "name": "Intemperate Torment",
             "description": "First crystal activation",
-            "category": "PatternAoe"
+            "category": "AvoidableDamage"
         },
         {
-            "name": "Shackles of Time",
+            "name": "Crystal #2",
+            "description": "Second crystal activation",
+            "category": "AvoidableDamage"
+        },
+        {
+            "name": "Crystal #3",
+            "description": "Third crystal activation",
+            "category": "AvoidableDamage"
+        },
+        {
+            "name": "Shackles of Time Debuff",
             "description": "Ground explosion debuff",
             "category": "Mechanics"
+        },
+        {
+            "name": "Shackles of Time Act",
+            "description": "Ground explosion debuff",
+            "category": "AvoidableDamage"
+        },
+        {
+            "name": "Lethe",
+            "description": "Enrage",
+            "category": "RaidDamage"
         }
     ],
     "timeline": [
@@ -89,15 +140,15 @@
         },
         {
             "effectTime": "00:00:58",
-            "name": "Gaoler's Flail (in/out or side/side)"
+            "name": "Gaoler's Flail"
         },
         {
             "effectTime": "00:01:11",
-            "name": "Pitiless Flail (Grace or Purgation)"
+            "name": "Pitliess Flail of Purgation/Grace"
         },
         {
             "effectTime": "00:01:30",
-            "name": "Gaoler's Flail (opposite of the previous one)"
+            "name": "Gaoler's Flail"
         },
         {
             "effectTime": "00:01:44",
@@ -105,11 +156,11 @@
         },
         {
             "effectTime": "00:01:58",
-            "name": "Intemperance - Floor change"
+            "name": "Intemperance"
         },
         {
             "effectTime": "00:02:14",
-            "name": "Intemperant Torment (1st cube)"
+            "name": "Intemperate Torment"
         },
         {
             "effectTime": "00:02:21",
@@ -117,7 +168,7 @@
         },
         {
             "effectTime": "00:02:26",
-            "name": "2nd cube"
+            "name": "Crystal #2"
         },
         {
             "effectTime": "00:02:31",
@@ -125,7 +176,7 @@
         },
         {
             "effectTime": "00:02:37",
-            "name": "3rd cube"
+            "name": "Crystal #3"
         },
         {
             "effectTime": "00:02:47",
@@ -133,19 +184,19 @@
         },
         {
             "effectTime": "00:03:08",
-            "name": "Shining Cells - Floor change"
+            "name": "Shining Cells"
         },
         {
             "effectTime": "00:03:28",
-            "name": "Aetherflail (combination of left/right and in/out)"
+            "name": "AetherFlail"
         },
         {
             "effectTime": "00:03:43",
-            "name": "Pitiless Flail"
+            "name": "Pitliess Flail of Purgation/Grace"
         },
         {
             "effectTime": "00:04:03",
-            "name": "Aetherflail (opposite of the previous one)"
+            "name": "AetherFlail"
         },
         {
             "effectTime": "00:04:14",
@@ -169,27 +220,23 @@
         },
         {
             "effectTime": "00:05:41",
-            "name": "Intemperance - Floor change"
+            "name": "Intemperance"
         },
         {
             "effectTime": "00:05:57",
-            "name": "Intemperant Torment (1st cube)"
-        },
-        {
-            "effectTime": "00:06:01",
-            "name": "Gaoler's Flail cast"
+            "name": "Intemperate Torment"
         },
         {
             "effectTime": "00:06:09",
-            "name": "2nd cube"
+            "name": "Crystal #2"
         },
         {
             "effectTime": "00:06:13",
-            "name": "Gaoler's Flail resolves"
+            "name": "Gaoler's Flail"
         },
         {
             "effectTime": "00:06:20",
-            "name": "3rd cube"
+            "name": "Crystal #3"
         },
         {
             "effectTime": "00:06:29",
@@ -205,11 +252,11 @@
         },
         {
             "effectTime": "00:07:09",
-            "name": "Aetherchain"
+            "name": "AetherChain"
         },
         {
             "effectTime": "00:07:17",
-            "name": "Aetherchain"
+            "name": "AetherChain"
         },
         {
             "effectTime": "00:07:27",
@@ -217,15 +264,15 @@
         },
         {
             "effectTime": "00:07:35",
-            "name": " Shackles of Time cast"
+            "name": " Shackles of Time Debuff"
         },
         {
             "effectTime": "00:07:46",
-            "name": "Pitiless Flail"
+            "name": "Pitliess Flail of Purgation/Grace"
         },
         {
             "effectTime": "00:07:54",
-            "name": "Shackles of Time resolve"
+            "name": "Shackles of Time Act"
         },
         {
             "effectTime": "00:08:04",
@@ -233,15 +280,15 @@
         },
         {
             "effectTime": "00:08:25",
-            "name": "Aetherflail"
+            "name": "AetherFlail"
         },
         {
             "effectTime": "00:08:43",
-            "name": "Aetherflail (opposite to previous one)"
+            "name": "AetherFlail"
         },
         {
             "effectTime": "00:09:01",
-            "name": "Aetherflail (in/out or side/side)"
+            "name": "AetherFlail"
         },
         {
             "effectTime": "00:09:19",
@@ -257,7 +304,7 @@
         },
         {
             "effectTime": "00:10:00",
-            "name": "Lethe ( ENRAGE )"
+            "name": "Lethe"
         }
     ]
 }
