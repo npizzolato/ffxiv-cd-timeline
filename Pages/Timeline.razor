@@ -73,6 +73,18 @@ else
                         {
                             <Tooltip Text=@helpText><i class="bi bi-info-circle" style='padding-left:5px'></i></Tooltip>
                         }
+                        @if (abilityInfo != null && abilityInfo.DamageType != DamageType.Unknown)
+                        {
+                            @if (abilityInfo.DamageType == DamageType.Physical)
+                            {
+                                <img src="physical-damage.jpg" style="height: 25px" />
+                            }
+                            
+                            @if (abilityInfo.DamageType == DamageType.Magical)
+                            {
+                                <img src="magic-damage.jpg" style="height: 25px" />
+                            }
+                        }
                     </td>
                     @foreach (var job in this.timeline.Jobs)
                     {
@@ -222,4 +234,5 @@ td.Adds {
 td.AvoidableDamage {
     color: #00B034;
 }
+
 </style>

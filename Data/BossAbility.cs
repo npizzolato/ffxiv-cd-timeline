@@ -10,4 +10,7 @@ public class BossAbility
 
     [JsonConverter(typeof(StringEnumConverter))]
     public AbilityCategory Category { get; set; }
+
+    [JsonConverter(typeof(StringEnumConverter))]
+    public DamageType DamageType { get; set; }
 }

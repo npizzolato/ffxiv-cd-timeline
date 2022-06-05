@@ -11,7 +11,8 @@
         {
             "name": "Mistral Song",
             "description": "Green marker, wide line AOE to target, tankbuster damage to first target hit",
-            "category": "TankDamage"
+            "category": "TankDamage",
+            "damageType": "Magical"
         },
         {
             "name": "Spiny + Satin Plumes",
@@ -26,7 +27,8 @@
         {
             "name": "Downburst",
             "description": "Untelegraphed frontal cleave. Tankbuster damage. Becomes shared damage after Woken.",
-            "category": "TankDamage"
+            "category": "TankDamage",
+            "damageType": "Physical"
         },
         {
             "name": "Feather Rain",
@@ -36,17 +38,20 @@
         {
             "name": "Mistral Shriek",
             "description": "Moderate raidwide damage",
-            "category": "RaidDamage"
+            "category": "RaidDamage",
+            "damageType": "Magical"
         },
         {
             "name": "Friction",
             "description": "Moderate AOE damage on random target and inflicts Thermal Low",
-            "category": "RaidDamage"
+            "category": "RaidDamage",
+            "damageType": "Magical"
         },
         {
             "name": "Aerial Blast",
             "description": "Heavy raidwide damage",
-            "category": "RaidDamage"
+            "category": "RaidDamage",
+            "damageType": "Magical"
         },
         {
             "name": "Eye of the Storm",
@@ -61,7 +66,8 @@
         {
             "name": "Mesohigh",
             "description": "Green tether; deals fatal damage if target is now afflicted by Thermal Low. Cleanses Thermal Low.",
-            "category": "TankDamage"
+            "category": "TankDamage",
+            "damageType": "Magical"
         },
         {
             "name": "Wicked Tornado",
