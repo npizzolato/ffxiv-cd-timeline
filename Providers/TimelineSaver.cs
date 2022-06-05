@@ -19,10 +19,8 @@ public class TimelineSaver
     public MitigationTimeline LoadTimeline(string savedTimeline)
     {
         Console.WriteLine($"Loading {savedTimeline}");
-        //string decoded = HttpUtility.UrlDecode(savedTimeline);
         byte[] data = System.Convert.FromBase64String(savedTimeline);
         string uncompressed = Unzip(data);
-        //string base64Decoded = System.Text.ASCIIEncoding.ASCII.GetString(data);
         return JsonConvert.DeserializeObject<MitigationTimeline>(uncompressed);
     }
 
