@@ -62,11 +62,12 @@ else
             @foreach (TimeSpan second in range)
             {
                 BossTimelineEntry entry = this.timeline.BossTimeline.Timeline.Find(e => e.EffectTime == second);
-                var helpText = entry == null ? null : this.timeline.BossTimeline.Abilities.Find(a => a.Name.Equals(entry.Name))?.Description;
+                var abilityInfo = entry == null ? null : this.timeline.BossTimeline.Abilities.Find(a => a.Name.Equals(entry.Name));
+                string helpText = abilityInfo?.Description;
 
                 <tr scope="row">
                     <td>@second.ToString(@"mm\:ss")</td>
-                    <td scope="row">
+                    <td scope="row" class="@abilityInfo?.Category">
                         @entry?.Name
                         @if (!string.IsNullOrEmpty(helpText))
                         {
@@ -202,5 +203,23 @@ td {
 
 th {
     text-align: center;
+}
+
+td.RaidDamage {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+td.TankDamage {
+    color: #FFA525;
+    font-weight: bold;
+}
+
+td.Adds {
+    color: #8E569B;
+}
+
+td.AvoidableDamage {
+    color: #00B034;
 }
 </style>
