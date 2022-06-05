@@ -12,8 +12,7 @@ public class TimelineSaver
     {
         string timelineJson = JsonConvert.SerializeObject(timeline);
         byte[] compressedData = Zip(timelineJson);
-        string base64Encoded = System.Convert.ToBase64String(compressedData);
-        return HttpUtility.UrlEncode(base64Encoded);
+        return System.Convert.ToBase64String(compressedData);
     }
 
     public MitigationTimeline LoadTimeline(string savedTimeline)

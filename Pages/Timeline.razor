@@ -177,7 +177,7 @@ else
     private void Save()
     {
         string savedTimeline = this.TimelineSaver.SaveTimeline(this.timeline);
-        this.mitPlanLink =$"/timeline/{this.BossName}/{savedTimeline}";
+        this.mitPlanLink =$"/timeline/{this.BossName}/{HttpUtility.UrlEncode(savedTimeline)}";
     }
     
     private void LoadSavedMitPlan()
