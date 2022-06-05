@@ -1,3 +1,5 @@
+using Newtonsoft.Json;
+
 // Represents the status of a job availability on the timeline. 
 public enum JobAbilityStatus
 {
@@ -30,6 +32,22 @@ public class AbilityTimeline
                     this.timeline[second] = JobAbilityStatus.Available;
                 }
     }
+
+    [JsonConstructor]
+    public AbilityTimeline(TimeSpan length, JobAbility ability, IEnumerable<JobTimelineEntry> abilityUses)
+        : this(length, ability)
+    {
+        foreach (JobTimelineEntry abilityUse in abilityUses)
+        {
+            this.AddAbilityUse(abilityUse.CastTime);
+        }
+    }
+
+    public TimeSpan Length => this.length;
+
+    public JobAbility Ability => this.ability;
+
+    public IEnumerable<JobTimelineEntry> AbilityUses => this.abilityUses;
 
     public void AddAbilityUse(TimeSpan useTime)
     {

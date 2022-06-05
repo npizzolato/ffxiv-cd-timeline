@@ -1,4 +1,5 @@
-@page "/timeline/{bossName}"
+@page "/timeline/{bossName}/"
+@page "/timeline/{bossName}/{savedMitPlan}"
 
 @inject BossDataProvider BossDataProvider
 @inject JobDataProvider JobDataProvider
@@ -32,6 +33,17 @@ else
         <button class="btn btn-secondary" @onclick="AddJobAsync">
             Add @this.selectedJob
         </button>
+    </div>
+
+    <div>
+        <button class="btn btn-primary" @onclick="Save">
+            Save Mit Plan
+        </button>
+
+        @if (this.mitPlanLink != null)
+        {
+            <a href="@this.mitPlanLink">Click me!</a>
+        }
     </div>
 
     <table class="table table-striped">
@@ -119,8 +131,11 @@ else
 
     private bool showDetailedTimeline = false;
     private string selectedJob;
+    private string mitPlanLink;
 
     [Parameter] public string BossName { get; set; }
+
+    [Parameter] public string SavedMitPlan { get; set; }
 
     public string ButtonText => this.showDetailedTimeline ? "Show simplified timeline" : "Show detailed timeline";
 
@@ -128,9 +143,16 @@ else
     {
         var bossTimeline = await this.BossDataProvider.GetBossTimelineAsync(this.BossName);
 
-        this.timeline = new MitigationTimeline(bossTimeline);
-
         this.availableJobs = this.JobDataProvider.GetJobs(bossTimeline.Level).ToList();
+        
+        if (!string.IsNullOrWhiteSpace(this.SavedMitPlan))
+        {
+            this.LoadSavedMitPlan();
+        }
+        else 
+        {
+            this.timeline = new MitigationTimeline(bossTimeline);
+        }
     }
 
     private void ToggleDetailedTimeline()
@@ -149,6 +171,21 @@ else
     {
         var jobData = await this.JobDataProvider.GetJobDataAsync(this.selectedJob, this.timeline.BossTimeline.Level);
         this.timeline.AddJob(jobData);
+    }
+
+    private void Save()
+    {
+        string timelineJson = JsonConvert.SerializeObject(this.timeline);
+        byte[] data = System.Text.Encoding.UTF8.GetBytes(timelineJson);
+        string saveCode = System.Convert.ToBase64String(data);
+        this.mitPlanLink =$"/timeline/{this.BossName}/{saveCode}";
+    }
+    
+    private void LoadSavedMitPlan()
+    {
+        byte[] data = System.Convert.FromBase64String(this.SavedMitPlan);
+        string base64Decoded = System.Text.ASCIIEncoding.ASCII.GetString(data);
+        this.timeline = JsonConvert.DeserializeObject<MitigationTimeline>(base64Decoded);
     }
     
     private void HandleJobAbilityEntryChanged(object checkedValue, TimeSpan entryTime, JobInstance job, JobAbility ability)
@@ -173,16 +210,6 @@ else
     private void RemoveJobAbilityEntry(TimeSpan entryTime, JobInstance job, JobAbility ability)
     {
         this.timeline.GetAbilityTimeline(job, ability.Name).RemoveAbiityUse(entryTime);
-    }
-
-    private string GetStyle(JobAbilityStatus status)
-    {
-        if (status == JobAbilityStatus.Unavailable)
-        {
-            return "background-color: palevioletred";
-        }
-
-        return "";
     }
 }
 

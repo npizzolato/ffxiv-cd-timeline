@@ -1,3 +1,5 @@
+using Newtonsoft.Json;
+
 // Represents the state of all the mitigation for a single fight.
 public class MitigationTimeline
 {
@@ -11,9 +13,23 @@ public class MitigationTimeline
         this.lastAbilityTimeline = bossTimeline.Timeline.Last().EffectTime;
     }
 
+    [JsonConstructor]
+    public MitigationTimeline(BossTimeline bossTimeline, IEnumerable<JobInstance> jobs)
+    {
+        this.BossTimeline = bossTimeline;
+        this.lastAbilityTimeline = bossTimeline.Timeline.Last().EffectTime;
+
+        foreach (JobInstance job in jobs)
+        {
+            this.AddJobInstance(job);
+        }
+    }
+
     public BossTimeline BossTimeline { get; }
 
     public List<JobInstance> Jobs { get; } = new List<JobInstance>();
+
+    public Dictionary<string, Dictionary<string, AbilityTimeline>> JobAbilityTimelines => this.jobAbilityTimelines;
 
     public JobInstance AddJob(Job job)
     {
@@ -36,6 +52,21 @@ public class MitigationTimeline
         this.jobAbilityTimelines.Add(jobInstance.Id, jobAbilityTimeline);
 
         return jobInstance;
+    }
+
+    public void AddJobInstance(JobInstance jobInstance)
+    {
+        this.Jobs.Add(jobInstance);
+
+        Dictionary<string, AbilityTimeline> jobAbilityTimeline = new Dictionary<string, AbilityTimeline>();
+        
+        foreach (JobAbility ability in jobInstance.JobData.Abilities)
+        {
+            AbilityTimeline abilityTimeline = new AbilityTimeline(this.lastAbilityTimeline, ability);
+            jobAbilityTimeline[ability.Name] = abilityTimeline;
+        }
+
+        this.jobAbilityTimelines.Add(jobInstance.Id, jobAbilityTimeline);
     }
 
     public AbilityTimeline GetAbilityTimeline(JobInstance job, string abilityName)
