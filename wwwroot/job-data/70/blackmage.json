@@ -1,5 +1,5 @@
 {
-    "name": "Summoner",
+    "name": "Black Mage",
     "abilities": [
         {
             "name": "Addle",
@@ -9,12 +9,11 @@
             "type": "PartyMitigation"
         },
         {
-            "name": "Radiant Aegis",
-            "duration": "00:00:30",
-            "cooldown": "00:01:00",
-            "mitigation": 0.20,
-            "type": "PersonalMitigation",
-            "charge": 2
+            "name": "Manaward",
+            "duration": "00:00:20",
+            "cooldown": "00:02:00",
+            "mitigation": 0.30,
+            "type": "PersonalMitigation"
         }
     ]
 }

@@ -1,0 +1,40 @@
+{
+    "name": "Astrologian",
+    "abilities": [
+        {
+            "name": "Lightspeed",
+            "duration": "00:00:15",
+            "cooldown": "00:01:30",
+            "type": "Utility"
+        },
+        {
+            "name": "Essential Dignity",
+            "cooldown": "00:00:40",
+            "type": "TankMitigation"
+        },
+        {
+            "name": "Synastry ",
+            "duration": "00:00:20",
+            "cooldown": "00:02:00",
+            "type": "TankMitigation"
+        },
+        {
+            "name": "Collective Unconscious",
+            "duration": "00:00:15",
+            "cooldown": "00:01:00",
+            "type": "PartyMitigation"
+        },
+        {
+            "name": "Celestial Opposition",
+            "duration": "00:00:15",
+            "cooldown": "00:01:00",
+            "type": "PartyMitigation"
+        },
+        {
+            "name": "Earthly Star",
+            "duration": "00:00:20",
+            "cooldown": "00:01:00",
+            "type": "PartyMitigation"
+        }
+    ]
+}

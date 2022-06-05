@@ -1,0 +1,47 @@
+{
+    "name": "Scholar",
+    "abilities": [
+        {
+            "name": "Whispering Dawn",
+            "duration": "00:00:21",
+            "cooldown": "00:01:00",
+            "type": "PartyMitigation"
+        },
+        {
+            "name": "Fey Illumination",
+            "duration": "00:00:20",
+            "cooldown": "00:02:00",
+            "mitigation": 0.05,
+            "type": "PartyMitigation"
+        },
+        {
+            "name": "Sacred Soil",
+            "duration": "00:00:15",
+            "cooldown": "00:00:30",
+            "mitigation": 0.10,
+            "type": "PartyMitigation"
+        },
+        {
+            "name": "Indomitability",
+            "cooldown": "00:00:30",
+            "type": "PartyMitigation"
+        },
+        {
+            "name": "Deployment Tactics",
+            "cooldown": "00:02:00",
+            "type": "PartyMitigation"
+        },
+        {
+            "name": "Dissipation",
+            "duration": "00:00:30",
+            "cooldown": "00:03:00",
+            "type": "PartyMitigation"
+        },
+        {
+            "name": "Excogitation",
+            "duration": "00:00:45",
+            "cooldown": "00:00:45",
+            "type": "TankMitigation"
+        }
+    ]
+}

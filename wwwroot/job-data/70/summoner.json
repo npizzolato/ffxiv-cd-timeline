@@ -13,8 +13,7 @@
             "duration": "00:00:30",
             "cooldown": "00:01:00",
             "mitigation": 0.20,
-            "type": "PersonalMitigation",
-            "charge": 2
+            "type": "PersonalMitigation"
         }
     ]
 }
