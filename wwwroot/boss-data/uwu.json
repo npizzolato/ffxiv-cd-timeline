@@ -104,7 +104,8 @@
         {
             "name": "Infernal Nails",
             "description": "Adds that must be burned down after being hit by 2 eruptions each. Will explode for considerable damage.",
-            "category": "Adds"
+            "category": "Adds",
+            "damageType": "Magical"
         },
         {
             "name": "Inferno Howl",
@@ -124,7 +125,8 @@
         {
             "name": "Flaming Crush",
             "description": "Heavy Shared damage. Should be soaked by 6 people at least.",
-            "category": "SharedDamage"
+            "category": "SharedDamage",
+            "damageType": "Magical"
         }
     ],
     "timeline": [
