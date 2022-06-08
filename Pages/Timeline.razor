@@ -47,7 +47,7 @@ else
         }
     </div>
 
-    <table class="table table-striped">
+    <table class="table table-striped tableFixHead">
         <thead>
             <tr>
                 <th scope="col" rowspan="2">Time</th>
@@ -63,7 +63,7 @@ else
                 {
                     @foreach (var ability in job.JobData.Abilities)
                     {
-                        <th scope="col">@ability.Name</th>
+                        <th scope="col" class="row2">@ability.Name</th>
                     }
                 }
             </tr>
@@ -263,6 +263,24 @@ td.AvoidableDamage {
 td.SharedDamage {
     color: #479BBE;
     font-weight: bold;
+}
+
+.tableFixHead { 
+    overflow: auto; 
+    height: 100px; 
+}
+
+.tableFixHead thead th { 
+    position: sticky; 
+    top: 50px; 
+    z-index: 1; 
+    background-color: #E3F2FD; <!-- Matches nav bar color -->
+}
+
+.tableFixHead thead th.row2 { 
+    position: sticky; 
+    top: 90px; 
+    z-index: 1; 
 }
 
 </style>
