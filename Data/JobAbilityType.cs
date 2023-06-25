@@ -8,5 +8,7 @@ public enum JobAbilityType
 
     Utility,
 
-    PersonalMitigation
+    PersonalMitigation,
+
+    Healing
 }

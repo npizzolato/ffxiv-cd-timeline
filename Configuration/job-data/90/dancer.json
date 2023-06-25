@@ -1,0 +1,23 @@
+{
+  "name": "Dancer",
+  "abilities": [
+    {
+      "name": "Shield Samba",
+      "duration": "00:00:15",
+      "cooldown": "00:01:30",
+      "mitigation": 0.10,
+      "type": "PartyMitigation"
+    },
+    {
+      "name": "Curing Waltz",
+      "cooldown": "00:01:00",
+      "type": "Healing"
+    },
+    {
+      "name": "Improvisation",
+      "cooldown": "00:02:00",
+      "duration": "00:00:15",
+      "type": "Healing"
+    }
+  ]
+}

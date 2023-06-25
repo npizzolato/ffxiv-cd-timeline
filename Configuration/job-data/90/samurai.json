@@ -1,0 +1,12 @@
+{
+  "name": "Samurai",
+  "abilities": [
+    {
+      "name": "Feint",
+      "duration": "00:00:10",
+      "cooldown": "00:01:30",
+      "mitigation": 0.10,
+      "type": "PartyMitigation"
+    }
+  ]
+}
