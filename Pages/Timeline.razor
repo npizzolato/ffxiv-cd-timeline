@@ -148,7 +148,7 @@ else
         var bossTimeline = await this.BossDataProvider.GetBossTimelineAsync(this.BossName);
 
         this.availableJobs = this.JobDataProvider.GetJobs(bossTimeline.Level).ToList();
-        
+
         if (!string.IsNullOrWhiteSpace(this.SavedMitPlan))
         {
             this.LoadSavedMitPlan();
@@ -177,9 +177,10 @@ else
         this.timeline.AddJob(jobData);
     }
 
-    private async Task RemoveJobAsync(JobInstance job)
+    private Task RemoveJobAsync(JobInstance job)
     {
         this.timeline.RemoveJob(job);
+        return Task.CompletedTask;
     }
 
     private void Save()
