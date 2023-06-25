@@ -192,11 +192,11 @@ else
         this.timeline = new MitigationTimeline(this.TimelineId, bossTimeline);
         /*
         if (await this.TimelineSaver.TimelineExistsAsync(this.TimelineId))
-        {
+            {
             await this.LoadSavedMitPlanAsync();
         }
         else
-        {
+            {
             this.timeline = new MitigationTimeline(this.TimelineId, bossTimeline);
         }*/
     }
@@ -215,8 +215,11 @@ else
 
     private async Task AddJobAsync()
     {
-        var jobData = await this.JobDataProvider.GetJobDataAsync(this.selectedJob, this.timeline.BossTimeline.Level);
-        this.timeline.AddJob(jobData);
+        if (!string.IsNullOrWhiteSpace(this.selectedJob))
+        {
+            var jobData = await this.JobDataProvider.GetJobDataAsync(this.selectedJob, this.timeline.BossTimeline.Level);
+            this.timeline.AddJob(jobData);
+        }
     }
 
     private Task RemoveJobAsync(JobInstance job)
