@@ -1,5 +1,4 @@
-@page "/timeline/{bossName}/"
-@page "/timeline/{bossName}/{savedMitPlan}"
+@page "/timeline/{bossName}/{id}"
 @using System.Web;
 
 @inject BossDataProvider BossDataProvider
@@ -39,12 +38,12 @@ else
 
     <div>
         <button class="btn btn-primary" @onclick="SaveAsync">
-            Generate link to mit plan
+            Save Mit Plan
         </button>
 
         @if (this.mitPlanLink != null)
         {
-            <a href="@this.mitPlanLink" class="link-primary">Copy this link!</a>
+            <a href="@this.mitPlanLink" class="link-primary">Saved!</a>
         }
     </div>
 
@@ -156,7 +155,9 @@ else
 
     [Parameter] public string BossName { get; set; }
 
-    [Parameter] public string SavedMitPlan { get; set; }
+    [Parameter] public string Id { get; set; }
+
+    public Guid TimelineId => Guid.Parse(this.Id);
 
     public string ButtonText => this.showDetailedTimeline ? "Show simplified timeline" : "Show detailed timeline";
 
@@ -166,13 +167,13 @@ else
 
         this.availableJobs = this.JobDataProvider.GetJobs(bossTimeline.Level).ToList();
 
-        if (!string.IsNullOrWhiteSpace(this.SavedMitPlan))
+        if (await this.TimelineSaver.TimelineExistsAsync(this.TimelineId))
         {
             await this.LoadSavedMitPlanAsync();
         }
-        else 
+        else
         {
-            this.timeline = new MitigationTimeline(bossTimeline);
+            this.timeline = new MitigationTimeline(this.TimelineId, bossTimeline);
         }
     }
 
@@ -207,10 +208,9 @@ else
         this.mitPlanLink = "dummy"; //$"/timeline/{this.BossName}/{HttpUtility.UrlEncode(savedTimeline)}";
     }
     
-    private Task LoadSavedMitPlanAsync()
+    private async Task LoadSavedMitPlanAsync()
     {
-        return Task.CompletedTask;
-        //this.timeline = this.TimelineSaver.LoadTimelineAsync(this.SavedMitPlan.Id);
+        this.timeline = await this.TimelineSaver.LoadTimelineAsync(this.TimelineId);
     }
     
     private void HandleJobAbilityEntryChanged(object checkedValue, TimeSpan entryTime, JobInstance job, JobAbility ability)

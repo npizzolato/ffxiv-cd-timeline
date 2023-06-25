@@ -7,9 +7,9 @@ public class MitigationTimeline
     private Dictionary<string, Dictionary<string, AbilityTimeline>> jobAbilityTimelines { get; } = 
         new Dictionary<string, Dictionary<string, AbilityTimeline>>();
 
-    public MitigationTimeline(BossTimeline bossTimeline)
+    public MitigationTimeline(Guid id, BossTimeline bossTimeline)
     {
-        this.Id = Guid.Parse("7a70bc83-c0e3-430d-a23d-de381e98189f");
+        this.Id = id;
         this.BossTimeline = bossTimeline;
         this.lastAbilityTimeline = bossTimeline.Timeline.Last().EffectTime;
     }

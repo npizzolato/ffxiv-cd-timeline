@@ -2,6 +2,7 @@
 using Azure.Storage.Blobs.Models;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
+using System.ComponentModel;
 
 public class BlobTimelineSaver
 {
@@ -38,6 +39,15 @@ public class BlobTimelineSaver
         BlobDownloadResult result = await blobClient.DownloadContentAsync();
         string serializedContent = result.Content.ToString();
         return JsonConvert.DeserializeObject<MitigationTimeline>(serializedContent);
+    }
+
+    public async Task<bool> TimelineExistsAsync(Guid id)
+    {
+        BlobContainerClient containerClient = this.client.GetBlobContainerClient(this.options.Value.ContainerName);
+        BlobClient blobClient = containerClient.GetBlobClient(id.ToString());
+
+        Azure.Response<bool> result = await blobClient.ExistsAsync();
+        return result.Value;
     }
 }
 
