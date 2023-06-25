@@ -3,32 +3,41 @@ FFXIV Mitigation Timeline
 
 This project is designed to allow you to customize a mitigation plan for encounters in Final Fantasy 14. 
 
-This site is currently under active development and is not yet at an MVP stage. My initial goals are:
+The site is currently in an alpha state and deployed to https://ffxiv-cooldown-planner.azurewebsites.net/. 
 
-1. Get this to a working state for a single fight.
-2. Clean up the presentation so it looks halfway decent.
-2. Figure out a deployment story and get it live.
-3. Add remaining fights for current content. 
-4. Add additional features. 
+## Additional Feature Ideas
+- Support for p9s, p12s1, and p12s2
+- Showing unmitigated damage, % mit, and damage given the applied mitigation
+- Letting you hide abilities you aren't interested in
+- Taking into account ability charges and other resources (aetherflow, oath gauge, etc.)
 
 ## Development Environment
 
-This website is built on asp.net Blazor. Follow [these instructions](https://dotnet.microsoft.com/en-us/learn/aspnet/blazor-tutorial/install) for installing the .net framework. There is decent built-in integration with [VS Code](https://code.visualstudio.com/) for an editor. 
+This website is built on asp.net Blazor Server. Follow [these instructions](https://dotnet.microsoft.com/en-us/learn/aspnet/blazor-tutorial/install) for installing the .net framework. Main development is done through [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), but there is decent built-in integration with [VS Code](https://code.visualstudio.com/) for an editor. 
 
 ### Building the Site
 
-1. Run `dotnet build` in the project's directory.
+- In Visual Studio, right click the project and Build.
+- Alternately, run `dotnet build` in the project's directory.
 
 ### Running the Site Locally
 
-1. Run `dotnet watch` in the project's directory. 
-2. As you make changes, many changes can be hot-reloaded and automatically display. You may occassionally make "rude edits" and need to rebuild the app. Pay attention to the console window as you save edits. 
+- In Visual Studio, click the "https" button near the time. 
+- Alternately, (and I haven't tested this since swapping to Blazor Server), run `dotnet watch` in the project's directory.
+	- As you make changes, many changes can be hot-reloaded and automatically display. You may occassionally make "rude edits" and need to rebuild the app. Pay attention to the console window as you save edits. 
 
 ### Running Tests
 
 ![](https://i.kym-cdn.com/entries/icons/mobile/000/030/710/dd0.jpg)
 
-Surely I'll get around to writing tests at some point... lol
+### Deployment
+
+Deployment is done through Visual Studio publish profiles.
+
+1. Right click the project and select Publish.
+2. Follow the prompts to deploy using the `ffxiv-cooldown-planner Web Deploy.pubxml` file
+
+## Design/Implementation
 
 ### Job Ability Icons
 

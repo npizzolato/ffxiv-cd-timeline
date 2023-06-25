@@ -188,9 +188,7 @@ else
         Console.WriteLine($"Loaded {bossTimeline.Abilities.Count()} abilities and {bossTimeline.Timeline.Count()} actions for boss {bossTimeline.ShortName}.");
 
         this.availableJobs = this.JobDataProvider.GetJobs(bossTimeline.Level).ToList();
-
-        this.timeline = new MitigationTimeline(this.TimelineId, bossTimeline);
-        /*
+        
         if (await this.TimelineSaver.TimelineExistsAsync(this.TimelineId))
             {
             await this.LoadSavedMitPlanAsync();
@@ -198,7 +196,7 @@ else
         else
             {
             this.timeline = new MitigationTimeline(this.TimelineId, bossTimeline);
-        }*/
+        }
     }
 
     private void ToggleDetailedTimeline()
