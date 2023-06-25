@@ -15,10 +15,6 @@ else
         @this.timeline.BossTimeline.FullName
     </h1>
 
-    <div>
-        Loaded @this.timeline.BossTimeline.Abilities.Count() abilities and @this.timeline.BossTimeline.Timeline.Count() actions for boss @this.timeline.BossTimeline.ShortName.
-    </div>
-
     <button class="btn btn-secondary" @onclick="ToggleDetailedTimeline">
         @this.ButtonText
     </button>
@@ -164,6 +160,7 @@ else
     protected override async Task OnInitializedAsync()
     {
         var bossTimeline = await this.BossDataProvider.GetBossTimelineAsync(this.BossName);
+        Console.WriteLine($"Loaded {bossTimeline.Abilities.Count()} abilities and {bossTimeline.Timeline.Count()} actions for boss {bossTimeline.ShortName}.");
 
         this.availableJobs = this.JobDataProvider.GetJobs(bossTimeline.Level).ToList();
 
