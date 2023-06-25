@@ -1,67 +1,76 @@
 {
     "name": "Paladin",
     "abilities": [
-        {
-            "name": "Intervention",
-            "duration": "00:00:08",
-            "cooldown": "00:00:10",
-            "mitigation": 0.10,
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Sentinel",
-            "duration": "00:00:15",
-            "cooldown": "00:02:00",
-            "mitigation": 0.30,
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Hallowed Ground",
-            "duration": "00:00:10",
-            "cooldown": "00:07:00",
-            "mitigation": 1.0,
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Passage of Arms",
-            "duration": "00:00:03",
-            "cooldown": "00:02:00",
-            "mitigation": 0.15,
-            "type": "PartyMitigation"
-        },
-        {
-            "name": "Holy Sheltron",
-            "duration": "00:00:08",
-            "cooldown": "00:00:05",
-            "mitigation": 0.15,
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Rampart",
-            "duration": "00:00:20",
-            "cooldown": "00:01:30",
-            "mitigation": 0.20,
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Reprisal",
-            "duration": "00:00:10",
-            "cooldown": "00:01:00",
-            "mitigation": 0.10,
-            "type": "PartyMitigation"
-        },
-        {
-            "name": "Cover",
-            "duration": "00:00:12",
-            "cooldown": "00:02:00",
-            "mitigation": 1,
-            "type":"TankMitigation"
-        },
-        {
-            "name": "Divine Veil",
-            "duration": "00:00:30",
-            "cooldown": "00:01:30",
-            "type":"PartyMitigation"
-        }
+      {
+        "name": "Intervention",
+        "duration": "00:00:08",
+        "cooldown": "00:00:10",
+        "mitigation": 0.10,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/fdb9b8347b33dae63e25debeab15aa75c270f39a.png"
+      },
+      {
+        "name": "Sentinel",
+        "duration": "00:00:15",
+        "cooldown": "00:02:00",
+        "mitigation": 0.30,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/913eb4344bb6c8710f250115fa22484b026f08bd.png"
+      },
+      {
+        "name": "Hallowed Ground",
+        "duration": "00:00:10",
+        "cooldown": "00:07:00",
+        "mitigation": 1.0,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/249bf48c39ec44b9b32f0681ea256850ed6aa8f8.png"
+      },
+      {
+        "name": "Passage of Arms",
+        "duration": "00:00:03",
+        "cooldown": "00:02:00",
+        "mitigation": 0.15,
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/b570dfda793945b3bb8fddef02b1a865b8a04b32.png"
+      },
+      {
+        "name": "Holy Sheltron",
+        "duration": "00:00:08",
+        "cooldown": "00:00:05",
+        "mitigation": 0.15,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/c856abb6dac68e4bfd6cbb98b309360cb6162ced.png"
+      },
+      {
+        "name": "Rampart",
+        "duration": "00:00:20",
+        "cooldown": "00:01:30",
+        "mitigation": 0.20,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/37546679ae5e431c0903b20fa2c91a88c5a8e001.png"
+      },
+      {
+        "name": "Reprisal",
+        "duration": "00:00:10",
+        "cooldown": "00:01:00",
+        "mitigation": 0.10,
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/6b83d9368623d5cd20a426d26916021b59a14963.png"
+      },
+      {
+        "name": "Cover",
+        "duration": "00:00:12",
+        "cooldown": "00:02:00",
+        "mitigation": 1,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/81b581992c0df5ad867ed18ad229f6d6f7fd3eea.png"
+      },
+      {
+        "name": "Divine Veil",
+        "duration": "00:00:30",
+        "cooldown": "00:01:30",
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/495faab61344751872ca0867e2d5e59b04c6940c.png"
+      }
     ]
 }

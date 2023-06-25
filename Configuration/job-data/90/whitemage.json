@@ -1,52 +1,60 @@
 {
     "name": "White Mage",
     "abilities": [
-        {
-            "name": "Benediction",
-            "cooldown": "00:03:00",
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Asylum",
-            "duration": "00:00:24",
-            "cooldown": "00:01:30",
-            "type": "PartyMitigation"
-        },
-        {
-            "name": "Tetragrammaton",
-            "cooldown": "00:01:00",
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Divine Benison",
-            "duration": "00:00:15",
-            "cooldown": "00:00:30",
-            "type": "TankMitigation",
-            "charge": 2
-        },
-        {
-            "name": "Plenary Indulgence",
-            "duration": "00:00:10",
-            "cooldown": "00:01:00",
-            "type": "PartyMitigation"
-        },
-        {
-            "name": "Temperence",
-            "duration": "00:00:20",
-            "cooldown": "00:02:00",
-            "type": "PartyMitigation"
-        },
-        {
-            "name": "Aquaveil",
-            "duration": "00:00:08",
-            "cooldown": "00:01:00",
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Liturgy of the Bell",
-            "duration": "00:00:15",
-            "cooldown": "00:03:00",
-            "type": "PartyMitigation"
-        }
+      {
+        "name": "Benediction",
+        "cooldown": "00:03:00",
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/44e09756739b6b8924b82471572e7103ac5ca1fb.png"
+      },
+      {
+        "name": "Asylum",
+        "duration": "00:00:24",
+        "cooldown": "00:01:30",
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/cf3242dc922e88211cb5b2c4aa67f9ae79fb88fb.png"
+      },
+      {
+        "name": "Tetragrammaton",
+        "cooldown": "00:01:00",
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/6e00b907b75a6906045955d68cf68af66ba6aa9e.png"
+      },
+      {
+        "name": "Divine Benison",
+        "duration": "00:00:15",
+        "cooldown": "00:00:30",
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/065d9df35159a3bc53d59984a18b35581b442a73.png",
+        "charge": 2
+      },
+      {
+        "name": "Plenary Indulgence",
+        "duration": "00:00:10",
+        "cooldown": "00:01:00",
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/2144617daa9bac9ea7bc1f063a9e0cd033fcd363.png"
+      },
+      {
+        "name": "Temperence",
+        "duration": "00:00:20",
+        "cooldown": "00:02:00",
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/78e099cba536b64fe978d05487c51b28a66f29df.png"
+      },
+      {
+        "name": "Aquaveil",
+        "duration": "00:00:08",
+        "cooldown": "00:01:00",
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/f87f8e18282665458cc9c358ff1a2b8a78833491.png"
+      },
+      {
+        "name": "Liturgy of the Bell",
+        "duration": "00:00:15",
+        "cooldown": "00:03:00",
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/4d31a93f520e700ac70ab1604bdb6811f124ebb4.png"
+      }
     ]
 }

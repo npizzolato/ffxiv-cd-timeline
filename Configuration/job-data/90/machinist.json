@@ -6,14 +6,16 @@
       "duration": "00:00:15",
       "cooldown": "00:01:30",
       "mitigation": 0.10,
-      "type": "PartyMitigation"
+      "type": "PartyMitigation",
+      "icon": "https://ffxiv.gamerescape.com/w/images/3/3e/Tactician_Icon.png"
     },
     {
       "name": "Dismantle",
       "cooldown": "00:02:00",
       "duration": "00:00:10",
       "mitigation": 0.10,
-      "type": "PartyMitigation"
+      "type": "PartyMitigation",
+      "icon": "https://ffxiv.gamerescape.com/w/images/2/26/Dismantle_Icon.png"
     }
   ]
 }

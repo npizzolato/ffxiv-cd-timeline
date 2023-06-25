@@ -1,19 +1,21 @@
 {
     "name": "Black Mage",
     "abilities": [
-        {
-            "name": "Addle",
-            "duration": "00:00:10",
-            "cooldown": "00:01:30",
-            "mitigation": 0.10,
-            "type": "PartyMitigation"
-        },
-        {
-            "name": "Manaward",
-            "duration": "00:00:20",
-            "cooldown": "00:02:00",
-            "mitigation": 0.30,
-            "type": "PersonalMitigation"
-        }
+      {
+        "name": "Addle",
+        "duration": "00:00:10",
+        "cooldown": "00:01:30",
+        "mitigation": 0.10,
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/b45e688d81b5607246600f904aac008364db0d1e.png"
+      },
+      {
+        "name": "Manaward",
+        "duration": "00:00:20",
+        "cooldown": "00:02:00",
+        "mitigation": 0.30,
+        "type": "PersonalMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/75ed92265dc2dcc6fa1e0b8f22a01258799f222d.png"
+      }
     ]
 }

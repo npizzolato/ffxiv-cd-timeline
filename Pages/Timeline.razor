@@ -73,7 +73,7 @@ else
                 {
                     @foreach (var ability in job.JobData.Abilities)
                     {
-                        <th scope="col" class="row2">@ability.Name</th>
+                        <th scope="col" class="row2"><img src="@ability.Icon" height="40" width="40" title="@ability.Name" /></th>
                     }
                 }
             </tr>
@@ -167,6 +167,8 @@ else
 
         this.availableJobs = this.JobDataProvider.GetJobs(bossTimeline.Level).ToList();
 
+        this.timeline = new MitigationTimeline(this.TimelineId, bossTimeline);
+        /*
         if (await this.TimelineSaver.TimelineExistsAsync(this.TimelineId))
         {
             await this.LoadSavedMitPlanAsync();
@@ -174,7 +176,7 @@ else
         else
         {
             this.timeline = new MitigationTimeline(this.TimelineId, bossTimeline);
-        }
+        }*/
     }
 
     private void ToggleDetailedTimeline()

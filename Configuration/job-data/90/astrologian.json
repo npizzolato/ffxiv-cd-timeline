@@ -1,72 +1,83 @@
 {
     "name": "Astrologian",
     "abilities": [
-        {
-            "name": "Lightspeed",
-            "duration": "00:00:15",
-            "cooldown": "00:01:30",
-            "type": "Utility"
-        },
-        {
-            "name": "Essential Dignity",
-            "cooldown": "00:00:40",
-            "type": "TankMitigation",
-            "charge": 2
-        },
-        {
-            "name": "Synastry ",
-            "duration": "00:00:20",
-            "cooldown": "00:02:00",
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Collective Unconscious",
-            "duration": "00:00:15",
-            "cooldown": "00:01:00",
-            "type": "PartyMitigation"
-        },
-        {
-            "name": "Celestial Opposition",
-            "duration": "00:00:15",
-            "cooldown": "00:01:00",
-            "type": "PartyMitigation"
-        },
-        {
-            "name": "Earthly Star",
-            "duration": "00:00:20",
-            "cooldown": "00:01:00",
-            "type": "PartyMitigation"
-        },
-        {
-            "name": "Celestial Intersection",
-            "duration": "00:00:30",
-            "cooldown": "00:00:30",
-            "type": "TankMitigation",
-            "charge": 2
-        },
-        {
-            "name": "Horoscope",
-            "duration": "00:00:30",
-            "cooldown": "00:01:00",
-            "type": "PartyMitigation"
-        },
-        {
-            "name": "Neutral Sect",
-            "duration": "00:00:30",
-            "cooldown": "00:02:00",
-            "type": "PartyMitigation"
-        },
-        {
-            "name": "Exaltation",
-            "duration": "00:00:08",
-            "cooldown": "00:01:00",
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Macrocosmos",
-            "duration": "00:00:15",
-            "cooldown": "00:03:00",
-            "type": "PartyMitigation"
-        }
+      {
+        "name": "Lightspeed",
+        "duration": "00:00:15",
+        "cooldown": "00:01:30",
+        "type": "Utility",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/8e5b0f4ba2437c7ed0dba22471388c128372c767.png"
+      },
+      {
+        "name": "Essential Dignity",
+        "cooldown": "00:00:40",
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/6e6f7c02d300a61d010d596d0e2fe80a12f8e03b.png",
+        "charge": 2
+      },
+      {
+        "name": "Synastry",
+        "duration": "00:00:20",
+        "cooldown": "00:02:00",
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/883284b0f5ce828b73992bdaf990124383c77efd.png"
+      },
+      {
+        "name": "Collective Unconscious",
+        "duration": "00:00:15",
+        "cooldown": "00:01:00",
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/6ffe2bab0c77721314aee02e2f3f14f61351e2a4.png"
+      },
+      {
+        "name": "Celestial Opposition",
+        "duration": "00:00:15",
+        "cooldown": "00:01:00",
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/f2ca2bba463ed6f55295fb64f6a497e130b05cf4.png"
+      },
+      {
+        "name": "Earthly Star",
+        "duration": "00:00:20",
+        "cooldown": "00:01:00",
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/522e3417c4930cf5834e64c75e763e999dc284c8.png"
+      },
+      {
+        "name": "Celestial Intersection",
+        "duration": "00:00:30",
+        "cooldown": "00:00:30",
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/2a71645e6880d0bb4b46332fd64cd0756dd3b08f.png",
+        "charge": 2
+      },
+      {
+        "name": "Horoscope",
+        "duration": "00:00:30",
+        "cooldown": "00:01:00",
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/c806bf7d70b7343de2de42f47a2bbaa59e8b324e.png"
+      },
+      {
+        "name": "Neutral Sect",
+        "duration": "00:00:30",
+        "cooldown": "00:02:00",
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/8ccf71b513276dce09f58889b5bb8878371b8519.png"
+      },
+      {
+        "name": "Exaltation",
+        "duration": "00:00:08",
+        "cooldown": "00:01:00",
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/c4bf5c769353b2ee48cba7af8c64a86f1bb11e7d.png"
+      },
+      {
+        "name": "Macrocosmos",
+        "duration": "00:00:15",
+        "cooldown": "00:03:00",
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/1d39637c8a2ed0b39fc54cac5eb718eabc29bc53.png"
+      }
     ]
 }

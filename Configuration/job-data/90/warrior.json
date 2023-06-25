@@ -1,53 +1,60 @@
 {
     "name": "Warrior",
     "abilities": [
-        {
-            "name": "Thrill of Battle",
-            "duration": "00:00:10",
-            "cooldown": "00:01:30",
-            "mitigation": 0.20,
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Vengence",
-            "duration": "00:00:15",
-            "cooldown": "00:02:00",
-            "mitigation": 0.30,
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Holmgang",
-            "duration": "00:00:10",
-            "cooldown": "00:04:00",
-            "mitigation": 1.0,
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Shake It Off",
-            "cooldown": "00:01:30",
-            "mitigation": 0.15,
-            "type": "PartyMitigation"
-        },
-        {
-            "name": "Bloodwhetting",
-            "duration": "00:00:08",
-            "cooldown": "00:00:25",
-            "mitigation": 0.20,
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Rampart",
-            "duration": "00:00:20",
-            "cooldown": "00:01:30",
-            "mitigation": 0.20,
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Reprisal",
-            "duration": "00:00:10",
-            "cooldown": "00:01:00",
-            "mitigation": 0.10,
-            "type": "PartyMitigation"
-        }
+      {
+        "name": "Thrill of Battle",
+        "duration": "00:00:10",
+        "cooldown": "00:01:30",
+        "mitigation": 0.20,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/9412945d8b5a61fbb118907bd33046110ff83434.png"
+      },
+      {
+        "name": "Vengence",
+        "duration": "00:00:15",
+        "cooldown": "00:02:00",
+        "mitigation": 0.30,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/72a939d0010304553c5b88fae576f5a25f453e10.png"
+      },
+      {
+        "name": "Holmgang",
+        "duration": "00:00:10",
+        "cooldown": "00:04:00",
+        "mitigation": 1.0,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/91b5673b1dfb08c80d7b8fc2bdc936f46906317f.png"
+      },
+      {
+        "name": "Shake It Off",
+        "cooldown": "00:01:30",
+        "mitigation": 0.15,
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/f71e2c46512c1e937c0ff316be668d853869c637.png"
+      },
+      {
+        "name": "Bloodwhetting",
+        "duration": "00:00:08",
+        "cooldown": "00:00:25",
+        "mitigation": 0.20,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/439c677f7cd4da8e9be9b92245865d2eb1ebceca.png"
+      },
+      {
+        "name": "Rampart",
+        "duration": "00:00:20",
+        "cooldown": "00:01:30",
+        "mitigation": 0.20,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/37546679ae5e431c0903b20fa2c91a88c5a8e001.png"
+      },
+      {
+        "name": "Reprisal",
+        "duration": "00:00:10",
+        "cooldown": "00:01:00",
+        "mitigation": 0.10,
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/6b83d9368623d5cd20a426d26916021b59a14963.png"
+      }
     ]
 }

@@ -1,62 +1,70 @@
 {
     "name": "Gunbreaker",
     "abilities": [
-        {
-            "name": "Camouflage",
-            "duration": "00:00:10",
-            "cooldown": "00:01:30",
-            "mitigation": 0.10,
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Nebula",
-            "duration": "00:00:15",
-            "cooldown": "00:02:00",
-            "mitigation": 0.30,
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Superbolide",
-            "duration": "00:00:10",
-            "cooldown": "00:06:00",
-            "mitigation": 1.0,
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Heart of Light",
-            "duration": "00:00:15",
-            "cooldown": "00:01:30",
-            "mitigation": 0.10,
-            "type": "PartyMitigation"
-        },
-        {
-            "name": "Heart of Corundum",
-            "duration": "00:00:08",
-            "cooldown": "00:00:25",
-            "mitigation": 0.20,
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Rampart",
-            "duration": "00:00:20",
-            "cooldown": "00:01:30",
-            "mitigation": 0.20,
-            "type": "TankMitigation"
-        },
-        {
-            "name": "Reprisal",
-            "duration": "00:00:10",
-            "cooldown": "00:01:00",
-            "mitigation": 0.10,
-            "type": "PartyMitigation"
-        },
-        {
-            "name": "Aurora",
-            "duration": "00:00:18",
-            "cooldown": "00:01:00",
-            "mitigation": 0,
-            "type":"TankMitigation",
-            "charge": 2
-        }
+      {
+        "name": "Camouflage",
+        "duration": "00:00:10",
+        "cooldown": "00:01:30",
+        "mitigation": 0.10,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/62855107ef85d3d74b0eb9d14f030368ddb6ff5a.png"
+      },
+      {
+        "name": "Nebula",
+        "duration": "00:00:15",
+        "cooldown": "00:02:00",
+        "mitigation": 0.30,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/d16438334b399cb5524acb6d77485b6c56a2be4a.png"
+      },
+      {
+        "name": "Superbolide",
+        "duration": "00:00:10",
+        "cooldown": "00:06:00",
+        "mitigation": 1.0,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/58257f726f8a2f793622a654e5b0b2df36b372ad.png"
+      },
+      {
+        "name": "Heart of Light",
+        "duration": "00:00:15",
+        "cooldown": "00:01:30",
+        "mitigation": 0.10,
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/04bbce4afc048a15cdccdd0495e679f90b115963.png"
+      },
+      {
+        "name": "Heart of Corundum",
+        "duration": "00:00:08",
+        "cooldown": "00:00:25",
+        "mitigation": 0.20,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/493de7202ca9b1e4bed75fdd4e5b1e7a8c61d58a.png"
+      },
+      {
+        "name": "Rampart",
+        "duration": "00:00:20",
+        "cooldown": "00:01:30",
+        "mitigation": 0.20,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/37546679ae5e431c0903b20fa2c91a88c5a8e001.png"
+      },
+      {
+        "name": "Reprisal",
+        "duration": "00:00:10",
+        "cooldown": "00:01:00",
+        "mitigation": 0.10,
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/6b83d9368623d5cd20a426d26916021b59a14963.png"
+      },
+      {
+        "name": "Aurora",
+        "duration": "00:00:18",
+        "cooldown": "00:01:00",
+        "mitigation": 0,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/acaf4d3fc4adf9d9d241bec0be8376d207647c8c.png",
+        "charge": 2
+      }
     ]
 }

@@ -1,20 +1,22 @@
 {
     "name": "Summoner",
     "abilities": [
-        {
-            "name": "Addle",
-            "duration": "00:00:10",
-            "cooldown": "00:01:30",
-            "mitigation": 0.10,
-            "type": "PartyMitigation"
-        },
-        {
-            "name": "Radiant Aegis",
-            "duration": "00:00:30",
-            "cooldown": "00:01:00",
-            "mitigation": 0.20,
-            "type": "PersonalMitigation",
-            "charge": 2
-        }
+      {
+        "name": "Addle",
+        "duration": "00:00:10",
+        "cooldown": "00:01:30",
+        "mitigation": 0.10,
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/b45e688d81b5607246600f904aac008364db0d1e.png"
+      },
+      {
+        "name": "Radiant Aegis",
+        "duration": "00:00:30",
+        "cooldown": "00:01:00",
+        "mitigation": 0.20,
+        "type": "PersonalMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/a116b861109158ee5db8e36cf922fae8f923e7d5.png",
+        "charge": 2
+      }
     ]
 }

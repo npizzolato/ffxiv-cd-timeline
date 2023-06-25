@@ -15,5 +15,7 @@ public class JobAbility
     [JsonConverter(typeof(StringEnumConverter))]
     public JobAbilityType Type { get; set; }
 
+    public Uri Icon { get; set; }
+
     public int Charge { get; set; } = 1;
 }

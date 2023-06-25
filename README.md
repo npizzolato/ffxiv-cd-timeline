@@ -29,3 +29,20 @@ This website is built on asp.net Blazor. Follow [these instructions](https://dot
 ![](https://i.kym-cdn.com/entries/icons/mobile/000/030/710/dd0.jpg)
 
 Surely I'll get around to writing tests at some point... lol
+
+### Job Ability Icons
+
+Job ability icons are sourced from the official [job guides](https://na.finalfantasyxiv.com/jobguide/battle/).
+
+Process:
+
+1. Load a page for a job and View Page Source
+2. Copy entire source into a sublime text file
+3. Find all entries matching `tooltip=".+"><img src=".+" width` and copy the results into a new tab. Ensure regex support is on.
+4. Find/Replace All, finding all `tooltip="(.+)"><img src="(.+)" width` with `$1\n$2\n`. Ensure regex support is on.
+5. For each ability, copy the URI into the job data file.
+
+More manual process for jobs with few abilities:
+
+1. Right click an icon and Inspect
+2. Expand the `div` to see the `img`, copy the address and paste it into the job data file.
