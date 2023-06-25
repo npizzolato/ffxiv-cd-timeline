@@ -55,7 +55,10 @@ else
                 @foreach (var job in this.timeline.Jobs)
                 {
                     var columnSpan = job.JobData.Abilities.Count;
-                    <th scope="col" colspan="@columnSpan" style="text-align:center">@job.JobData.Name</th>
+                    <th scope="col" colspan="@columnSpan" style="text-align:center">
+                        @job.JobData.Name
+                        <button class="btn btn-outline-danger btn-sm" @onclick="() => RemoveJobAsync(job)"><i class="bi bi-x" /></button>
+                    </th>
                 }
             </tr>
             <tr>
@@ -172,6 +175,11 @@ else
     {
         var jobData = await this.JobDataProvider.GetJobDataAsync(this.selectedJob, this.timeline.BossTimeline.Level);
         this.timeline.AddJob(jobData);
+    }
+
+    private async Task RemoveJobAsync(JobInstance job)
+    {
+        this.timeline.RemoveJob(job);
     }
 
     private void Save()

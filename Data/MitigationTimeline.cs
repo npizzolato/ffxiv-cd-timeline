@@ -68,6 +68,11 @@ public class MitigationTimeline
 
         this.jobAbilityTimelines.Add(jobInstance.Id, jobAbilityTimeline);
     }
+    
+    public void RemoveJob(JobInstance job)
+    {
+        this.Jobs.Remove(job);
+    }
 
     public AbilityTimeline GetAbilityTimeline(JobInstance job, string abilityName)
     {
