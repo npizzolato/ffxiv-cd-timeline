@@ -4,7 +4,7 @@
 
 @inject BossDataProvider BossDataProvider
 @inject JobDataProvider JobDataProvider
-@inject TimelineSaver TimelineSaver
+@inject BlobTimelineSaver TimelineSaver
 
 @if (this.timeline == null)
 {
@@ -38,7 +38,7 @@ else
     </div>
 
     <div>
-        <button class="btn btn-primary" @onclick="Save">
+        <button class="btn btn-primary" @onclick="SaveAsync">
             Generate link to mit plan
         </button>
 
@@ -168,7 +168,7 @@ else
 
         if (!string.IsNullOrWhiteSpace(this.SavedMitPlan))
         {
-            this.LoadSavedMitPlan();
+            await this.LoadSavedMitPlanAsync();
         }
         else 
         {
@@ -200,16 +200,17 @@ else
         return Task.CompletedTask;
     }
 
-    private void Save()
+    private async Task SaveAsync()
     {
         this.mitPlanLink = null;
-        string savedTimeline = this.TimelineSaver.SaveTimeline(this.timeline);
-        this.mitPlanLink =$"/timeline/{this.BossName}/{HttpUtility.UrlEncode(savedTimeline)}";
+        await this.TimelineSaver.SaveTimelineAsync(this.timeline);
+        this.mitPlanLink = "dummy"; //$"/timeline/{this.BossName}/{HttpUtility.UrlEncode(savedTimeline)}";
     }
     
-    private void LoadSavedMitPlan()
+    private Task LoadSavedMitPlanAsync()
     {
-        this.timeline = this.TimelineSaver.LoadTimeline(this.SavedMitPlan);
+        return Task.CompletedTask;
+        //this.timeline = this.TimelineSaver.LoadTimelineAsync(this.SavedMitPlan.Id);
     }
     
     private void HandleJobAbilityEntryChanged(object checkedValue, TimeSpan entryTime, JobInstance job, JobAbility ability)

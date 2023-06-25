@@ -1,3 +1,6 @@
+using Azure.Storage.Blobs;
+using Azure.Storage.Blobs.Models;
+using Azure.Identity;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 
@@ -14,6 +17,7 @@ Console.WriteLine($"Startup: Loaded {options.JobDataFileMaps.Count} levels.");
 
 builder.Services.Configure<JobDataProviderOptions>(builder.Configuration.GetSection("jobDataProviderOptions"));
 builder.Services.Configure<BossDataProviderOptions>(builder.Configuration.GetSection("bossDataProviderOptions"));
+builder.Services.Configure<BlobTimelineSaverOptions>(builder.Configuration.GetSection("blobTimelineSaverOptions"));
 
 builder.Services.AddHttpClient("ApiClient", (provider, client) =>
 {
@@ -23,6 +27,22 @@ builder.Services.AddHttpClient("ApiClient", (provider, client) =>
 builder.Services.AddScoped<BossDataProvider>();
 builder.Services.AddScoped<JobDataProvider>();
 builder.Services.AddScoped<TimelineSaver>();
+
+var blobOptions = new BlobTimelineSaverOptions();
+builder.Configuration.GetSection("blobTimelineSaverOptions").Bind(blobOptions);
+var blobClient = new BlobServiceClient(
+    blobOptions.BlobUri,
+    new DefaultAzureCredential(new DefaultAzureCredentialOptions
+        {
+            Diagnostics =
+            {
+                LoggedHeaderNames = { "x-ms-request-id" },
+                LoggedQueryParameters = { "api-version" },
+                IsLoggingContentEnabled = true
+            }
+    }));
+builder.Services.AddSingleton<BlobServiceClient>(blobClient);
+builder.Services.AddSingleton<BlobTimelineSaver>();
 
 var app = builder.Build();
 

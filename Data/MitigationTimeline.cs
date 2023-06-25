@@ -9,13 +9,15 @@ public class MitigationTimeline
 
     public MitigationTimeline(BossTimeline bossTimeline)
     {
+        this.Id = Guid.Parse("7a70bc83-c0e3-430d-a23d-de381e98189f");
         this.BossTimeline = bossTimeline;
         this.lastAbilityTimeline = bossTimeline.Timeline.Last().EffectTime;
     }
 
     [JsonConstructor]
-    public MitigationTimeline(BossTimeline bossTimeline, IEnumerable<JobInstance> jobs)
+    public MitigationTimeline(Guid id, BossTimeline bossTimeline, IEnumerable<JobInstance> jobs)
     {
+        this.Id = id;
         this.BossTimeline = bossTimeline;
         this.lastAbilityTimeline = bossTimeline.Timeline.Last().EffectTime;
 
@@ -24,6 +26,8 @@ public class MitigationTimeline
             this.AddJobInstance(job);
         }
     }
+
+    public Guid Id { get; }
 
     public BossTimeline BossTimeline { get; }
 
