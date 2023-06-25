@@ -2,128 +2,170 @@
     "shortName": "P10S",
     "fullName": "Pandamonium Anabaseios: The Tenth Circle",
     "level": 90,
-    "abilities": [
-        {
-            "name": "Ultima",
-            "description": "Raidwide with bleed",
-            "category": "RaidDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Soul Grasp",
-            "description": "Multi-hit shared tank buster (4 times)",
-            "category": "TankDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Dividing Wings",
-            "description": "Spawns 2 winged swords that deal conal AoE with a bleed",
-            "category": "TargetedAoe",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Steel Web",
-            "description": "Shared AoE on 2 players",
-            "category": "SharedDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Circles of Pandaemonium",
-            "description": "Donut AoE hitting everything outside the boss's hitbox",
-            "category": "AvoidableDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Pandaemon's Holy",
-            "description": "Circle AoE hitting everything inside the boss's hitbox",
-            "category": "AvoidableDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Pandaemonium's Holy / Circle",
-            "description": "Chariot or Dynamo AoE around the boss's hitbox",
-            "category": "AvoidableDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Wicked Step",
-            "description": "Towers that must be soaked by tanks. Knocks up.",
-            "category": "TankDamage",
-            "damageType": "Physical"
-        },
-        {
-            "name": "Entangling Web",
-            "description": "Baited Circle AoEs on 4 players.",
-            "category": "AvoidableDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Pandaemonic Pillars",
-            "description": "8 towers that must be soaked by all 8 players",
-            "category": "Mechanics",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Tower AoE",
-            "description": "Towers cast either a line AOE, chariot, or dynamo",
-            "category": "AvoidableDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Silkspit",
-            "description": "Large circle AoE on each player",
-            "category": "TargetedAoe",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Daemoniac Bonds",
-            "description": "Enumeration debuff that requires spread, partner stacks, or role stacks.",
-            "category": "Mechanics",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Daemoniac Meltdown",
-            "description": "Shared line AoE on 1 player and line AoEs on 2 other players.",
-            "category": "SharedDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Touchdown",
-            "description": "AoE covering the entirety of the center platform",
-            "category": "AvoidableDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Peal of Condemnation",
-            "description": "Shared line AoE toward the closest player. Closest player gets a vuln. This hurts.",
-            "category": "Mechanics",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Pandaemonic Ray",
-            "description": "Half-room cleave that spawns horizontal small line AoEs.",
-            "category": "AvoidableDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Jade Passage",
-            "description": "Line AoEs from orbs following Pandaemonic Ray.",
-            "category": "AvoidableDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Harrowing Hell",
-            "description": "Rapid high raid damage. Closest 2 people are hit by wild charge.",
-            "category": "RaidDamage",
-            "damageType": "Physical"
-        },
-        {
-            "name": "Parted Plumes",
-            "description": "Rotating conal AoEs from center.",
-            "category": "AvoidableDamage",
-            "damageType": "Magical"
-        }
-    ],
+  "abilities": [
+    {
+      "name": "Ultima",
+      "description": "Raidwide with bleed",
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Soul Grasp",
+      "description": "Multi-hit shared tank buster (4 times)",
+      "category": "SignificantTankDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Dividing Wings",
+      "description": "Spawns 2 winged swords that deal conal AoE with a bleed",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Dividing Wings (Cast)",
+      "description": "Cast for spawning 2 winged swords. Damage happens later.",
+      "category": "Mechanics",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Steel Web",
+      "description": "Shared AoE on 2 players",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Steel Web (Cast)",
+      "description": "Cast for shared AoE on 2 players. Damage happens later.",
+      "category": "Mechanics",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Circles of Pandaemonium",
+      "description": "Donut AoE hitting everything outside the boss's hitbox",
+      "category": "AvoidableDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Pandaemon's Holy",
+      "description": "Circle AoE hitting everything inside the boss's hitbox",
+      "category": "AvoidableDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Pandaemonium's Holy / Circle",
+      "description": "Chariot or Dynamo AoE around the boss's hitbox",
+      "category": "AvoidableDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Wicked Step",
+      "description": "Towers that must be soaked by tanks. Knocks up.",
+      "category": "SignificantTankDamage",
+      "damageType": "Physical"
+    },
+    {
+      "name": "Entangling Web",
+      "description": "Baited Circle AoEs on 4 players.",
+      "category": "AvoidableDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Entangling Web (Cast)",
+      "description": "Cast for baited Circle AoEs on 4 players. Damage happens later.",
+      "category": "Mechanics",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Pandaemonic Pillars",
+      "description": "8 towers that must be soaked by all 8 players",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Tower AoE",
+      "description": "Towers cast either a line AOE, chariot, or dynamo",
+      "category": "AvoidableDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Silkspit",
+      "description": "Large circle AoE on each player",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Silkspit (Cast)",
+      "description": "Cast for large circle AoE on each player. Damage happens later.",
+      "category": "Mechanics",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Daemoniac Bonds",
+      "description": "Enumeration debuff that requires spread, partner stacks, or role stacks.",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Daemoniac Bonds (Cast)",
+      "description": "Cast that places enumeration debuff that requires spread, partner stacks, or role stacks. Damage happens later.",
+      "category": "Mechanics",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Pandaemonic Meltdown",
+      "description": "Shared line AoE on 1 player and line AoEs on 2 other players.",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Touchdown",
+      "description": "AoE covering the entirety of the center platform",
+      "category": "AvoidableDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Peal of Condemnation",
+      "description": "Shared line AoE toward the closest player. Closest player gets a vuln.",
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Pandaemonic Ray",
+      "description": "Half-room cleave that spawns horizontal small line AoEs.",
+      "category": "AvoidableDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Jade Passage",
+      "description": "Line AoEs from orbs following Pandaemonic Ray.",
+      "category": "AvoidableDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Harrowing Hell",
+      "description": "Rapid high raid damage. Closest 2 people are hit by wild charge.",
+      "category": "SignificantRaidDamage",
+      "damageType": "Physical"
+    },
+    {
+      "name": "Harrowing Hell (Knockback)",
+      "description": "The final hit of Harrowing Hell, dealing huge damage and knocking everyone back.",
+      "category": "SignificantRaidDamage",
+      "damageType": "Physical"
+    },
+    {
+      "name": "Parted Plumes",
+      "description": "Rotating conal AoEs from center.",
+      "category": "AvoidableDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Parted Plumes (Cast)",
+      "description": "Cast creating rotating conal AoEs from center. Damage happens later.",
+      "category": "Mechanics",
+      "damageType": "Magical"
+    }
+  ],
     "timeline": [
         {
             "effectTime": "00:00:14",

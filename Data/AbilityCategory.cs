@@ -3,19 +3,13 @@
 // Planning to use this to color code the timeline, maybe? 
 public enum AbilityCategory
 {
+    SignificantRaidDamage,
+
+    SignificantTankDamage,
+
     RaidDamage,
 
-    TankDamage,
-
-    SharedDamage,
-
-    PatternAoe,
-
-    TargetedAoe,
-
     Mechanics,
-
-    Adds,
 
     AvoidableDamage
 }

@@ -2,158 +2,164 @@
     "shortName": "P10S",
     "fullName": "Pandamonium Anabaseios: The Eleventh Circle",
     "level": 90,
-    "abilities": [
-        {
-            "name": "Eunomia",
-            "description": "Raidwide with bleed",
-            "category": "RaidDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Dike",
-            "description": "Double tank buster, requires swap between hits",
-            "category": "TankDamage",
-            "damageType": "Physical"
-        },
-        {
-            "name": "Inevitable Sentence",
-            "description": "Partner stacks",
-            "category": "SharedDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Inevitable Law",
-            "description": "Light party stacks",
-            "category": "SharedDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Sentence / Law",
-            "description": "Partner or Light party stacks, depending on dark/light",
-            "category": "SharedDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Jury Overruling",
-            "description": "Line AoEs on all players, followed by partner stack (dark) or light party stack (light)",
-            "category": "TargetedAoe",
-            "damageType": "Physical"
-        },
-        {
-            "name": "Upheld Overruling",
-            "description": "Tank Buster with bleed followed by partner stacks (dark) or shared damage followed by light party stacks (light)",
-            "category": "SharedDamage",
-            "damageType": "Physical"
-        },
-        {
-            "name": "Upheld Ruling",
-            "description": "Tank Buster with bleed AND shared damage coming from clones",
-            "category": "SharedDamage",
-            "damageType": "Physical"
-        },
-        {
-            "name": "Divisive Overruling",
-            "description": "Line AoE cutting through boss followed by partner stack (dark) or light party stack (light)",
-            "category": "AvoidableDamage",
-            "damageType": "Physical"
-        },
-        {
-            "name": "Divisive Ruling",
-            "description": "Line AoE cutting through clones",
-            "category": "AvoidableDamage",
-            "damageType": "Physical"
-        },
-        {
-            "name": "Dismissal Overruling",
-            "description": "Minimal raid damage with knockback, followed by partner stack (dark) or light party stack (light)",
-            "category": "RaidDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Styx",
-            "description": "Shared AoE that hits multiple times, hitting 1 more time each cast.",
-            "category": "SharedDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Arcane Revelation",
-            "description": "Summons mirrors or orbs that will fire line AoEs or explode, respectively.",
-            "category": "Mechanics",
-            "damageType": "Unknown"
-        },
-        {
-            "name": "Arche",
-            "description": "Line AoE from mirrors.",
-            "category": "AvoidableDamage",
-            "damageType": "Unknown"
-        },
-        {
-            "name": "Unlucky Lot",
-            "description": "Explosions from orbs.",
-            "category": "AvoidableDamage",
-            "damageType": "Unknown"
-        },
-        {
-            "name": "Shadowed Messengers",
-            "description": "Summons clones which cast line AoEs followed by dark/light mechanics",
-            "category": "Mechanics",
-            "damageType": "Unknown"
-        },
-        {
-            "name": "Lightstream",
-            "description": "3 rotating line AoEs from the edge of the platform",
-            "category": "AvoidableDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Dark and Light",
-            "description": "Each player is tethered to a partner and must go close or far from them.",
-            "category": "Mechanics",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Emissary's Will",
-            "description": "Removes tethers caused by Dark and Light.",
-            "category": "Mechanics",
-            "damageType": "Unknown"
-        },
-        {
-            "name": "Dark Current",
-            "description": "Rotating circle AoEs around the room.",
-            "category": "AvoidableDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Blinding Light",
-            "description": "AoEs on all players. Must be spread.",
-            "category": "RaidDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Letter of the Law",
-            "description": "Summons clones which cast Upheld abilities followed by dark/light mechanics",
-            "category": "Mechanics",
-            "damageType": "Physical"
-        },
-        {
-            "name": "Twofold Revelation",
-            "description": "Summons both mirrors and orbs from Arcane Revelation.",
-            "category": "Mechanics",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Heart of Judgement",
-            "description": "Towers that must be soaked by two players each.",
-            "category": "RaidDamage",
-            "damageType": "Magical"
-        },
-        {
-            "name": "Ultimate Verdict (Enrage)",
-            "description": "Enrage",
-            "category": "RaidDamage",
-            "damageType": "Magical"
-        }
-    ],
+  "abilities": [
+    {
+      "name": "Eunomia",
+      "description": "Raidwide with bleed",
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Dike",
+      "description": "Double tank buster, requires swap between hits",
+      "category": "SignificantTankDamage",
+      "damageType": "Physical"
+    },
+    {
+      "name": "Inevitable Sentence",
+      "description": "Partner stacks",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Inevitable Law",
+      "description": "Light party stacks",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Sentence / Law",
+      "description": "Partner or Light party stacks, depending on dark/light",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Jury Overruling",
+      "description": "Line AoEs on all players, followed by partner stack (dark) or light party stack (light)",
+      "category": "RaidDamage",
+      "damageType": "Physical"
+    },
+    {
+      "name": "Upheld Overruling",
+      "description": "Tank Buster with bleed followed by partner stacks (dark) or shared damage followed by light party stacks (light)",
+      "category": "RaidDamage",
+      "damageType": "Physical"
+    },
+    {
+      "name": "Upheld Ruling",
+      "description": "Tank Buster with bleed AND shared damage coming from clones",
+      "category": "RaidDamage",
+      "damageType": "Physical"
+    },
+    {
+      "name": "Divisive Overruling",
+      "description": "Line AoE cutting through boss followed by partner stack (dark) or light party stack (light)",
+      "category": "AvoidableDamage",
+      "damageType": "Physical"
+    },
+    {
+      "name": "Divisive Ruling",
+      "description": "Line AoE cutting through clones",
+      "category": "AvoidableDamage",
+      "damageType": "Physical"
+    },
+    {
+      "name": "Dismissal Overruling",
+      "description": "Minimal raid damage with knockback, followed by partner stack (dark) or light party stack (light)",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Styx",
+      "description": "Shared AoE that hits multiple times, hitting 1 more time each cast.",
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Arcane Revelation",
+      "description": "Summons mirrors or orbs that will fire line AoEs or explode, respectively.",
+      "category": "Mechanics",
+      "damageType": "Unknown"
+    },
+    {
+      "name": "Arche",
+      "description": "Line AoE from mirrors.",
+      "category": "AvoidableDamage",
+      "damageType": "Unknown"
+    },
+    {
+      "name": "Unlucky Lot",
+      "description": "Explosions from orbs.",
+      "category": "AvoidableDamage",
+      "damageType": "Unknown"
+    },
+    {
+      "name": "Shadowed Messengers",
+      "description": "Summons clones which cast line AoEs followed by dark/light mechanics",
+      "category": "Mechanics",
+      "damageType": "Unknown"
+    },
+    {
+      "name": "Lightstream",
+      "description": "3 rotating line AoEs from the edge of the platform",
+      "category": "AvoidableDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Dark and Light",
+      "description": "Each player is tethered to a partner and must go close or far from them.",
+      "category": "Mechanics",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Emissary's Will",
+      "description": "Removes tethers caused by Dark and Light.",
+      "category": "Mechanics",
+      "damageType": "Unknown"
+    },
+    {
+      "name": "Dark Current",
+      "description": "Rotating circle AoEs around the room.",
+      "category": "AvoidableDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Blinding Light",
+      "description": "AoEs on all players. Must be spread.",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Letter of the Law",
+      "description": "Summons clones which cast Upheld abilities followed by dark/light mechanics",
+      "category": "Mechanics",
+      "damageType": "Physical"
+    },
+    {
+      "name": "Twofold Revelation",
+      "description": "Summons both mirrors and orbs from Arcane Revelation.",
+      "category": "Mechanics",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Heart of Judgement",
+      "description": "Towers that must be soaked by two players each.",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Heart of Judgement (Cast)",
+      "description": "Summons towers that must be soaked by two players each. Damage happens later.",
+      "category": "Mechanics",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Ultimate Verdict (Enrage)",
+      "description": "Enrage",
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
+    }
+  ],
     "timeline": [
         {
             "effectTime": "00:00:16",

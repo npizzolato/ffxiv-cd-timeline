@@ -43,6 +43,31 @@ else
         }
     </div>
 
+    <div style="width:25%; padding:20px">
+        <table class="table table-bordered table-sm">
+            <thead>
+                <tr><th>Legend</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="SignificantRaidDamage">Significant Raid Damage</td>
+                </tr>
+                <tr>
+                    <td class="SignificantTankDamage">Significant Tank Damage</td>
+                </tr>
+                <tr>
+                    <td class="RaidDamage">Raid Damage</td>
+                </tr>
+                <tr>
+                    <td class="AvoidableDamage">Avoidable Damage</td>
+                </tr>
+                <tr>
+                    <td class="Mechanics">Mechanics (no damage)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
     <table class="table table-striped tableFixHead">
         <thead>
             <tr>
@@ -268,18 +293,14 @@ th {
     text-align: center;
 }
 
-td.RaidDamage {
+td.SignificantRaidDamage {
     color: #FF0000;
     font-weight: bold;
 }
 
-td.TankDamage {
+td.SignificantTankDamage {
     color: #FFA525;
     font-weight: bold;
-}
-
-td.Adds {
-    color: #8E569B;
 }
 
 td.Mechanics {
@@ -287,12 +308,12 @@ td.Mechanics {
 }
 
 td.AvoidableDamage {
-    color: #00B034;
+    color: grey;
 }
 
-td.SharedDamage {
-    color: #479BBE;
-    font-weight: bold;
+td.RaidDamage {
+        color: #00B034
+    <!-- color: #479BBE; -->
 }
 
 .tableFixHead { 
