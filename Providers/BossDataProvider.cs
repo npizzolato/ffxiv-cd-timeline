@@ -3,15 +3,12 @@ using Newtonsoft.Json;
 
 public class BossDataProvider 
 {    
-    private readonly HttpClient client;
     private readonly IOptions<BossDataProviderOptions> options;
 
-    public BossDataProvider(HttpClient client, IOptions<BossDataProviderOptions> options)
+    public BossDataProvider(IOptions<BossDataProviderOptions> options)
     {
-        if (client == null) throw new ArgumentNullException(nameof(client));
         if (options == null) throw new ArgumentNullException(nameof(options));
 
-        this.client = client;
         this.options = options;
     }
 
@@ -35,8 +32,7 @@ public class BossDataProvider
             throw new ArgumentException($"Boss name {bossName} is not supported.");
         }
 
-        HttpResponseMessage response = await this.client.GetAsync(metadata.DetailsFile);
-        string content = await response.Content.ReadAsStringAsync();
+        string content = await File.ReadAllTextAsync(metadata.DetailsFile);
         return JsonConvert.DeserializeObject<BossTimeline>(content);
     }
 }

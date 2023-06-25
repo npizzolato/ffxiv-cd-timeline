@@ -1,0 +1,431 @@
+{
+    "shortName": "P10S",
+    "fullName": "Pandamonium Anabaseios: The Eleventh Circle",
+    "level": 90,
+    "abilities": [
+        {
+            "name": "Eunomia",
+            "description": "Raidwide with bleed",
+            "category": "RaidDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Dike",
+            "description": "Double tank buster, requires swap between hits",
+            "category": "TankDamage",
+            "damageType": "Physical"
+        },
+        {
+            "name": "Inevitable Sentence",
+            "description": "Partner stacks",
+            "category": "SharedDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Inevitable Law",
+            "description": "Light party stacks",
+            "category": "SharedDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Sentence / Law",
+            "description": "Partner or Light party stacks, depending on dark/light",
+            "category": "SharedDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Jury Overruling",
+            "description": "Line AoEs on all players, followed by partner stack (dark) or light party stack (light)",
+            "category": "TargetedAoe",
+            "damageType": "Physical"
+        },
+        {
+            "name": "Upheld Overruling",
+            "description": "Tank Buster with bleed followed by partner stacks (dark) or shared damage followed by light party stacks (light)",
+            "category": "SharedDamage",
+            "damageType": "Physical"
+        },
+        {
+            "name": "Upheld Ruling",
+            "description": "Tank Buster with bleed AND shared damage coming from clones",
+            "category": "SharedDamage",
+            "damageType": "Physical"
+        },
+        {
+            "name": "Divisive Overruling",
+            "description": "Line AoE cutting through boss followed by partner stack (dark) or light party stack (light)",
+            "category": "AvoidableDamage",
+            "damageType": "Physical"
+        },
+        {
+            "name": "Divisive Ruling",
+            "description": "Line AoE cutting through clones",
+            "category": "AvoidableDamage",
+            "damageType": "Physical"
+        },
+        {
+            "name": "Dismissal Overruling",
+            "description": "Minimal raid damage with knockback, followed by partner stack (dark) or light party stack (light)",
+            "category": "RaidDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Styx",
+            "description": "Shared AoE that hits multiple times, hitting 1 more time each cast.",
+            "category": "SharedDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Arcane Revelation",
+            "description": "Summons mirrors or orbs that will fire line AoEs or explode, respectively.",
+            "category": "Mechanics",
+            "damageType": "Unknown"
+        },
+        {
+            "name": "Arche",
+            "description": "Line AoE from mirrors.",
+            "category": "AvoidableDamage",
+            "damageType": "Unknown"
+        },
+        {
+            "name": "Unlucky Lot",
+            "description": "Explosions from orbs.",
+            "category": "AvoidableDamage",
+            "damageType": "Unknown"
+        },
+        {
+            "name": "Shadowed Messengers",
+            "description": "Summons clones which cast line AoEs followed by dark/light mechanics",
+            "category": "Mechanics",
+            "damageType": "Unknown"
+        },
+        {
+            "name": "Lightstream",
+            "description": "3 rotating line AoEs from the edge of the platform",
+            "category": "AvoidableDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Dark and Light",
+            "description": "Each player is tethered to a partner and must go close or far from them.",
+            "category": "Mechanics",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Emissary's Will",
+            "description": "Removes tethers caused by Dark and Light.",
+            "category": "Mechanics",
+            "damageType": "Unknown"
+        },
+        {
+            "name": "Dark Current",
+            "description": "Rotating circle AoEs around the room.",
+            "category": "AvoidableDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Blinding Light",
+            "description": "AoEs on all players. Must be spread.",
+            "category": "RaidDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Letter of the Law",
+            "description": "Summons clones which cast Upheld abilities followed by dark/light mechanics",
+            "category": "Mechanics",
+            "damageType": "Physical"
+        },
+        {
+            "name": "Twofold Revelation",
+            "description": "Summons both mirrors and orbs from Arcane Revelation.",
+            "category": "Mechanics",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Heart of Judgement",
+            "description": "Towers that must be soaked by two players each.",
+            "category": "RaidDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Ultimate Verdict (Enrage)",
+            "description": "Enrage",
+            "category": "RaidDamage",
+            "damageType": "Magical"
+        }
+    ],
+    "timeline": [
+        {
+            "effectTime": "00:00:16",
+            "name": "Eunomia"
+        },
+        {
+            "effectTime": "00:00:26",
+            "name": "Dike"
+        },
+        {
+            "effectTime": "00:00:29",
+            "name": "Dike"
+        },
+        {
+            "effectTime": "00:00:42",
+            "name": "Jury Overruling"
+        },
+        {
+            "effectTime": "00:00:48",
+            "name": "Sentence / Law"
+        },
+        {
+            "effectTime": "00:01:02",
+            "name": "Upheld Overruling"
+        },
+        {
+            "effectTime": "00:01:06",
+            "name": "Sentence / Law"
+        },
+        {
+            "effectTime": "00:01:20",
+            "name": "Divisive Overruling"
+        },
+        {
+            "effectTime": "00:01:25",
+            "name": "Sentence / Law"
+        },
+        {
+            "effectTime": "00:01:34",
+            "name": "Styx"
+        },
+        {
+            "effectTime": "00:01:54",
+            "name": "Arcane Revelation"
+        },
+        {
+            "effectTime": "00:02:01",
+            "name": "Dismissal Overruling"
+        },
+        {
+            "effectTime": "00:02:04",
+            "name": "Arche"
+        },
+        {
+            "effectTime": "00:02:07",
+            "name": "Sentence / Law"
+        },
+        {
+            "effectTime": "00:02:33",
+            "name": "Shadowed Messengers"
+        },
+        {
+            "effectTime": "00:02:47",
+            "name": "Divisive Ruling"
+        },
+        {
+            "effectTime": "00:02:50",
+            "name": "Divisive Overruling"
+        },
+        {
+            "effectTime": "00:02:55",
+            "name": "Sentence / Law"
+        },
+        {
+            "effectTime": "00:03:00",
+            "name": "Upheld Ruling"
+        },
+        {
+            "effectTime": "00:03:10",
+            "name": "Jury Overruling"
+        },
+        {
+            "effectTime": "00:03:16",
+            "name": "Sentence / Law"
+        },
+        {
+            "effectTime": "00:03:24",
+            "name": "Styx"
+        },
+        {
+            "effectTime": "00:03:42",
+            "name": "Lightstream"
+        },
+        {
+            "effectTime": "00:04:01",
+            "name": "Divisive Overruling"
+        },
+        {
+            "effectTime": "00:04:06",
+            "name": "Sentence / Law"
+        },
+        {
+            "effectTime": "00:04:18",
+            "name": "Eunomia"
+        },
+        {
+            "effectTime": "00:04:33",
+            "name": "Upheld Overruling"
+        },
+        {
+            "effectTime": "00:04:37",
+            "name": "Sentence / Law"
+        },
+        {
+            "effectTime": "00:04:56",
+            "name": "Dark and Light"
+        },
+        {
+            "effectTime": "00:05:09",
+            "name": "Arcane Revelation"
+        },
+        {
+            "effectTime": "00:05:19",
+            "name": "Unlucky Lot"
+        },
+        {
+            "effectTime": "00:05:25",
+            "name": "Jury Overruling"
+        },
+        {
+            "effectTime": "00:05:31",
+            "name": "Sentence / Law"
+        },
+        {
+            "effectTime": "00:05:44",
+            "name": "Divisive Overruling"
+        },
+        {
+            "effectTime": "00:05:48",
+            "name": "Sentence / Law"
+        },
+        {
+            "effectTime": "00:05:55",
+            "name": "Emissary's Will"
+        },
+        {
+            "effectTime": "00:06:03",
+            "name": "Styx"
+        },
+        {
+            "effectTime": "00:06:22",
+            "name": "Dike"
+        },
+        {
+            "effectTime": "00:06:25",
+            "name": "Dike"
+        },
+        {
+            "effectTime": "00:06:54",
+            "name": "Dark Current"
+        },
+        {
+            "effectTime": "00:06:55",
+            "name": "Blinding Light"
+        },
+        {
+            "effectTime": "00:07:09",
+            "name": "Jury Overruling"
+        },
+        {
+            "effectTime": "00:07:15",
+            "name": "Sentence / Law"
+        },
+        {
+            "effectTime": "00:07:29",
+            "name": "Upheld Overruling"
+        },
+        {
+            "effectTime": "00:07:33",
+            "name": "Sentence / Law"
+        },
+        {
+            "effectTime": "00:07:49",
+            "name": "Divisive Overruling"
+        },
+        {
+            "effectTime": "00:07:53",
+            "name": "Sentence / Law"
+        },
+        {
+            "effectTime": "00:08:07",
+            "name": "Eunomia"
+        },
+        {
+            "effectTime": "00:08:33",
+            "name": "Letter of the Law"
+        },
+        {
+            "effectTime": "00:08:40",
+            "name": "Twofold Revelation"
+        },
+        {
+            "effectTime": "00:08:49",
+            "name": "Heart of Judgement (Cast)"
+        },
+        {
+            "effectTime": "00:08:50",
+            "name": "Arche"
+        },
+        {
+            "effectTime": "00:08:50",
+            "name": "Unlucky Lot"
+        },
+        {
+            "effectTime": "00:08:52",
+            "name": "Upheld Ruling"
+        },
+        {
+            "effectTime": "00:09:01",
+            "name": "Heart of Judgement"
+        },
+        {
+            "effectTime": "00:09:04",
+            "name": "Divisive Ruling"
+        },
+        {
+            "effectTime": "00:09:10",
+            "name": "Dismissal Overruling"
+        },
+        {
+            "effectTime": "00:09:16",
+            "name": "Sentence / Law"
+        },
+        {
+            "effectTime": "00:09:25",
+            "name": "Styx"
+        },
+        {
+            "effectTime": "00:09:44",
+            "name": "Lightstream"
+        },
+        {
+            "effectTime": "00:10:02",
+            "name": "Divisive Overruling"
+        },
+        {
+            "effectTime": "00:10:07",
+            "name": "Sentence / Law"
+        },
+        {
+            "effectTime": "00:10:23",
+            "name": "Dike"
+        },
+        {
+            "effectTime": "00:10:26",
+            "name": "Dike"
+        },
+        {
+            "effectTime": "00:10:42",
+            "name": "Jury Overruling"
+        },
+        {
+            "effectTime": "00:10:48",
+            "name": "Sentence / Law"
+        },
+        {
+            "effectTime": "00:10:59",
+            "name": "Eunomia"
+        },
+        {
+            "effectTime": "00:11:16",
+            "name": "Ultimate Verdict (Enrage)"
+        }
+    ]
+}

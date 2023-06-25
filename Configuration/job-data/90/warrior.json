@@ -1,0 +1,53 @@
+{
+    "name": "Warrior",
+    "abilities": [
+        {
+            "name": "Thrill of Battle",
+            "duration": "00:00:10",
+            "cooldown": "00:01:30",
+            "mitigation": 0.20,
+            "type": "TankMitigation"
+        },
+        {
+            "name": "Vengence",
+            "duration": "00:00:15",
+            "cooldown": "00:02:00",
+            "mitigation": 0.30,
+            "type": "TankMitigation"
+        },
+        {
+            "name": "Holmgang",
+            "duration": "00:00:10",
+            "cooldown": "00:04:00",
+            "mitigation": 1.0,
+            "type": "TankMitigation"
+        },
+        {
+            "name": "Shake It Off",
+            "cooldown": "00:01:30",
+            "mitigation": 0.15,
+            "type": "PartyMitigation"
+        },
+        {
+            "name": "Bloodwhetting",
+            "duration": "00:00:08",
+            "cooldown": "00:00:25",
+            "mitigation": 0.20,
+            "type": "TankMitigation"
+        },
+        {
+            "name": "Rampart",
+            "duration": "00:00:20",
+            "cooldown": "00:01:30",
+            "mitigation": 0.20,
+            "type": "TankMitigation"
+        },
+        {
+            "name": "Reprisal",
+            "duration": "00:00:10",
+            "cooldown": "00:01:00",
+            "mitigation": 0.10,
+            "type": "PartyMitigation"
+        }
+    ]
+}

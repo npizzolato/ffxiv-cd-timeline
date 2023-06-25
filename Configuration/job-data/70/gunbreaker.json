@@ -1,0 +1,60 @@
+{
+    "name": "Gunbreaker",
+    "abilities": [
+        {
+            "name": "Camouflage",
+            "duration": "00:00:10",
+            "cooldown": "00:01:30",
+            "mitigation": 0.10,
+            "type": "TankMitigation"
+        },
+        {
+            "name": "Nebula",
+            "duration": "00:00:15",
+            "cooldown": "00:02:00",
+            "mitigation": 0.30,
+            "type": "TankMitigation"
+        },
+        {
+            "name": "Superbolide",
+            "duration": "00:00:10",
+            "cooldown": "00:06:00",
+            "mitigation": 1.0,
+            "type": "TankMitigation"
+        },
+        {
+            "name": "Heart of Light",
+            "cooldown": "00:01:30",
+            "mitigation": 0.10,
+            "type": "PartyMitigation"
+        },
+        {
+            "name": "Heart of Stone",
+            "duration": "00:00:07",
+            "cooldown": "00:00:25",
+            "mitigation": 0.15,
+            "type": "TankMitigation"
+        },
+        {
+            "name": "Rampart",
+            "duration": "00:00:20",
+            "cooldown": "00:01:30",
+            "mitigation": 0.20,
+            "type": "TankMitigation"
+        },
+        {
+            "name": "Reprisal",
+            "duration": "00:00:10",
+            "cooldown": "00:01:00",
+            "mitigation": 0.10,
+            "type": "PartyMitigation"
+        },
+        {
+            "name": "Aurora",
+            "duration": "00:00:18",
+            "cooldown": "00:01:00",
+            "mitigation": 0,
+            "type":"TankMitigation"
+        }
+    ]
+}

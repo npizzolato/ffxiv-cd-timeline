@@ -1,0 +1,481 @@
+{
+    "shortName": "P10S",
+    "fullName": "Pandamonium Anabaseios: The Tenth Circle",
+    "level": 90,
+    "abilities": [
+        {
+            "name": "Ultima",
+            "description": "Raidwide with bleed",
+            "category": "RaidDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Soul Grasp",
+            "description": "Multi-hit shared tank buster (4 times)",
+            "category": "TankDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Dividing Wings",
+            "description": "Spawns 2 winged swords that deal conal AoE with a bleed",
+            "category": "TargetedAoe",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Steel Web",
+            "description": "Shared AoE on 2 players",
+            "category": "SharedDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Circles of Pandaemonium",
+            "description": "Donut AoE hitting everything outside the boss's hitbox",
+            "category": "AvoidableDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Pandaemon's Holy",
+            "description": "Circle AoE hitting everything inside the boss's hitbox",
+            "category": "AvoidableDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Pandaemonium's Holy / Circle",
+            "description": "Chariot or Dynamo AoE around the boss's hitbox",
+            "category": "AvoidableDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Wicked Step",
+            "description": "Towers that must be soaked by tanks. Knocks up.",
+            "category": "TankDamage",
+            "damageType": "Physical"
+        },
+        {
+            "name": "Entangling Web",
+            "description": "Baited Circle AoEs on 4 players.",
+            "category": "AvoidableDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Pandaemonic Pillars",
+            "description": "8 towers that must be soaked by all 8 players",
+            "category": "Mechanics",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Tower AoE",
+            "description": "Towers cast either a line AOE, chariot, or dynamo",
+            "category": "AvoidableDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Silkspit",
+            "description": "Large circle AoE on each player",
+            "category": "TargetedAoe",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Daemoniac Bonds",
+            "description": "Enumeration debuff that requires spread, partner stacks, or role stacks.",
+            "category": "Mechanics",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Daemoniac Meltdown",
+            "description": "Shared line AoE on 1 player and line AoEs on 2 other players.",
+            "category": "SharedDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Touchdown",
+            "description": "AoE covering the entirety of the center platform",
+            "category": "AvoidableDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Peal of Condemnation",
+            "description": "Shared line AoE toward the closest player. Closest player gets a vuln. This hurts.",
+            "category": "Mechanics",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Pandaemonic Ray",
+            "description": "Half-room cleave that spawns horizontal small line AoEs.",
+            "category": "AvoidableDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Jade Passage",
+            "description": "Line AoEs from orbs following Pandaemonic Ray.",
+            "category": "AvoidableDamage",
+            "damageType": "Magical"
+        },
+        {
+            "name": "Harrowing Hell",
+            "description": "Rapid high raid damage. Closest 2 people are hit by wild charge.",
+            "category": "RaidDamage",
+            "damageType": "Physical"
+        },
+        {
+            "name": "Parted Plumes",
+            "description": "Rotating conal AoEs from center.",
+            "category": "AvoidableDamage",
+            "damageType": "Magical"
+        }
+    ],
+    "timeline": [
+        {
+            "effectTime": "00:00:14",
+            "name": "Ultima"
+        },
+        {
+            "effectTime": "00:00:24",
+            "name": "Soul Grasp"
+        },
+        {
+            "effectTime": "00:00:35",
+            "name": "Dividing Wings (Cast)"
+        },
+        {
+            "effectTime": "00:00:41",
+            "name": "Steel Web (Cast)"
+        },
+        {
+            "effectTime": "00:00:49",
+            "name": "Dividing Wings"
+        },
+        {
+            "effectTime": "00:00:49",
+            "name": "Steel Web"
+        },
+        {
+            "effectTime": "00:00:59",
+            "name": "Pandaemonium's Holy / Circle"
+        },
+        {
+            "effectTime": "00:01:08",
+            "name": "Wicked Step"
+        },
+        {
+            "effectTime": "00:01:11",
+            "name": "Wicked Step"
+        },
+        {
+            "effectTime": "00:01:19",
+            "name": "Entangling Web (Cast)" 
+        },
+        {
+            "effectTime": "00:01:30",
+            "name": "Entangling Web" 
+        },
+        {
+            "effectTime": "00:01:30",
+            "name": "Entangling Web" 
+        },
+        {
+            "effectTime": "00:01:36",
+            "name": "Pandaemonic Pillars" 
+        },
+        {
+            "effectTime": "00:01:43",
+            "name": "Pandaemonium's Holy / Circle" 
+        },
+        {
+            "effectTime": "00:01:43",
+            "name": "Tower AoE" 
+        },
+        {
+            "effectTime": "00:01:48",
+            "name": "Silkspit (Cast)" 
+        },
+        {
+            "effectTime": "00:01:58",
+            "name": "Silkspit" 
+        },
+        {
+            "effectTime": "00:02:03",
+            "name": "Daemoniac Bonds (Cast)" 
+        },
+        {
+            "effectTime": "00:02:12",
+            "name": "Pandaemonic Meltdown" 
+        },
+        {
+            "effectTime": "00:02:25",
+            "name": "Touchdown" 
+        },
+        {
+            "effectTime": "00:02:26",
+            "name": "Daemoniac Bonds" 
+        },
+        {
+            "effectTime": "00:02:29",
+            "name": "Daemoniac Bonds" 
+        },
+        {
+            "effectTime": "00:02:40",
+            "name": "Ultima" 
+        },
+        {
+            "effectTime": "00:02:49",
+            "name": "Soul Grasp" 
+        },
+        {
+            "effectTime": "00:03:05",
+            "name": "Daemoniac Bonds (Cast)" 
+        },
+        {
+            "effectTime": "00:03:14",
+            "name": "Pandaemonic Pillars" 
+        },
+        {
+            "effectTime": "00:03:26",
+            "name": "Peal of Condemnation" 
+        },
+        {
+            "effectTime": "00:03:30",
+            "name": "Peal of Condemnation" 
+        },
+        {
+            "effectTime": "00:03:35",
+            "name": "Peal of Condemnation" 
+        },
+        {
+            "effectTime": "00:03:39",
+            "name": "Peal of Condemnation" 
+        },
+        {
+            "effectTime": "00:03:44",
+            "name": "Daemoniac Bonds" 
+        },
+        {
+            "effectTime": "00:03:47",
+            "name": "Daemoniac Bonds" 
+        },
+        {
+            "effectTime": "00:03:53",
+            "name": "Pandaemonic Ray" 
+        },
+        {
+            "effectTime": "00:03:57",
+            "name": "Jade Passage" 
+        },
+        {
+            "effectTime": "00:04:09",
+            "name": "Ultima" 
+        },
+        {
+            "effectTime": "00:04:18",
+            "name": "Soul Grasp" 
+        },
+        {
+            "effectTime": "00:04:37",
+            "name": "Wicked Step" 
+        },
+        {
+            "effectTime": "00:04:40",
+            "name": "Wicked Step" 
+        },
+        {
+            "effectTime": "00:04:48",
+            "name": "Entangling Web (Cast)" 
+        },
+        {
+            "effectTime": "00:04:58",
+            "name": "Silkspit (Cast)" 
+        },
+        {
+            "effectTime": "00:04:59",
+            "name": "Entangling Web" 
+        },
+        {
+            "effectTime": "00:05:07",
+            "name": "Daemoniac Bonds (Cast)" 
+        },
+        {
+            "effectTime": "00:05:08",
+            "name": "Silkspit" 
+        },
+        {
+            "effectTime": "00:05:16",
+            "name": "Pandaemonic Pillars" 
+        },
+        {
+            "effectTime": "00:05:22",
+            "name": "Pandaemonium's Holy / Circle" 
+        },
+        {
+            "effectTime": "00:05:22",
+            "name": "Tower AoE" 
+        },
+        {
+            "effectTime": "00:05:29",
+            "name": "Daemoniac Bonds" 
+        },
+        {
+            "effectTime": "00:05:30",
+            "name": "Pandaemonic Ray" 
+        },
+        {
+            "effectTime": "00:05:33",
+            "name": "Daemoniac Bonds" 
+        },
+        {
+            "effectTime": "00:05:34",
+            "name": "Jade Passage" 
+        },
+        {
+            "effectTime": "00:05:38",
+            "name": "Dividing Wings (Cast)" 
+        },
+        {
+            "effectTime": "00:05:44",
+            "name": "Steel Web (Cast)" 
+        },
+        {
+            "effectTime": "00:05:57",
+            "name": "Dividing Wings" 
+        },
+        {
+            "effectTime": "00:05:57",
+            "name": "Steel Web" 
+        },
+        {
+            "effectTime": "00:05:57",
+            "name": "Touchdown" 
+        },
+        {
+            "effectTime": "00:05:57",
+            "name": "Touchdown" 
+        },
+        {
+            "effectTime": "00:06:15",
+            "name": "Pandaemonic Meltdown" 
+        },
+        {
+            "effectTime": "00:06:24",
+            "name": "Soul Grasp" 
+        },
+        {
+            "effectTime": "00:06:44",
+            "name": "Dividing Wings (Cast)" 
+        },
+        {
+            "effectTime": "00:06:58",
+            "name": "Dividing Wings (Cast)" 
+        },
+        {
+            "effectTime": "00:06:58",
+            "name": "Steel Web (Cast)" 
+        },
+        {
+            "effectTime": "00:06:58",
+            "name": "Pandaemonium's Holy / Circle" 
+        },
+        {
+            "effectTime": "00:07:01",
+            "name": "Entangling Web" 
+        },
+        {
+            "effectTime": "00:07:06",
+            "name": "Daemoniac Bonds (Cast)" 
+        },
+        {
+            "effectTime": "00:07:07",
+            "name": "Entangling Web" 
+        },
+        {
+            "effectTime": "00:07:17",
+            "name": "Harrowing Hell" 
+        },
+        {
+            "effectTime": "00:07:33",
+            "name": "Harrowing Hell (Knockback)" 
+        },
+        {
+            "effectTime": "00:07:38",
+            "name": "Daemoniac Bonds" 
+        },
+        {
+            "effectTime": "00:07:41",
+            "name": "Daemoniac Bonds" 
+        },
+        {
+            "effectTime": "00:08:00",
+            "name": "Ultima" 
+        },
+        {
+            "effectTime": "00:08:10",
+            "name": "Soul Grasp" 
+        },
+        {
+            "effectTime": "00:08:32",
+            "name": "Wicked Step" 
+        },
+        {
+            "effectTime": "00:08:35",
+            "name": "Wicked Step" 
+        },
+        {
+            "effectTime": "00:08:42",
+            "name": "Entangling Web (Cast)" 
+        },
+        {
+            "effectTime": "00:08:53",
+            "name": "Entangling Web" 
+        },
+        {
+            "effectTime": "00:09:03",
+            "name": "Parted Plumes (Cast)" 
+        },
+        {
+            "effectTime": "00:09:10",
+            "name": "Parted Plumes" 
+        },
+        {
+            "effectTime": "00:09:15",
+            "name": "Pandaemonic Ray" 
+        },
+        {
+            "effectTime": "00:09:19",
+            "name": "Jade Passage" 
+        },
+        {
+            "effectTime": "00:09:22",
+            "name": "Pandaemonium's Holy / Circle" 
+        },
+        {
+            "effectTime": "00:09:28",
+            "name": "Silkspit (Cast)" 
+        },
+        {
+            "effectTime": "00:09:38",
+            "name": "Silkspit" 
+        },
+        {
+            "effectTime": "00:09:46",
+            "name": "Pandaemonic Pillars" 
+        },
+        {
+            "effectTime": "00:09:52",
+            "name": "Pandaemonium's Holy / Circle" 
+        },
+        {
+            "effectTime": "00:09:52",
+            "name": "Tower AoE" 
+        },
+        {
+            "effectTime": "00:10:00",
+            "name": "Pandaemonic Meltdown" 
+        },
+        {
+            "effectTime": "00:10:23",
+            "name": "Harrowing Hell" 
+        },
+        {
+            "effectTime": "00:10:39",
+            "name": "Harrowing Hell (Knockback)" 
+        }
+    ]
+}

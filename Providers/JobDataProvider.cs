@@ -2,15 +2,13 @@ using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 
 public class JobDataProvider 
-{    
-    private readonly HttpClient client;
+{
     private readonly IOptions<JobDataProviderOptions> options;
 
-    public JobDataProvider(HttpClient client, IOptions<JobDataProviderOptions> options)
+    public JobDataProvider(IOptions<JobDataProviderOptions> options)
     {
-        if (client == null) throw new ArgumentNullException(nameof(client));
+        if (options == null) { throw new ArgumentNullException(nameof(options)); }
 
-        this.client = client;
         this.options = options;
 
         Console.WriteLine($"Loaded {options.Value.JobDataFileMaps.Count} levels.");
@@ -47,8 +45,7 @@ public class JobDataProvider
             throw new ArgumentException($"Job {jobName} is not supported at level {level}.");
         }
 
-        HttpResponseMessage response = await this.client.GetAsync(this.options.Value.JobDataFileMaps[level.ToString()][jobName]);
-        string content = await response.Content.ReadAsStringAsync();
+        string content = await File.ReadAllTextAsync(this.options.Value.JobDataFileMaps[level.ToString()][jobName]);
         return JsonConvert.DeserializeObject<Job>(content);
     }
 }
