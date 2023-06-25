@@ -26,7 +26,6 @@ builder.Services.AddHttpClient("ApiClient", (provider, client) =>
 });
 builder.Services.AddScoped<BossDataProvider>();
 builder.Services.AddScoped<JobDataProvider>();
-builder.Services.AddScoped<TimelineSaver>();
 
 var blobOptions = new BlobTimelineSaverOptions();
 builder.Configuration.GetSection("blobTimelineSaverOptions").Bind(blobOptions);
