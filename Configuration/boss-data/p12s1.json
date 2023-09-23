@@ -1,0 +1,469 @@
+{
+    "shortName": "P10S",
+    "fullName": "Pandamonium Anabaseios: The Tenth Circle",
+    "level": 90,
+    "abilities": [
+        {
+          "name": "On the Soul",
+          "description": "Raidwide",
+          "category": "SignificantRaidDamage",
+          "damageType": "Magical"
+        },
+        {
+          "name": "Paradeigma",
+          "description": "Summons orbs that will be used in future mechanics.",
+          "category": "Mechanics"
+        },
+        {
+          "name": "Trinity of Souls",
+          "description": "Half-room cleave based on wings.",
+          "category": "AvoidableDamage"
+        },
+        {
+          "name": "White Flame",
+          "description": "Line AoE on the closest 2 players.",
+          "category": "RaidDamage"
+        },
+        {
+          "name": "Engravement of Souls",
+          "description": "Tethers or debuffs players that will be used in future mechanics.",
+          "category": "Mechanics"
+        },
+        {
+          "name": "Polarized Sear",
+          "description": "Line AoE dealing damage to tethered players.",
+          "category": "RaidDamage"
+        },
+        {
+          "name": "Polarized Glow",
+          "description": "Small AoE on certain players, spawning towers.",
+          "category": "RaidDamage"
+        },
+        {
+          "name": "Polarized Advance",
+          "description": "Towers that must be soaked.",
+          "category": "RaidDamage"
+        },
+        {
+          "name": "Ray of Light",
+          "description": "Line AoE from adds outside the arena.",
+          "category": "AvoidableDamage"
+        },
+        {
+          "name": "Glaukopis",
+          "description": "Line AoE tank buster. Requires double tank swap.",
+          "category": "SignificantTankDamage"
+        },
+        {
+          "name": "Superchain Theory 1",
+          "description": "Summons chained orbs that will be used in upcoming mechanics.",
+          "category": "Mechanics"
+        },
+        {
+          "name": "Radiation/Emission + Coil/Burst",
+          "description": "Partners or proteans combined with out/in dodge.",
+          "category": "RaidDamage"
+        },
+        {
+          "name": "Polarized Ray + Coil/Burst",
+          "description": "Shared line aoe on 2 players combined with out/in dodge.",
+          "category": "RaidDamage"
+        },
+        {
+          "name": "Coil/Burst",
+          "description": "Out or in dodge.",
+          "category": "AvoidableDamage"
+        },
+        {
+          "name": "Thoes's Holy",
+          "description": "aoe on debuffed players.",
+          "category": "RaidDamage"
+        },
+        {
+          "name": "Peridalogos/Apodialogos",
+          "description": "Shared tank buster (with bleed) plus shared aoe on the furthest/closest player.",
+          "category": "SignificantRaidDamage"
+        },
+        {
+          "name": "Unnatural Enchainment",
+          "description": "Destroys part of the arena.",
+          "category": "Mechanics"
+        },
+        {
+          "name": "Theos's Cross + Saltire",
+          "description": "Drops + and X-shaped aoes that can be avoided.",
+          "category": "AvoidableDamage"
+        },
+        {
+          "name": "Ultima Blade",
+          "description": "Very high raid damage.",
+          "category": "SignificantRaidDamage"
+        },
+        {
+          "name": "Palladion",
+          "description": "Shared aoe on players marked 1-8. Leaves a puddle on the ground that must be avoided.",
+          "category": "RaidDamage"
+        },
+        {
+          "name": "Clear Cut/White Flame",
+          "description": "Cleave on center or line AoE on 2 closest players, from the add in the center.",
+          "category": "RaidDamage"
+        },
+        {
+          "name": "Palladion (platform break)",
+          "description": "Big slash that destroys platforms. Avoided by going behind.",
+          "category": "AvoidableDamage"
+        },
+        {
+          "name": "Palladion + Clear Cut/White Flame",
+          "description": "Palladion and clear cut/white flame happening at the same time.",
+          "category": "RaidDamage"
+        },
+        {
+          "name": "Theos's Ultima",
+          "description": "Incredibly high raidwide damage.",
+          "category": "SignificantRaidDamage"
+        },
+        {
+          "name": "Superchain Theory 2A",
+          "description": "Summons chained orbs that will be used in upcoming mechanics.",
+          "category": "Mechanics"
+        },
+        {
+          "name": "Superchain Theory 2A",
+          "description": "Summons chained orbs that will be used in upcoming mechanics.",
+          "category": "Mechanics"
+        },
+        {
+          "name": "Trinity of Souls + Coil/Burst",
+          "description": "Half-room cleave at the same time as in/out dodges.",
+          "category": "AvoidableDamage"
+        },
+        {
+          "name": "Trinity of Souls + Coil/Burst + Emission",
+          "description": "Partners at the same time as half-room cleave at the same time as in/out dodges.",
+          "category": "AvoidableDamage"
+        },
+        {
+          "name": "Radiation/Emission + Burst",
+          "description": "Partners or Proteans combined with out dodge",
+          "category": "RaidDamage"
+        },
+        {
+          "name": "Superchain Theory 2B",
+          "description": "Summons chained orbs that will be used in upcoming mechanics.",
+          "category": "Mechanics"
+        },
+        {
+          "name": "Parthenos",
+          "description": "Line aoe through center of boss",
+          "category": "AvoidableDamage"
+        }
+    ],
+    "timeline": [
+        {
+            "effectTime": "00:00:12",
+            "name": "On the Soul"
+        },
+        {
+            "effectTime": "00:00:22",
+            "name": "Paradeigma"
+        },
+        {
+            "effectTime": "00:00:37",
+            "name": "Trinity of Souls"
+        },
+        {
+            "effectTime": "00:00:38",
+            "name": "White Flame"
+        },
+        {
+            "effectTime": "00:00:40",
+            "name": "Trinity of Souls"
+        },
+        {
+            "effectTime": "00:00:43",
+            "name": "Trinity of Souls"
+        },
+        {
+            "effectTime": "00:00:43",
+            "name": "White Flame"
+        },
+        {
+            "effectTime": "00:00:58",
+            "name": "Paradeigma"
+        },
+        {
+            "effectTime": "00:01:06",
+            "name": "Engravement of Souls"
+        },
+        {
+            "effectTime": "00:01:15",
+            "name": "Polarized Sear"
+        },
+        {
+            "effectTime": "00:01:16",
+            "name": "Polarized Glow"
+        },
+        {
+            "effectTime": "00:01:19",
+            "name": "Polarized Advance"
+        },
+        {
+            "effectTime": "00:01:22",
+            "name": "Ray of Light"
+        },
+        {
+            "effectTime": "00:01:29",
+            "name": "On the Soul"
+        },
+        {
+            "effectTime": "00:01:38",
+            "name": "Glaukopis"
+        },
+        {
+            "effectTime": "00:01:41",
+            "name": "Glaukopis"
+        },
+        {
+            "effectTime": "00:01:57",
+            "name": "Superchain Theory 1"
+        },
+        {
+            "effectTime": "00:02:04",
+            "name": "Engravement of Souls"
+        },
+        {
+            "effectTime": "00:02:09",
+            "name": "Radiation/Emission + Coil/Burst"
+        },
+        {
+            "effectTime": "00:02:16",
+            "name": "Polarized Ray + Coil/Burst"
+        },
+        {
+            "effectTime": "00:02:21",
+            "name": "Coil/Burst"
+        },
+        {
+            "effectTime": "00:02:23",
+            "name": "Coil/Burst"
+        },
+        {
+            "effectTime": "00:02:25",
+            "name": "Polarized Glow"
+        },
+        {
+            "effectTime": "00:02:26",
+            "name": "Thoes's Holy"
+        },
+        {
+            "effectTime": "00:02:28",
+            "name": "Polarized Advance"
+        },
+        {
+            "effectTime": "00:02:39",
+            "name": "Trinity of Souls"
+        },
+        {
+            "effectTime": "00:02:41",
+            "name": "Trinity of Souls"
+        },
+        {
+            "effectTime": "00:02:44",
+            "name": "Trinity of Souls"
+        },
+        {
+            "effectTime": "00:02:52",
+            "name": "Peridalogos/Apodialogos"
+        },
+        {
+            "effectTime": "00:03:00",
+            "name": "On the Soul"
+        },
+        {
+            "effectTime": "00:03:17",
+            "name": "Paradeigma"
+        },
+        {
+            "effectTime": "00:03:24",
+            "name": "Engravement of Souls"
+        },
+        {
+            "effectTime": "00:03:34",
+            "name": "Unnatural Enchainment"
+        },
+        {
+            "effectTime": "00:03:35",
+            "name": "Polarized Sear"
+        },
+        {
+            "effectTime": "00:03:41",
+            "name": "Theos's Cross + Saltire"
+        },
+        {
+            "effectTime": "00:03:42",
+            "name": "Polarized Glow"
+        },
+        {
+            "effectTime": "00:03:43",
+            "name": "White Flame"
+        },
+        {
+            "effectTime": "00:03:45",
+            "name": "Polarized Advance"
+        },
+        {
+            "effectTime": "00:03:51",
+            "name": "On the Soul"
+        },
+        {
+            "effectTime": "00:04:03",
+            "name": "Glaukopis"
+        },
+        {
+            "effectTime": "00:04:07",
+            "name": "Glaukopis"
+        },
+        {
+            "effectTime": "00:04:29",
+            "name": "Ultima Blade"
+        },
+        {
+            "effectTime": "00:04:29",
+            "name": "Ultima Blade"
+        },
+        {
+            "effectTime": "00:04:52",
+            "name": "Palladion"
+        },
+        {
+            "effectTime": "00:04:54",
+            "name": "Clear Cut/White Flame"
+        },
+        {
+            "effectTime": "00:04:55",
+            "name": "Palladion"
+        },
+        {
+            "effectTime": "00:04:58",
+            "name": "Palladion + Clear Cut/White Flame"
+        },
+        {
+            "effectTime": "00:05:00",
+            "name": "Clear Cut/White Flame"
+        },
+        {
+            "effectTime": "00:05:01",
+            "name": "Palladion"
+        },
+        {
+            "effectTime": "00:05:03",
+            "name": "Clear Cut/White Flame"
+        },
+        {
+            "effectTime": "00:05:04",
+            "name": "Palladion"
+        },
+        {
+            "effectTime": "00:05:07",
+            "name": "Palladion + Clear Cut/White Flame"
+        },
+        {
+            "effectTime": "00:05:09",
+            "name": "Clear Cut/White Flame"
+        },
+        {
+            "effectTime": "00:05:11",
+            "name": "Palladion"
+        },
+        {
+            "effectTime": "00:05:13",
+            "name": "Clear Cut/White Flame"
+        },
+        {
+            "effectTime": "00:05:04",
+            "name": "Palladion"
+        },
+        {
+            "effectTime": "00:05:23",
+            "name": "Palladion (platform break)"
+        },
+        {
+            "effectTime": "00:05:35",
+            "name": "Theos's Ultima"
+        },
+        {
+            "effectTime": "00:05:54",
+            "name": "Superchain Theory 2A"
+        },
+        {
+            "effectTime": "00:06:07",
+            "name": "Trinity of Souls + Coil/Burst + Emission"
+        },
+        {
+            "effectTime": "00:06:10",
+            "name": "Trinity of Souls + Coil/Burst"
+        },
+        {
+            "effectTime": "00:06:12",
+            "name": "Trinity of Souls + Coil/Burst"
+        },
+        {
+            "effectTime": "00:06:16",
+            "name": "Radiation/Emission + Coil/Burst"
+        },
+        {
+            "effectTime": "00:06:22",
+            "name": "Peridalogos/Apodialogos"
+        },
+        {
+            "effectTime": "00:06:30",
+            "name": "On the Soul"
+        },
+        {
+            "effectTime": "00:06:44",
+            "name": "Superchain Theory 2B"
+        },
+        {
+            "effectTime": "00:06:51",
+            "name": "Paradeigma"
+        },
+        {
+            "effectTime": "00:06:58",
+            "name": "Coil/Burst"
+        },
+        {
+            "effectTime": "00:07:01",
+            "name": "Parthenos"
+        },
+        {
+            "effectTime": "00:07:05",
+            "name": "Radiation/Emission + Coil/Burst"
+        },
+        {
+            "effectTime": "00:07:07",
+            "name": "Ray of Light"
+        },
+        {
+            "effectTime": "00:07:14",
+            "name": "Radiation/Emission + Burst"
+        },
+        {
+            "effectTime": "00:07:16",
+            "name": "Unnatural Enchainment"
+        },
+        {
+            "effectTime": "00:07:25",
+            "name": "On the Soul"
+        },
+        {
+            "effectTime": "00:07:33",
+            "name": "On the Soul"
+        },
+        {
+            "effectTime": "00:07:48",
+            "name": "Theos's Ultima"
+        }
+    ]
+}
