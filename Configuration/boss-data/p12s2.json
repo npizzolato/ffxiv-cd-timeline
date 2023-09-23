@@ -1,0 +1,431 @@
+{
+  "shortName": "P12S2",
+  "fullName": "Pandamonium Anabaseios: The Twelfth Circle, Part 2",
+  "level": 90,
+  "abilities": [
+    {
+      "name": "Ultima",
+      "description": "High raidwide damage",
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Palladian Grasp",
+      "description": "Tank buster on the half of the arena the tank is standing.",
+      "category": "SignificantTankDamage",
+      "damageType": "Physical"
+    },
+    {
+      "name": "Gaiaochos",
+      "description": "High raidwide damage. Destroys all but a small circle of the arena.",
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Summon Darkness",
+      "description": "Summons adds on the outside of the arena.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Ultima Ray",
+      "description": "Line aoes from the adds on the outside of the arena.",
+      "category": "AvoidableDamage"
+    },
+    {
+      "name": "Missing Link",
+      "description": "Chains dps to healers. Can be broken if the chains are pulled apart.",
+      "category": "AvoidableDamage"
+    },
+    {
+      "name": "Demi Parhelion + Geocentrism",
+      "description": "Aoes on the ground andat the same time as another aoe telegraphed by her tentacles.",
+      "category": "AvoidableDamage"
+    },
+    {
+      "name": "Divine Excoriation",
+      "description": "Small aoes on each party member.",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "The Classical Concepts",
+      "description": "High raid damage. Tethers players together with playstation markers and summons shapes that will tether.",
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Aspect Effect",
+      "description": "Moderate raid damage from the shape tethers that players intercept.",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Implode",
+      "description": "Explosion from each shape.",
+      "category": "AvoidableDamage"
+    },
+    {
+      "name": "Palladian Ray",
+      "description": "Persistent cone aoe from the spear to the nearest 4 players.",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Crush Helm",
+      "description": "5-hit tankbuster that applies a stacking vuln on the first 4 hits. Vuln must be cleaned via Esuna.",
+      "category": "SignificantTankDamage",
+      "damageType": "Physical"
+    },
+    {
+      "name": "Crush Helm (Final Hit)",
+      "description": "Final hit of tankbuster. Deadly if vuln is not cleansed. Still does significant damage with cleanse.",
+      "category": "SignificantTankDamage",
+      "damageType": "Physical"
+    },
+    {
+      "name": "Caloric Theory",
+      "description": "Raidwide damage and debuffs players with fire and wind debuffs.",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Pyre Pulse",
+      "description": "Fire debuffs explode. Must be stacked by at least 2 people total.",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Dynamic Atmosphere + Pyre Pulse",
+      "description": "Wind and fire debuffs explode. Fires must be stacked by at least 2 people total. Winds cannot be stacked.",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Ekpyrosis (Cast)",
+      "description": "Cast for exaflare mechanic.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Ekpyrosis (Exaflares begin)",
+      "description": "Exaflares begin cascading through the arena.",
+      "category": "AvoidableDamage"
+    },
+    {
+      "name": "Ekpyrosis (proximity damage)",
+      "description": "Proximity markers go off during exaflares, dealing high raidwide damage.",
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Ekpyrosis (spreads)",
+      "description": "Spread aoes go off on each player, dealing high raidwide damage.",
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Pangenesis",
+      "description": "High raidewide damage, leaving players with DNA debuffs and dark/light tilts.",
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Pantheos",
+      "description": "Spawns 3 sets of towers that must be soaked by the appropriate players.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Polarized Advent",
+      "description": "Towers resolve, dealing light damage.",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Factor In",
+      "description": "Large defamation aoes on tethered players.",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Panta Rhei",
+      "description": "Flips classical concept shapes across horizontal and vertical axes.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Entropic Excess",
+      "description": "Rot that must be passed in a chain. Occassionally drops aoe under current player that can be dodged.",
+      "category": "AvoidableDamage"
+    },
+    {
+      "name": "Dynamic Atmosphere",
+      "description": "Wind aoes resolve. Players must be spread apart",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Ultima Blow",
+      "description": "Line aoe on 4 tethered players. Must be soaked by another player.",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Ignorabimus",
+      "description": "Enrage.",
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
+    }
+  ],
+  "timeline": [
+    {
+      "effectTime": "00:00:11",
+      "name": "Ultima"
+    },
+    {
+      "effectTime": "00:00:23",
+      "name": "Palladian Grasp"
+    },
+    {
+      "effectTime": "00:00:27",
+      "name": "Palladian Grasp"
+    },
+    {
+      "effectTime": "00:00:40",
+      "name": "Gaiaochos"
+    },
+    {
+      "effectTime": "00:00:51",
+      "name": "Summon Darkness"
+    },
+    {
+      "effectTime": "00:01:03",
+      "name": "Ultima Ray"
+    },
+    {
+      "effectTime": "00:01:04",
+      "name": "Missing Link"
+    },
+    {
+      "effectTime": "00:01:23",
+      "name": "Demi Parhelion + Geocentrism"
+    },
+    {
+      "effectTime": "00:01:24",
+      "name": "Divine Excoriation"
+    },
+    {
+      "effectTime": "00:01:33",
+      "name": "Ultima"
+    },
+    {
+      "effectTime": "00:01:48",
+      "name": "The Classical Concepts"
+    },
+    {
+      "effectTime": "00:02:04",
+      "name": "Aspect Effect"
+    },
+    {
+      "effectTime": "00:02:09",
+      "name": "Implode"
+    },
+    {
+      "effectTime": "00:02:10",
+      "name": "Palladian Ray"
+    },
+    {
+      "effectTime": "00:02:23",
+      "name": "Ultima"
+    },
+    {
+      "effectTime": "00:02:32",
+      "name": "Crush Helm"
+    },
+    {
+      "effectTime": "00:02:38",
+      "name": "Crush Helm (Final Hit)"
+    },
+    {
+      "effectTime": "00:02:52",
+      "name": "Caloric Theory"
+    },
+    {
+      "effectTime": "00:03:05",
+      "name": "Pyre Pulse"
+    },
+    {
+      "effectTime": "00:03:16",
+      "name": "Dynamic Atmosphere + Pyre Pulse"
+    },
+    {
+      "effectTime": "00:03:27",
+      "name": "Ekpyrosis (Cast)"
+    },
+    {
+      "effectTime": "00:03:33",
+      "name": "Ekpyrosis (Exaflares begin)"
+    },
+    {
+      "effectTime": "00:03:34",
+      "name": "Ekpyrosis (proximity damage)"
+    },
+    {
+      "effectTime": "00:03:37",
+      "name": "Ekpyrosis (spreads)"
+    },
+    {
+      "effectTime": "00:03:46",
+      "name": "Ultima"
+    },
+    {
+      "effectTime": "00:04:00",
+      "name": "Pangenesis"
+    },
+    {
+      "effectTime": "00:04:08",
+      "name": "Pantheos"
+    },
+    {
+      "effectTime": "00:04:14",
+      "name": "Polarized Advent"
+    },
+    {
+      "effectTime": "00:04:19",
+      "name": "Polarized Advent"
+    },
+    {
+      "effectTime": "00:04:24",
+      "name": "Polarized Advent"
+    },
+    {
+      "effectTime": "00:04:36",
+      "name": "Factor In"
+    },
+    {
+      "effectTime": "00:04:39",
+      "name": "Palladian Grasp"
+    },
+    {
+      "effectTime": "00:04:42",
+      "name": "Palladian Grasp"
+    },
+    {
+      "effectTime": "00:04:56",
+      "name": "The Classical Concepts"
+    },
+    {
+      "effectTime": "00:05:13",
+      "name": "Panta Rhei"
+    },
+    {
+      "effectTime": "00:05:19",
+      "name": "Aspect Effect"
+    },
+    {
+      "effectTime": "00:05:21",
+      "name": "Palladian Ray"
+    },
+    {
+      "effectTime": "00:05:24",
+      "name": "Implode"
+    },
+    {
+      "effectTime": "00:05:32",
+      "name": "Ultima"
+    },
+    {
+      "effectTime": "00:05:42",
+      "name": "Crush Helm"
+    },
+    {
+      "effectTime": "00:05:48",
+      "name": "Crush Helm (Final Hit)"
+    },
+    {
+      "effectTime": "00:06:02",
+      "name": "Caloric Theory"
+    },
+    {
+      "effectTime": "00:06:09",
+      "name": "Entropic Excess"
+    },
+    {
+      "effectTime": "00:06:12",
+      "name": "Entropic Excess"
+    },
+    {
+      "effectTime": "00:06:27",
+      "name": "Entropic Excess"
+    },
+    {
+      "effectTime": "00:06:30",
+      "name": "Dynamic Atmosphere"
+    },
+    {
+      "effectTime": "00:06:32",
+      "name": "Ekpyrosis (Cast)"
+    },
+    {
+      "effectTime": "00:06:39",
+      "name": "Ekpyrosis (Exaflares begin)"
+    },
+    {
+      "effectTime": "00:06:40",
+      "name": "Ekpyrosis (proximity damage)"
+    },
+    {
+      "effectTime": "00:06:43",
+      "name": "Ekpyrosis (spreads)"
+    },
+    {
+      "effectTime": "00:06:51",
+      "name": "Ultima"
+    },
+    {
+      "effectTime": "00:07:05",
+      "name": "Gaiaochos"
+    },
+    {
+      "effectTime": "00:07:16",
+      "name": "Summon Darkness"
+    },
+    {
+      "effectTime": "00:07:33",
+      "name": "Demi Parhelion + Geocentrism"
+    },
+    {
+      "effectTime": "00:07:33",
+      "name": "Ultima Ray"
+    },
+    {
+      "effectTime": "00:07:34",
+      "name": "Missing Link"
+    },
+    {
+      "effectTime": "00:07:38",
+      "name": "Divine Excoriation"
+    },
+    {
+      "effectTime": "00:07:45",
+      "name": "Summon Darkness"
+    },
+    {
+      "effectTime": "00:07:56",
+      "name": "Ultima Blow"
+    },
+    {
+      "effectTime": "00:08:00",
+      "name": "Ultima"
+    },
+    {
+      "effectTime": "00:08:10",
+      "name": "Ultima Blow"
+    },
+    {
+      "effectTime": "00:08:14",
+      "name": "Ultima"
+    },
+    {
+      "effectTime": "00:08:43",
+      "name": "Ignorabimus"
+    }
+  ]
+}
