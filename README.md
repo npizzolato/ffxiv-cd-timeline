@@ -55,3 +55,9 @@ More manual process for jobs with few abilities:
 
 1. Right click an icon and Inspect
 2. Expand the `div` to see the `img`, copy the address and paste it into the job data file.
+
+### Adding new fights
+
+1. Create a json file under `Configuration\boss-data` with the boss's abilities and timeline.
+2. Find a picture for the boss and store it in `wwwroot\boss-data`. The image should be twice as wide as it is tall.
+3. Update `bossDataProviderOptions.bosses` in `appsettings.json` to point to the above files.
