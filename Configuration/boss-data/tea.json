@@ -83,7 +83,7 @@
     {
       "name": "J-Kick",
       "description": "Raidwide damage when BJ/CC enter the arena.",
-      "category": "SignficantRaidDamage",
+      "category": "SignificantRaidDamage",
       "damageType": "Magical"
     },
     {
@@ -168,7 +168,7 @@
     {
       "name": "Flarethrower",
       "description": "Large conal AoE from Brute Justice. Used to blow up a water tornado.",
-      "category": "TankDamage",
+      "category": "SignificantTankDamage",
       "damageType": "Magical"
     },
     {
@@ -296,6 +296,130 @@
     {
       "effectTime": "00:02:04",
       "name": "Hand of Prayer/Parting"
+    },
+    {
+      "effectTime": "00:02:06",
+      "name": "Limit Cut"
+    },
+    {
+      "effectTime": "00:02:37",
+      "name": "J-Kick"
+    },
+    {
+      "effectTime": "00:02:48",
+      "name": "Whirlwind"
+    },
+    {
+      "effectTime": "00:02:51",
+      "name": "Judgement Nisi"
+    },
+    {
+      "effectTime": "00:02:57",
+      "name": "Link-Up"
+    },
+    {
+      "effectTime": "00:03:05",
+      "name": "Optical Sight"
+    },
+    {
+      "effectTime": "00:03:10",
+      "name": "Hawk Blaster"
+    },
+    {
+      "effectTime": "00:03:12",
+      "name": "Photon"
+    },
+    {
+      "effectTime": "00:03:22",
+      "name": "Spin Crusher"
+    },
+    {
+      "effectTime": "00:03:27",
+      "name": "Crashing Wave"
+    },
+    {
+      "effectTime": "00:03:27",
+      "name": "Crashing Thunder"
+    },
+    {
+      "effectTime": "00:03:34",
+      "name": "Missle Command"
+    },
+    {
+      "effectTime": "00:03:38",
+      "name": "Earth Missle"
+    },
+    {
+      "effectTime": "00:03:44",
+      "name": "Hidden Minefield"
+    },
+    {
+      "effectTime": "00:03:42",
+      "name": "Enumeration"
+    },
+    {
+      "effectTime": "00:04:02",
+      "name": "Verdict"
+    },
+    {
+      "effectTime": "00:04:00",
+      "name": "Crashing Wave"
+    },
+    {
+      "effectTime": "00:04:00",
+      "name": "Crashing Thunder"
+    },
+    {
+      "effectTime": "00:04:07",
+      "name": "Limit Cut"
+    },
+    {
+      "effectTime": "00:04:09",
+      "name": "Flarethrower"
+    },
+    {
+      "effectTime": "00:04:21",
+      "name": "Whirlwind"
+    },
+    {
+      "effectTime": "00:04:30",
+      "name": "Crashing Wave"
+    },
+    {
+      "effectTime": "00:04:30",
+      "name": "Crashing Thunder"
+    },
+    {
+      "effectTime": "00:04:48",
+      "name": "Propeller Wind"
+    },
+    {
+      "effectTime": "00:04:51",
+      "name": "Gavel"
+    },
+    {
+      "effectTime": "00:05:01",
+      "name": "Photon (Tanks)"
+    },
+    {
+      "effectTime": "00:05:09",
+      "name": "Double Rocket Punch"
+    },
+    {
+      "effectTime": "00:05:16",
+      "name": "Super Jump"
+    },
+    {
+      "effectTime": "00:05:24",
+      "name": "Apocalyptic Ray"
+    },
+    {
+      "effectTime": "00:05:29",
+      "name": "Whirlwind"
+    },
+    {
+      "effectTime": "00:05:37",
+      "name": "Whirlwind"
     }
   ]
 }
