@@ -1,0 +1,60 @@
+{
+    "name": "Dark Knight",
+    "abilities": [
+      {
+        "name": "Dark Mind",
+        "duration": "00:00:10",
+        "cooldown": "00:01:00",
+        "mitigation": 0.20,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/adb1f756a8cfa746f5ec2f97e487e41c06026a61.png"
+      },
+      {
+        "name": "Shadow Wall",
+        "duration": "00:00:15",
+        "cooldown": "00:02:00",
+        "mitigation": 0.30,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/7ea7904a9e066bb33d542755b5984ad78c711a45.png"
+      },
+      {
+        "name": "Living Dead",
+        "duration": "00:00:20",
+        "cooldown": "00:05:00",
+        "mitigation": 1.0,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/968fc4ccd880ca468fff7b34680e793a80ffdab1.png"
+      },
+      {
+        "name": "Dark Missionary",
+        "cooldown": "00:01:30",
+        "mitigation": 0.10,
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/1dc1a1d830e5355e2cd251531e85932c24ba1b8d.png"
+      },
+      {
+        "name": "The Blackest Night",
+        "duration": "00:00:07",
+        "cooldown": "00:00:15",
+        "mitigation": 0.25,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/1ceca4c94f71633fea2d1d23b75384672dd6b82b.png"
+      },
+      {
+        "name": "Rampart",
+        "duration": "00:00:20",
+        "cooldown": "00:01:30",
+        "mitigation": 0.20,
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/37546679ae5e431c0903b20fa2c91a88c5a8e001.png"
+      },
+      {
+        "name": "Reprisal",
+        "duration": "00:00:10",
+        "cooldown": "00:01:00",
+        "mitigation": 0.10,
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/6b83d9368623d5cd20a426d26916021b59a14963.png"
+      }
+    ]
+}

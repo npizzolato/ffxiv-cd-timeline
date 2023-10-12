@@ -1,0 +1,20 @@
+{
+  "name": "Monk",
+  "abilities": [
+    {
+      "name": "Feint",
+      "duration": "00:00:10",
+      "cooldown": "00:01:30",
+      "mitigation": 0.10,
+      "type": "PartyMitigation",
+      "icon": "https://img.finalfantasyxiv.com/lds/d/84c26a86cbbb8a599e5a2441cebcd33b0064bf07.png"
+    },
+    {
+      "name": "Mantra",
+      "cooldown": "00:01:30",
+      "duration": "00:00:15",
+      "type": "Healing",
+      "icon": "https://img.finalfantasyxiv.com/lds/d/87f8bb6f1bcc8aa169c04e15c7d526d9d6e3dc55.png"
+    }
+  ]
+}

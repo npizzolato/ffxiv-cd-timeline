@@ -1,0 +1,26 @@
+{
+  "name": "Dancer",
+  "abilities": [
+    {
+      "name": "Shield Samba",
+      "duration": "00:00:15",
+      "cooldown": "00:02:00",
+      "mitigation": 0.10,
+      "type": "PartyMitigation",
+      "icon": "https://img.finalfantasyxiv.com/lds/d/f9692ff39ee50c5901429aaca48c066b8952732a.png"
+    },
+    {
+      "name": "Curing Waltz",
+      "cooldown": "00:01:00",
+      "type": "Healing",
+      "icon": "https://img.finalfantasyxiv.com/lds/d/30a793f0a1bae7d643449bd69b63722b8bbf1b3a.png"
+    },
+    {
+      "name": "Improvisation",
+      "cooldown": "00:02:00",
+      "duration": "00:00:15",
+      "type": "Healing",
+      "icon": "https://img.finalfantasyxiv.com/lds/d/837e2a8d2f6c135ea8aaa20630487d15967465c8.png"
+    }
+  ]
+}

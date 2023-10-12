@@ -1,0 +1,20 @@
+{
+  "name": "Bard",
+  "abilities": [
+    {
+      "name": "Troubadour",
+      "duration": "00:00:15",
+      "cooldown": "00:02:00",
+      "mitigation": 0.10,
+      "type": "PartyMitigation",
+      "icon": "https://img.finalfantasyxiv.com/lds/d/8afc3a84c2ec0f215d378e8ed011fd260d3cdc6b.png"
+    },
+    {
+      "name": "Nature's Minne",
+      "cooldown": "00:02:00",
+      "duration": "00:00:15",
+      "type": "Healing",
+      "icon": "https://img.finalfantasyxiv.com/lds/d/18695708d8d7ea8d7f9a7ffe0857dafcaea57694.png"
+    }
+  ]
+}

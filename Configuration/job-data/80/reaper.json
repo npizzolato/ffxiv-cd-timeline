@@ -1,0 +1,21 @@
+{
+  "name": "Reaper",
+  "abilities": [
+    {
+      "name": "Feint",
+      "duration": "00:00:10",
+      "cooldown": "00:01:30",
+      "mitigation": 0.10,
+      "type": "PartyMitigation",
+      "icon": "https://img.finalfantasyxiv.com/lds/d/84c26a86cbbb8a599e5a2441cebcd33b0064bf07.png"
+    },
+    {
+      "name": "Arcane Crest",
+      "duration": "00:00:05",
+      "cooldown": "00:00:30",
+      "mitigation": 0.05,
+      "type": "PersonalMitigation",
+      "icon": "https://img.finalfantasyxiv.com/lds/d/9977fdbbf70443f9f31f4868cba97138fbec5460.png"
+    }
+  ]
+}

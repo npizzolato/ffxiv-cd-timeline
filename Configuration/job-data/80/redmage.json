@@ -1,0 +1,13 @@
+{
+    "name": "Red Mage",
+    "abilities": [
+      {
+        "name": "Addle",
+        "duration": "00:00:10",
+        "cooldown": "00:01:30",
+        "mitigation": 0.10,
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/b45e688d81b5607246600f904aac008364db0d1e.png"
+      }
+    ]
+}

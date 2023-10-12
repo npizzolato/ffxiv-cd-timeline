@@ -1,0 +1,74 @@
+{
+    "name": "Scholar",
+    "abilities": [
+      {
+        "name": "Whispering Dawn",
+        "duration": "00:00:21",
+        "cooldown": "00:01:00",
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/161dc95f27e69fb5bd4caecfdeab022e3560193d.png"
+      },
+      {
+        "name": "Fey Illumination",
+        "duration": "00:00:20",
+        "cooldown": "00:02:00",
+        "mitigation": 0.05,
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/6ed1ace8e31760fa3b042e6d27dac669668196b0.png"
+      },
+      {
+        "name": "Sacred Soil",
+        "duration": "00:00:15",
+        "cooldown": "00:00:30",
+        "mitigation": 0.10,
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/4c47bdf94dc6c3dcd9b303cfa42a08a5cfd13629.png"
+      },
+      {
+        "name": "Indomitability",
+        "cooldown": "00:00:30",
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/7f80a5bd016eab7200c55dd8d1d6afb07361a0ca.png"
+      },
+      {
+        "name": "Deployment Tactics",
+        "cooldown": "00:02:00",
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/307e3a65fff1e38b28235509dd392323642d6965.png"
+      },
+      {
+        "name": "Dissipation",
+        "duration": "00:00:30",
+        "cooldown": "00:03:00",
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/fffbdbce557a09ee3a50f541fac07d432bfc7c89.png"
+      },
+      {
+        "name": "Excogitation",
+        "duration": "00:00:45",
+        "cooldown": "00:00:45",
+        "type": "TankMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/b46ada85c48a81940953f46eaaba05f1c2f5cfdd.png"
+      },
+      {
+        "name": "Recitation",
+        "duration": "00:00:15",
+        "cooldown": "00:01:30",
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/b1be794db381c20399faf7dec80b7f64eaba2e61.png"
+      },
+      {
+        "name": "Fey Blessing",
+        "cooldown": "00:01:00",
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/e37b65935298898f61fd4b12a293998ba1258be5.png"
+      },
+      {
+        "name": "Summon Seraph",
+        "duration": "00:00:22",
+        "cooldown": "00:02:00",
+        "type": "PartyMitigation",
+        "icon": "https://img.finalfantasyxiv.com/lds/d/ff070d67e4c75ed8bb06de1f577979e8c69c8ad1.png"
+      }
+    ]
+}
