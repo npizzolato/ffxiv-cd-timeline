@@ -105,38 +105,44 @@ else
             }
             @foreach (TimeSpan second in range)
             {
-                BossTimelineEntry entry = this.timeline.BossTimeline.Timeline.Find(e => e.EffectTime == second);
-                var abilityInfo = entry == null ? null : this.timeline.BossTimeline.Abilities.Find(a => a.Name.Equals(entry.Name));
-                string helpText = abilityInfo?.Description;
+                IEnumerable<BossTimelineEntry> entries = this.timeline.BossTimeline.Timeline.FindAll(e => e.EffectTime == second);
 
                 <tr scope="row">
                     <td>@second.ToString(@"mm\:ss")</td>
-                    <td scope="row" class="@abilityInfo?.Category">
-                        @entry?.Name
-                        @if (!string.IsNullOrEmpty(helpText))
+                    <td scope="row">
+                        @foreach (BossTimelineEntry entry in entries)
                         {
-                            <div class="tooltip-wrapper" style='padding-left:5px'>
-                                <span>@helpText</span>
-                                <!-- Bootstrap Info Circle - https://icons.getbootstrap.com/icons/info-circle/ -->
-                                <!-- Using <i> isn't working. Not initializing css/svg correctly? -->
-                                <!-- Should just be able to do <i class="bi bi-info-circle" /> in place of the svg -->
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
-                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                                </svg>
+                            var abilityInfo = entry == null ? null : this.timeline.BossTimeline.Abilities.Find(a => a.Name.Equals(entry.Name));
+                            string helpText = abilityInfo?.Description;
+
+                            <div class="@abilityInfo?.Category">
+                                @entry?.Name
+                                @if (!string.IsNullOrEmpty(helpText))
+                                {
+                                    <div class="tooltip-wrapper" style='padding-left:5px'>
+                                        <span>@helpText</span>
+                                        <!-- Bootstrap Info Circle - https://icons.getbootstrap.com/icons/info-circle/ -->
+                                        <!-- Using <i> isn't working. Not initializing css/svg correctly? -->
+                                        <!-- Should just be able to do <i class="bi bi-info-circle" /> in place of the svg -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                        </svg>
+                                    </div>
+                                }
+                                @if (abilityInfo != null && abilityInfo.DamageType != DamageType.Unknown)
+                                {
+                                    @if (abilityInfo.DamageType == DamageType.Physical)
+                                    {
+                                        <img src="physical-damage.jpg" style="height: 25px; padding-left:5px" alt="[Physical Damage]" />
+                                    }
+
+                                    @if (abilityInfo.DamageType == DamageType.Magical)
+                                    {
+                                        <img src="magic-damage.jpg" style="height: 25px; padding-left:5px" alt="[Magical Damage]" />
+                                    }
+                                }
                             </div>
-                        }
-                        @if (abilityInfo != null && abilityInfo.DamageType != DamageType.Unknown)
-                        {
-                            @if (abilityInfo.DamageType == DamageType.Physical)
-                            {
-                                <img src="physical-damage.jpg" style="height: 25px; padding-left:5px" alt="[Physical Damage]" />
-                            }
-                            
-                            @if (abilityInfo.DamageType == DamageType.Magical)
-                            {
-                                <img src="magic-damage.jpg" style="height: 25px; padding-left:5px" alt="[Magical Damage]" />
-                            }
                         }
                     </td>
                     @foreach (var job in this.timeline.Jobs)
@@ -288,6 +294,7 @@ td.OnCooldown {
 
 td {
     text-align: center;
+    vertical-align: middle;
 }
 
 th {
@@ -299,7 +306,17 @@ td.SignificantRaidDamage {
     font-weight: bold;
 }
 
+div.SignificantRaidDamage {
+    color: #FF0000;
+    font-weight: bold;
+}
+
 td.SignificantTankDamage {
+    color: #FFA525;
+    font-weight: bold;
+}
+
+div.SignificantTankDamage {
     color: #FFA525;
     font-weight: bold;
 }
@@ -308,12 +325,25 @@ td.Mechanics {
     color: #8E569B;
 }
 
+div.Mechanics {
+    color: #8E569B;
+}
+
 td.AvoidableDamage {
+    color: grey;
+}
+
+div.AvoidableDamage {
     color: grey;
 }
 
 td.RaidDamage {
         color: #00B034
+    <!-- color: #479BBE; -->
+}
+
+div.RaidDamage {
+    color: #00B034
     <!-- color: #479BBE; -->
 }
 
