@@ -1,0 +1,166 @@
+{
+
+  "shortName": "TEA",
+  "fullName": "The Epic of Alexander (Ultimate) (Typical killtimes)",
+  "level": 80,
+  "abilities": [
+    {
+      "name": "Fluid Swing",
+      "description": "Tankbuster",
+      "category": "SignificantTankDamage",
+      "damageType": "Physical"
+    },
+    {
+      "name": "Cascade",
+      "description": "Raidwide causing significant damage",
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Protean Wave",
+      "description": "Proteans coming from the boss and/or the tornadoes.",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Hand of Prayer/Parting",
+      "description": "Very minor raidwide damage if the hand is brought far/close to the body, respectively. Wipe otherwise.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Fluid Swing/Strike",
+      "description": "Tankbuster coming from both the body and the hand.",
+      "category": "SignificantTankDamage",
+      "damageType": "Physical"
+    },
+    {
+      "name": "Exhaust",
+      "description": "Minor damage coming from the dolls.",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Hand of Pain",
+      "description": "Incredibly minor damage as long as the hand is within 5% of the boss.",
+      "category": "Mechanics",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Splash",
+      "description": "6 back to back raidwides.",
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Drainage",
+      "description": "Tethered AOE tank busters.",
+      "category": "SignificantTankDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Exhaust",
+      "description": "Minor damage coming from the dolls.",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Throttle",
+      "description": "Debuff on 6 players that must be cleansed or they will die.",
+      "category": "Mechanics"
+    }
+  ],
+  "timeline": [
+    {
+      "effectTime": "00:00:12",
+      "name": "Fluid Swing"
+    },
+    {
+      "effectTime": "00:00:20",
+      "name": "Cascade"
+    },
+    {
+      "effectTime": "00:00:36",
+      "name": "Hand of Prayer/Parting"
+    },
+    {
+      "effectTime": "00:00:38",
+      "name": "Fluid Swing/Strike"
+    },
+    {
+      "effectTime": "00:00:38",
+      "name": "Protean Wave"
+    },
+    {
+      "effectTime": "00:00:39",
+      "name": "Exhaust"
+    },
+    {
+      "effectTime": "00:00:39",
+      "name": "Hand of Pain"
+    },
+    {
+      "effectTime": "00:00:50",
+      "name": "Exhaust"
+    },
+    {
+      "effectTime": "00:00:57",
+      "name": "Fluid Swing/Strike"
+    },
+    {
+      "effectTime": "00:01:09",
+      "name": "Hand of Pain"
+    },
+    {
+      "effectTime": "00:01:09",
+      "name": "Protean Wave"
+    },
+    {
+      "effectTime": "00:01:11",
+      "name": "Protean Wave"
+    },
+    {
+      "effectTime": "00:01:14",
+      "name": "Protean Wave"
+    },
+    {
+      "effectTime": "00:01:26",
+      "name": "Splash"
+    },
+    {
+      "effectTime": "00:01:26",
+      "name": "Drainage"
+    },
+    {
+      "effectTime": "00:01:28",
+      "name": "Hand of Pain"
+    },
+    {
+      "effectTime": "00:01:31",
+      "name": "Cascade"
+    },
+    {
+      "effectTime": "00:01:35",
+      "name": "Throttle"
+    },
+    {
+      "effectTime": "00:01:46",
+      "name": "Protean Wave"
+    },
+    {
+      "effectTime": "00:01:48",
+      "name": "Hand of Pain"
+    },
+    {
+      "effectTime": "00:01:48",
+      "name": "Protean Wave"
+    },
+    {
+      "effectTime": "00:01:54",
+      "name": "Protean Wave"
+    },
+    {
+      "effectTime": "00:02:04",
+      "name": "Hand of Prayer/Parting"
+    }
+  ]
+}
