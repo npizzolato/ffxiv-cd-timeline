@@ -75,12 +75,6 @@
       "damageType": "Physical"
     },
     {
-      "name": "Limit Cut",
-      "description": "Trio mechanic with Brute Justice and Cruise Chaser.",
-      "category": "RaidDamage",
-      "damageType": "Physical"
-    },
-    {
       "name": "J-Kick",
       "description": "Raidwide damage when BJ/CC enter the arena.",
       "category": "SignificantRaidDamage",
@@ -190,7 +184,7 @@
       "name": "Double Rocket Punch",
       "description": "Shared tank buster.",
       "category": "SignificantTankDamage",
-      "damageType": "Magical"
+      "damageType": "Physical"
     },
     {
       "name": "Super Jump",
@@ -206,19 +200,19 @@
   ],
   "timeline": [
     {
-      "effectTime": "00:00:12",
+      "effectTime": "00:00:10",
       "name": "Fluid Swing"
     },
     {
-      "effectTime": "00:00:20",
+      "effectTime": "00:00:19",
       "name": "Cascade"
     },
     {
-      "effectTime": "00:00:36",
+      "effectTime": "00:00:35",
       "name": "Hand of Prayer/Parting"
     },
     {
-      "effectTime": "00:00:38",
+      "effectTime": "00:00:36",
       "name": "Fluid Swing/Strike"
     },
     {
@@ -230,15 +224,15 @@
       "name": "Exhaust"
     },
     {
-      "effectTime": "00:00:39",
+      "effectTime": "00:00:42",
       "name": "Hand of Pain"
     },
     {
-      "effectTime": "00:00:50",
+      "effectTime": "00:00:49",
       "name": "Exhaust"
     },
     {
-      "effectTime": "00:00:57",
+      "effectTime": "00:00:56",
       "name": "Fluid Swing/Strike"
     },
     {
@@ -246,7 +240,7 @@
       "name": "Hand of Pain"
     },
     {
-      "effectTime": "00:01:09",
+      "effectTime": "00:01:10",
       "name": "Protean Wave"
     },
     {
@@ -256,6 +250,10 @@
     {
       "effectTime": "00:01:14",
       "name": "Protean Wave"
+    },
+    {
+      "effectTime": "00:01:20",
+      "name": "Splash"
     },
     {
       "effectTime": "00:01:26",
@@ -270,7 +268,7 @@
       "name": "Hand of Pain"
     },
     {
-      "effectTime": "00:01:31",
+      "effectTime": "00:01:32",
       "name": "Cascade"
     },
     {
@@ -290,6 +288,10 @@
       "name": "Protean Wave"
     },
     {
+      "effectTime": "00:01:52",
+      "name": "Protean Wave"
+    },
+    {
       "effectTime": "00:01:54",
       "name": "Protean Wave"
     },
@@ -302,123 +304,119 @@
       "name": "Limit Cut"
     },
     {
-      "effectTime": "00:02:37",
+      "effectTime": "00:02:34",
       "name": "J-Kick"
     },
     {
-      "effectTime": "00:02:48",
+      "effectTime": "00:02:45",
       "name": "Whirlwind"
     },
     {
-      "effectTime": "00:02:51",
+      "effectTime": "00:02:48",
       "name": "Judgement Nisi"
     },
     {
-      "effectTime": "00:02:57",
+      "effectTime": "00:02:54",
       "name": "Link-Up"
     },
     {
-      "effectTime": "00:03:05",
+      "effectTime": "00:03:02",
       "name": "Optical Sight"
     },
     {
-      "effectTime": "00:03:10",
+      "effectTime": "00:03:07",
       "name": "Hawk Blaster"
     },
     {
-      "effectTime": "00:03:12",
+      "effectTime": "00:03:09",
       "name": "Photon"
     },
     {
-      "effectTime": "00:03:22",
+      "effectTime": "00:03:19",
       "name": "Spin Crusher"
     },
     {
-      "effectTime": "00:03:27",
+      "effectTime": "00:03:24",
       "name": "Crashing Wave"
     },
     {
-      "effectTime": "00:03:27",
+      "effectTime": "00:03:24",
       "name": "Crashing Thunder"
     },
     {
-      "effectTime": "00:03:34",
+      "effectTime": "00:03:31",
       "name": "Missle Command"
     },
     {
-      "effectTime": "00:03:38",
+      "effectTime": "00:03:35",
       "name": "Earth Missle"
     },
     {
-      "effectTime": "00:03:44",
-      "name": "Hidden Minefield"
+      "effectTime": "00:03:37",
+      "name": "Hidden Mine"
     },
     {
-      "effectTime": "00:03:42",
+      "effectTime": "00:03:39",
       "name": "Enumeration"
     },
     {
-      "effectTime": "00:04:02",
+      "effectTime": "00:03:54",
+      "name": "Crashing Wave"
+    },
+    {
+      "effectTime": "00:03:54",
+      "name": "Crashing Thunder"
+    },
+    {
+      "effectTime": "00:03:59",
       "name": "Verdict"
     },
     {
-      "effectTime": "00:04:00",
-      "name": "Crashing Wave"
+      "effectTime": "00:04:03",
+      "name": "Limit Cut (Shield)"
     },
     {
-      "effectTime": "00:04:00",
-      "name": "Crashing Thunder"
-    },
-    {
-      "effectTime": "00:04:07",
-      "name": "Limit Cut"
-    },
-    {
-      "effectTime": "00:04:09",
+      "effectTime": "00:04:04",
       "name": "Flarethrower"
     },
     {
-      "effectTime": "00:04:21",
+      "effectTime": "00:04:16",
       "name": "Whirlwind"
     },
     {
-      "effectTime": "00:04:30",
+      "effectTime": "00:04:24",
       "name": "Crashing Wave"
     },
     {
-      "effectTime": "00:04:30",
+      "effectTime": "00:04:24",
       "name": "Crashing Thunder"
     },
     {
-      "effectTime": "00:04:48",
+      "effectTime": "00:04:43",
       "name": "Propeller Wind"
     },
     {
-      "effectTime": "00:04:51",
+      "effectTime": "00:04:44",
       "name": "Gavel"
     },
     {
-      "effectTime": "00:05:01",
+      "effectTime": "00:04:57",
       "name": "Photon (Tanks)"
     },
     {
-      "effectTime": "00:05:09",
+      "effectTime": "00:05:04",
       "name": "Double Rocket Punch"
     },
     {
-      "effectTime": "00:05:16",
+      "effectTime": "00:05:09",
       "name": "Super Jump"
     },
     {
-      "effectTime": "00:05:24",
+      "effectTime": "00:05:12",
       "name": "Apocalyptic Ray"
     },
     {
-      "effectTime": "00:05:29",
-      "name": "Whirlwind"
-    },
-    {
-      "effectTime": "00:05:37",
+      "effectTime": "00:05:23",
       "name": "Whirlwind"
     }
   ]
