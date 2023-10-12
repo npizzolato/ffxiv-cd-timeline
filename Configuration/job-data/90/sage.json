@@ -1,69 +1,76 @@
 {
-    "name": "Sage",
-    "abilities": [
-      {
-        "name": "Physis II",
-        "duration": "00:00:15",
-        "cooldown": "00:01:00",
-        "type": "PartyMitigation",
-        "icon": "https://img.finalfantasyxiv.com/lds/d/ece8fe6d911ad6497e35a13d82572d2373d2a2a4.png"
-      },
-      {
-        "name": "Soteria",
-        "duration": "00:00:15",
-        "cooldown": "00:01:30",
-        "type": "TankMitigation",
-        "icon": "https://img.finalfantasyxiv.com/lds/d/4f39d0024ea7741facfb247d0056064e831c3765.png"
-      },
-      {
-        "name": "Kerachole",
-        "duration": "00:00:15",
-        "cooldown": "00:00:30",
-        "type": "PartyMitigation",
-        "icon": "https://img.finalfantasyxiv.com/lds/d/b49859cbf63de26b230527650742576590166760.png"
-      },
-      {
-        "name": "Taurochole",
-        "duration": "00:00:15",
-        "cooldown": "00:00:45",
-        "mitigation": 0.10,
-        "type": "PartyMitigation",
-        "icon": "https://img.finalfantasyxiv.com/lds/d/fe3b0d2ce97deba2e6b4cfbc39e65e2abd32b31b.png"
-      },
-      {
-        "name": "Haima",
-        "duration": "00:00:15",
-        "cooldown": "00:02:00",
-        "type": "TankMitigation",
-        "icon": "https://img.finalfantasyxiv.com/lds/d/31657e2f5ec2ec375960c927a6ed532883d8d271.png"
-      },
-      {
-        "name": "Holos",
-        "duration": "00:00:20",
-        "cooldown": "00:02:00",
-        "type": "PartyMitigation",
-        "icon": "https://img.finalfantasyxiv.com/lds/d/810d7969914bee1bbf088a70d62d6578a0949f9e.png"
-      },
-      {
-        "name": "Panhaima",
-        "duration": "00:00:15",
-        "cooldown": "00:02:00",
-        "type": "PartyMitigation",
-        "icon": "https://img.finalfantasyxiv.com/lds/d/f7bdefbdd3410f2dd4b5c0f36e74ee72b115ccda.png"
-      },
-      {
-        "name": "Krasis",
-        "duration": "00:00:10",
-        "cooldown": "00:01:00",
-        "mitigation": 0.20,
-        "type": "TankMitigation",
-        "icon": "https://img.finalfantasyxiv.com/lds/d/2ef8237422768324b57e9d244731351fb0eca548.png"
-      },
-      {
-        "name": "Pneuma",
-        "cooldown": "00:02:00",
-        "type": "PartyMitigation",
-        "icon": "https://img.finalfantasyxiv.com/lds/d/5ec3407305900508ed6eaea6dba984851b883fe3.png"
-      }
-    ]
+  "name": "Sage",
+  "abilities": [
+    {
+      "name": "Zoe",
+      "duration": "00:00:30",
+      "cooldown": "00:01:30",
+      "type": "PartyMitigation",
+      "icon": "https://img.finalfantasyxiv.com/lds/d/958000045b75c90c1ce059d11d2f2ed488d72a65.png"
+    },
+    {
+      "name": "Physis II",
+      "duration": "00:00:15",
+      "cooldown": "00:01:00",
+      "type": "PartyMitigation",
+      "icon": "https://img.finalfantasyxiv.com/lds/d/ece8fe6d911ad6497e35a13d82572d2373d2a2a4.png"
+    },
+    {
+      "name": "Soteria",
+      "duration": "00:00:15",
+      "cooldown": "00:01:30",
+      "type": "TankMitigation",
+      "icon": "https://img.finalfantasyxiv.com/lds/d/4f39d0024ea7741facfb247d0056064e831c3765.png"
+    },
+    {
+      "name": "Kerachole",
+      "duration": "00:00:15",
+      "cooldown": "00:00:30",
+      "type": "PartyMitigation",
+      "icon": "https://img.finalfantasyxiv.com/lds/d/b49859cbf63de26b230527650742576590166760.png"
+    },
+    {
+      "name": "Taurochole",
+      "duration": "00:00:15",
+      "cooldown": "00:00:45",
+      "mitigation": 0.10,
+      "type": "PartyMitigation",
+      "icon": "https://img.finalfantasyxiv.com/lds/d/fe3b0d2ce97deba2e6b4cfbc39e65e2abd32b31b.png"
+    },
+    {
+      "name": "Haima",
+      "duration": "00:00:15",
+      "cooldown": "00:02:00",
+      "type": "TankMitigation",
+      "icon": "https://img.finalfantasyxiv.com/lds/d/31657e2f5ec2ec375960c927a6ed532883d8d271.png"
+    },
+    {
+      "name": "Holos",
+      "duration": "00:00:20",
+      "cooldown": "00:02:00",
+      "type": "PartyMitigation",
+      "icon": "https://img.finalfantasyxiv.com/lds/d/810d7969914bee1bbf088a70d62d6578a0949f9e.png"
+    },
+    {
+      "name": "Panhaima",
+      "duration": "00:00:15",
+      "cooldown": "00:02:00",
+      "type": "PartyMitigation",
+      "icon": "https://img.finalfantasyxiv.com/lds/d/f7bdefbdd3410f2dd4b5c0f36e74ee72b115ccda.png"
+    },
+    {
+      "name": "Krasis",
+      "duration": "00:00:10",
+      "cooldown": "00:01:00",
+      "mitigation": 0.20,
+      "type": "TankMitigation",
+      "icon": "https://img.finalfantasyxiv.com/lds/d/2ef8237422768324b57e9d244731351fb0eca548.png"
+    },
+    {
+      "name": "Pneuma",
+      "cooldown": "00:02:00",
+      "type": "PartyMitigation",
+      "icon": "https://img.finalfantasyxiv.com/lds/d/5ec3407305900508ed6eaea6dba984851b883fe3.png"
+    }
+  ]
 }
