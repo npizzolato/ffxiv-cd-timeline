@@ -67,6 +67,141 @@
       "name": "Throttle",
       "description": "Debuff on 6 players that must be cleansed or they will die.",
       "category": "Mechanics"
+    },
+    {
+      "name": "Limit Cut",
+      "description": "Trio mechanic with Brute Justice and Cruise Chaser.",
+      "category": "RaidDamage",
+      "damageType": "Physical"
+    },
+    {
+      "name": "Limit Cut",
+      "description": "Trio mechanic with Brute Justice and Cruise Chaser.",
+      "category": "RaidDamage",
+      "damageType": "Physical"
+    },
+    {
+      "name": "J-Kick",
+      "description": "Raidwide damage when BJ/CC enter the arena.",
+      "category": "SignficantRaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Whirlwind",
+      "description": "Raidwide damage cast by Cruise Chaser.",
+      "category": "RaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Judgement Nisi",
+      "description": "Places Nisi debuffs on 4 players that must be passed throughout the phase.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Link-Up",
+      "description": "Summons chkrams on the outside of the arena.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Optical Sight",
+      "description": "Locks onto the position of each player. A big AoE will hit that location in a few seconds.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Photon",
+      "description": "Drops everyone to 1 HP. Must have shields to survive Nisi dot.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Hawk Blaster",
+      "description": "Large AoE at every players position during Optical Sight",
+      "category": "AvoidableDamage"
+    },
+    {
+      "name": "Spin Crusher",
+      "description": "Baited conal AoE.",
+      "category": "AvoidableDamage"
+    },
+    {
+      "name": "Crashing Wave",
+      "description": "Large AoE on the player with a water debuff. Must be soaked by 3-4 players.",
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Crashing Thunder",
+      "description": "Large AoE on the player with a lightning debuff. Must be soaked with 1 tank.",
+      "category": "SignificantTankDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Missle Command",
+      "description": "Baited ground AoEs.",
+      "category": "AvoidableDamage"
+    },
+    {
+      "name": "Earth Missle",
+      "description": "Places 2 mines that must be stepped on.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Hidden Mine",
+      "description": "Damage from the mines placed by Earth Missle. Deals significant damage to the tank blowing them up.",
+      "category": "SignificantTankDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Enumeration",
+      "description": "Requires 2 stacks of 3 players. Deals no damage.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Verdict",
+      "description": "Places debuffs on players designating their final nisi requirement.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Limit Cut (Shield)",
+      "description": "Creates a shield that must be burned down quickly.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Flarethrower",
+      "description": "Large conal AoE from Brute Justice. Used to blow up a water tornado.",
+      "category": "TankDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Propeller Wind",
+      "description": "AoE from Cruise Chaser that must be line-of-sighted behind a frozen pillar.",
+      "category": "AvoidableDamage"
+    },
+    {
+      "name": "Gavel",
+      "description": "Resolves nisi debuffs. Deals no damage if nisis are correct.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Photon (Tanks)",
+      "description": "Drops both tanks to 1 HP.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Double Rocket Punch",
+      "description": "Shared tank buster.",
+      "category": "SignificantTankDamage",
+      "damageType": "Magical"
+    },
+    {
+      "name": "Super Jump",
+      "description": "Baited AoE on the furthest player from Brute Justice.",
+      "category": "RaidDamage",
+      "damageType": "Physical"
+    },
+    {
+      "name": "Apocalyptic Ray",
+      "description": "Baited conal AoE at furthest player from Brute Justice.",
+      "category": "AvoidableDamage"
     }
   ],
   "timeline": [
