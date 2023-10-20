@@ -160,7 +160,7 @@
       "category": "Mechanics"
     },
     {
-      "name": "Flarethrower",
+      "name": "Flarethrower (BJCC)",
       "description": "Large conal AoE from Brute Justice. Used to blow up a water tornado.",
       "category": "SignificantTankDamage",
       "damageType": "Magical"
@@ -196,6 +196,126 @@
       "name": "Apocalyptic Ray",
       "description": "Baited conal AoE at furthest player from Brute Justice.",
       "category": "AvoidableDamage"
+    },
+    {
+      "name": "Temporal Stasis",
+      "description": "Freezes everyone in place before debuffs resolve and BJ/CC attack players.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Alpha Sword (Stasis)",
+      "description": "Conal attack from CC on the 3 closest players.",
+      "category": "RaidDamage"
+    },
+    {
+      "name": "Flarethrower (Stasis)",
+      "description": "Conal attack from BJ on the 2 closest players.",
+      "category": "RaidDamage"
+    },
+    {
+      "name": "Chastening Heat",
+      "description": "Large tankbuster that inflicts a magic vuln. Requires a tank swap after or invuln.",
+      "category": "SignificantTankDamage"
+    },
+    {
+      "name": "Divine Spear",
+      "description": "3-hit tankbuster. Always follows Chastening Heat.",
+      "category": "SignificantTankDamage"
+    },
+    {
+      "name": "Inception Formation",
+      "description": "Start of Alexander Prime's first trio mechanic.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Judgement Crystal",
+      "description": "Small aoe dropped by 4 players. Must not stack with each other and will eventually become proximity aoes.",
+      "category": "RaidDamage"
+    },
+    {
+      "name": "Tetrashatter",
+      "description": "Proximity aoes caused by Judgement Crystal explosion. Deals a lot of damage in a short amount of time.",
+      "category": "SignificantRaidDamage"
+    },
+    {
+      "name": "Flarethrower (Inception)",
+      "description": "Conal attack from BJ on the 3 closest players.",
+      "category": "RaidDamage"
+    },
+    {
+      "name": "Inception Debuffs",
+      "description": "Shared Sentence, tethers, and other debuffs resolve, dealing moderate damage.",
+      "category": "RaidDamage"
+    },
+    {
+      "name": "Alpha Sword (Inception)",
+      "description": "Conal attack from CC on the 3 closest players.",
+      "category": "RaidDamage"
+    },
+    {
+      "name": "Super Jump (Inception)",
+      "description": "Baited AoE on the furthest player from Brute Justice. Deals significant damage.",
+      "category": "SignificantTankDamage"
+    },
+    {
+      "name": "Inception End",
+      "description": "End of the Inception trio mechanic. Alexander is targettable again.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Wormhole Formation",
+      "description": "Start of Alexander Prime's second trio mechanic.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Alpha Sword (Limit Cut)",
+      "description": "Conal aoe from CC, who appears behind the odd numbers, in order, during Limit Cut/Wormhole.",
+      "category": "RaidDamage"
+    },
+    {
+      "name": "Super Blasty Charge",
+      "description": "Line aoe from CC's current position through the next even number, in order, during Limit Cut/Wormhole.",
+      "category": "RaidDamage"
+    },
+    {
+      "name": "Repentance",
+      "description": "Explosion of the aoes on the ground. Must be soaked by a player to avoid it wiping the raid.",
+      "category": "RaidDamage"
+    },
+    {
+      "name": "Incinerating Heat",
+      "description": "Stack damage that must be shared by everyone.",
+      "category": "SignificantRaidDamage"
+    },
+    {
+      "name": "Wormhole End",
+      "description": "End of the Wormhole trio mechanic. Alexander is targettable again.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Mega Holy",
+      "description": "Significant raidwide damage.",
+      "category": "SignificantRaidDamage"
+    },
+    {
+      "name": "Mega Holy",
+      "description": "Significant raidwide damage.",
+      "category": "SignificantRaidDamage"
+    },
+    {
+      "name": "Summon Alexander",
+      "description": "Prepares the next set of mechanics.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "J Storm",
+      "description": "Large raidwide damage when Brute Justice enters the arena.",
+      "category": "SignificantRaidDamage"
+    },
+    {
+      "name": "J Wave",
+      "description": "Raidwide damage caused by Brute Justice. He gets a stacking damage buff throughout, so each J-Wave will hit harder.",
+      "category": "SignificantRaidDamage"
     }
   ],
   "timeline": [
@@ -377,7 +497,7 @@
     },
     {
       "effectTime": "00:04:04",
-      "name": "Flarethrower"
+      "name": "Flarethrower (BJCC)"
     },
     {
       "effectTime": "00:04:16",
@@ -418,6 +538,250 @@
     {
       "effectTime": "00:05:23",
       "name": "Whirlwind"
+    },
+    {
+      "effectTime": "00:05:44",
+      "name": "Temporal Stasis"
+    },
+    {
+      "effectTime": "00:05:46",
+      "name": "Alpha Sword (Stasis)"
+    },
+    {
+      "effectTime": "00:05:47",
+      "name": "Flarethrower (Stasis)"
+    },
+    {
+      "effectTime": "00:05:47",
+      "name": "Alpha Sword (Stasis)"
+    },
+    {
+      "effectTime": "00:05:49",
+      "name": "Alpha Sword (Stasis)"
+    },
+    {
+      "effectTime": "00:05:50",
+      "name": "Flarethrower (Stasis)"
+    },
+    {
+      "effectTime": "00:06:03",
+      "name": "Chastening Heat"
+    },
+    {
+      "effectTime": "00:06:06",
+      "name": "Divine Spear"
+    },
+    {
+      "effectTime": "00:06:08",
+      "name": "Divine Spear"
+    },
+    {
+      "effectTime": "00:06:10",
+      "name": "Divine Spear"
+    },
+    {
+      "effectTime": "00:06:22",
+      "name": "Inception Formation"
+    },
+    {
+      "effectTime": "00:06:40",
+      "name": "Judgement Crystal"
+    },
+    {
+      "effectTime": "00:06:46",
+      "name": "Tetrashatter"
+    },
+    {
+      "effectTime": "00:06:46",
+      "name": "Tetrashatter"
+    },
+    {
+      "effectTime": "00:06:47",
+      "name": "Tetrashatter"
+    },
+    {
+      "effectTime": "00:06:47",
+      "name": "Tetrashatter"
+    },
+    {
+      "effectTime": "00:06:51",
+      "name": "Flarethrower (Inception)"
+    },
+    {
+      "effectTime": "00:06:53",
+      "name": "Flarethrower (Inception)"
+    },
+    {
+      "effectTime": "00:06:56",
+      "name": "Flarethrower (Inception)"
+    },
+    {
+      "effectTime": "00:07:11",
+      "name": "Inception Debuffs"
+    },
+    {
+      "effectTime": "00:07:17",
+      "name": "Alpha Sword (Inception)"
+    },
+    {
+      "effectTime": "00:07:18",
+      "name": "Alpha Sword (Inception)"
+    },
+    {
+      "effectTime": "00:07:19",
+      "name": "Alpha Sword (Inception)"
+    },
+    {
+      "effectTime": "00:07:20",
+      "name": "Super Jump (Inception)"
+    },
+    {
+      "effectTime": "00:07:22",
+      "name": "Inception End"
+    },
+    {
+      "effectTime": "00:07:32",
+      "name": "Chastening Heat"
+    },
+    {
+      "effectTime": "00:07:37",
+      "name": "Divine Spear"
+    },
+    {
+      "effectTime": "00:07:39",
+      "name": "Divine Spear"
+    },
+    {
+      "effectTime": "00:07:41",
+      "name": "Divine Spear"
+    },
+    {
+      "effectTime": "00:07:53",
+      "name": "Wormhole Formation"
+    },
+    {
+      "effectTime": "00:08:12",
+      "name": "Alpha Sword (Limit Cut)"
+    },
+    {
+      "effectTime": "00:08:13",
+      "name": "Super Jump"
+    },
+    {
+      "effectTime": "00:08:14",
+      "name": "Apocalyptic Ray"
+    },
+    {
+      "effectTime": "00:08:14",
+      "name": "Super Blasty Charge"
+    },
+    {
+      "effectTime": "00:08:17",
+      "name": "Alpha Sword (Limit Cut)"
+    },
+    {
+      "effectTime": "00:08:17",
+      "name": "Repentance"
+    },
+    {
+      "effectTime": "00:08:18",
+      "name": "Super Blasty Charge"
+    },
+    {
+      "effectTime": "00:08:21",
+      "name": "Alpha Sword (Limit Cut)"
+    },
+    {
+      "effectTime": "00:08:21",
+      "name": "Repentance"
+    },
+    {
+      "effectTime": "00:08:22",
+      "name": "Super Blasty Charge"
+    },
+    {
+      "effectTime": "00:08:25",
+      "name": "Alpha Sword (Limit Cut)"
+    },
+    {
+      "effectTime": "00:08:25",
+      "name": "Repentance"
+    },
+    {
+      "effectTime": "00:08:27",
+      "name": "Super Blasty Charge"
+    },
+    {
+      "effectTime": "00:08:32",
+      "name": "Incinerating Heat"
+    },
+    {
+      "effectTime": "00:08:36",
+      "name": "Enumeration"
+    },
+    {
+      "effectTime": "00:08:37",
+      "name": "Wormhole End"
+    },
+    {
+      "effectTime": "00:08:45",
+      "name": "Mega Holy"
+    },
+    {
+      "effectTime": "00:08:52",
+      "name": "Mega Holy"
+    },
+    {
+      "effectTime": "00:09:01",
+      "name": "Summon Alexander"
+    },
+    {
+      "effectTime": "00:09:08",
+      "name": "J Storm"
+    },
+    {
+      "effectTime": "00:09:13",
+      "name": "J Wave"
+    },
+    {
+      "effectTime": "00:09:16",
+      "name": "J Wave"
+    },
+    {
+      "effectTime": "00:09:19",
+      "name": "J Wave"
+    },
+    {
+      "effectTime": "00:09:22",
+      "name": "J Wave"
+    },
+    {
+      "effectTime": "00:09:25",
+      "name": "J Wave"
+    },
+    {
+      "effectTime": "00:09:28",
+      "name": "J Wave"
+    },
+    {
+      "effectTime": "00:09:31",
+      "name": "J Wave"
+    },
+    {
+      "effectTime": "00:09:34",
+      "name": "J Wave"
+    },
+    {
+      "effectTime": "00:09:37",
+      "name": "J Wave"
+    },
+    {
+      "effectTime": "00:09:40",
+      "name": "J Wave"
+    },
+    {
+      "effectTime": "00:09:43",
+      "name": "J Wave"
     }
   ]
 }
