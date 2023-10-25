@@ -316,6 +316,71 @@
       "name": "J Wave",
       "description": "Raidwide damage caused by Brute Justice. He gets a stacking damage buff throughout, so each J-Wave will hit harder.",
       "category": "SignificantRaidDamage"
+    },
+    {
+      "name": "The Final Word",
+      "description": "Light and Dark beacons and debuffs are applied on each player, indicating how they will be forced to move.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Ordained Motion/Stillness",
+      "description": "Requires every player to stay moving or be completely still or they die.",
+      "category": "AvoidableDamage"
+    },
+    {
+      "name": "Optical Sight (Perfect Alex)",
+      "description": "Either 4-player stacks on 2 random players or 8-player spreads. Stacks are survivable with 3 players with mit and shields.",
+      "category": "SignificantRaidDamage"
+    },
+    {
+      "name": "Fate Calibration Alpha",
+      "description": "Clones spawn on each player and Alexander shows mechanics happening on your clones.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Fate Calibration Alpha Debuffs",
+      "description": "The debuffs going out during Fate Calibration Alpha resolve, dealing light damage if resolved correctly.",
+      "category": "RaidDamage"
+    },
+    {
+      "name": "Ordained Capital Punishment",
+      "description": "3 hit shared, heavy-hitting tank buster.",
+      "category": "SignificantTankDamage"
+    },
+    {
+      "name": "Ordained Punishment",
+      "description": "Heavy hitting tank buster on top aggro. Applies a physical debuff after.",
+      "category": "SignificantTankDamage"
+    },
+    {
+      "name": "Fate Calibration Beta",
+      "description": "Clones spawn on each player and Alexander shows mechanics happening on your clones.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Fate Calibration Beta Debuffs",
+      "description": "The debuffs going out during Fate Calibration Beta resolve, dealing light damage if resolved correctly.",
+      "category": "RaidDamage"
+    },
+    {
+      "name": "J Jump",
+      "description": "Minor damage on the 3 furthest players from the Brute Justice clones.",
+      "category": "RaidDamage"
+    },
+    {
+      "name": "Radiant Sacrament",
+      "description": "Dynamo centered on one of the Brute Justice clones.",
+      "category": "AvoidableDamage"
+    },
+    {
+      "name": "Almighty Judgement",
+      "description": "Trines. Dodge 3-to-1.",
+      "category": "AvoidableDamage"
+    },
+    {
+      "name": "Irresistible Grace",
+      "description": "Major raidwide damage. Requires significant mitigation and shields to survive.",
+      "category": "SignificantRaidDamage"
     }
   ],
   "timeline": [
@@ -782,6 +847,146 @@
     {
       "effectTime": "00:09:43",
       "name": "J Wave"
+    },
+    {
+      "effectTime": "00:09:43",
+      "name": "J Wave"
+    },
+    {
+      "effectTime": "00:11:48",
+      "name": "The Final Word"
+    },
+    {
+      "effectTime": "00:11:55",
+      "name": "Ordained Motion/Stillness"
+    },
+    {
+      "effectTime": "00:12:06",
+      "name": "Ordained Motion/Stillness"
+    },
+    {
+      "effectTime": "00:12:19",
+      "name": "Optical Sight (Perfect Alex)"
+    },
+    {
+      "effectTime": "00:12:25",
+      "name": "Optical Sight (Perfect Alex)"
+    },
+    {
+      "effectTime": "00:13:03",
+      "name": "Fate Calibration Alpha"
+    },
+    {
+      "effectTime": "00:13:10",
+      "name": "Ordained Motion/Stillness"
+    },
+    {
+      "effectTime": "00:13:14",
+      "name": "Ordained Motion/Stillness"
+    },
+    {
+      "effectTime": "00:13:15",
+      "name": "Fate Calibration Alpha Debuffs"
+    },
+    {
+      "effectTime": "00:13:32",
+      "name": "Ordained Capital Punishment"
+    },
+    {
+      "effectTime": "00:13:33",
+      "name": "Ordained Capital Punishment"
+    },
+    {
+      "effectTime": "00:13:34",
+      "name": "Ordained Capital Punishment"
+    },
+    {
+      "effectTime": "00:13:38",
+      "name": "Ordained Punishment"
+    },
+    {
+      "effectTime": "00:14:31",
+      "name": "Fate Calibration Beta"
+    },
+    {
+      "effectTime": "00:14:43",
+      "name": "Fate Calibration Beta Debuffs"
+    },
+    {
+      "effectTime": "00:14:45",
+      "name": "J Jump"
+    },
+    {
+      "effectTime": "00:14:50",
+      "name": "Optical Sight (Perfect Alex)"
+    },
+    {
+      "effectTime": "00:14:56",
+      "name": "Radiant Sacrament"
+    },
+    {
+      "effectTime": "00:15:12",
+      "name": "Ordained Capital Punishment"
+    },
+    {
+      "effectTime": "00:15:13",
+      "name": "Ordained Capital Punishment"
+    },
+    {
+      "effectTime": "00:15:14",
+      "name": "Ordained Capital Punishment"
+    },
+    {
+      "effectTime": "00:15:18",
+      "name": "Ordained Punishment"
+    },
+    {
+      "effectTime": "00:15:39",
+      "name": "Almighty Judgement"
+    },
+    {
+      "effectTime": "00:15:41",
+      "name": "Almighty Judgement"
+    },
+    {
+      "effectTime": "00:15:43",
+      "name": "Almighty Judgement"
+    },
+    {
+      "effectTime": "00:15:45",
+      "name": "Irresistible Grace"
+    },
+    {
+      "effectTime": "00:15:57",
+      "name": "Ordained Capital Punishment"
+    },
+    {
+      "effectTime": "00:15:58",
+      "name": "Ordained Capital Punishment"
+    },
+    {
+      "effectTime": "00:15:59",
+      "name": "Ordained Capital Punishment"
+    },
+    {
+      "effectTime": "00:16:03",
+      "name": "Ordained Capital Punishment"
+    },
+    {
+      "effectTime": "00:16:24",
+      "name": "Almighty Judgement"
+    },
+    {
+      "effectTime": "00:16:26",
+      "name": "Almighty Judgement"
+    },
+    {
+      "effectTime": "00:16:28",
+      "name": "Almighty Judgement"
+    },
+    {
+      "effectTime": "00:16:30",
+      "name": "Irresistible Grace"
     }
   ]
 }
