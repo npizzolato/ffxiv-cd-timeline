@@ -205,22 +205,26 @@
     {
       "name": "Alpha Sword (Stasis)",
       "description": "Conal attack from CC on the 3 closest players.",
-      "category": "RaidDamage"
+      "category": "RaidDamage",
+      "damageType": "Physical"
     },
     {
       "name": "Flarethrower (Stasis)",
       "description": "Conal attack from BJ on the 2 closest players.",
-      "category": "RaidDamage"
+      "category": "RaidDamage",
+      "damageType": "Magical"
     },
     {
       "name": "Chastening Heat",
       "description": "Large tankbuster that inflicts a magic vuln. Requires a tank swap after or invuln.",
-      "category": "SignificantTankDamage"
+      "category": "SignificantTankDamage",
+      "damageType": "Magical"
     },
     {
       "name": "Divine Spear",
       "description": "3-hit tankbuster. Always follows Chastening Heat.",
-      "category": "SignificantTankDamage"
+      "category": "SignificantTankDamage",
+      "damageType": "Magical"
     },
     {
       "name": "Inception Formation",
@@ -230,32 +234,38 @@
     {
       "name": "Judgement Crystal",
       "description": "Small aoe dropped by 4 players. Must not stack with each other and will eventually become proximity aoes.",
-      "category": "RaidDamage"
+      "category": "RaidDamage",
+      "damageType": "Magical"
     },
     {
       "name": "Tetrashatter",
       "description": "Proximity aoes caused by Judgement Crystal explosion. Deals a lot of damage in a short amount of time.",
-      "category": "SignificantRaidDamage"
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
     },
     {
       "name": "Flarethrower (Inception)",
       "description": "Conal attack from BJ on the 3 closest players.",
-      "category": "RaidDamage"
+      "category": "RaidDamage",
+      "damageType": "Magical"
     },
     {
       "name": "Inception Debuffs",
       "description": "Shared Sentence, tethers, and other debuffs resolve, dealing moderate damage.",
-      "category": "RaidDamage"
+      "category": "RaidDamage",
+      "damageType": "Magical"
     },
     {
       "name": "Alpha Sword (Inception)",
       "description": "Conal attack from CC on the 3 closest players.",
-      "category": "RaidDamage"
+      "category": "RaidDamage",
+      "damageType": "Physical"
     },
     {
       "name": "Super Jump (Inception)",
       "description": "Baited AoE on the furthest player from Brute Justice. Deals significant damage.",
-      "category": "SignificantTankDamage"
+      "category": "SignificantTankDamage",
+      "damageType": "Physical"
     },
     {
       "name": "Inception End",
@@ -270,22 +280,26 @@
     {
       "name": "Alpha Sword (Limit Cut)",
       "description": "Conal aoe from CC, who appears behind the odd numbers, in order, during Limit Cut/Wormhole.",
-      "category": "RaidDamage"
+      "category": "RaidDamage",
+      "damageType": "Physical"
     },
     {
       "name": "Super Blasty Charge",
       "description": "Line aoe from CC's current position through the next even number, in order, during Limit Cut/Wormhole.",
-      "category": "RaidDamage"
+      "category": "RaidDamage",
+      "damageType": "Physical"
     },
     {
       "name": "Repentance",
       "description": "Explosion of the aoes on the ground. Must be soaked by a player to avoid it wiping the raid.",
-      "category": "RaidDamage"
+      "category": "RaidDamage",
+      "damageType": "Magical"
     },
     {
       "name": "Incinerating Heat",
       "description": "Stack damage that must be shared by everyone.",
-      "category": "SignificantRaidDamage"
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
     },
     {
       "name": "Wormhole End",
@@ -295,12 +309,8 @@
     {
       "name": "Mega Holy",
       "description": "Significant raidwide damage.",
-      "category": "SignificantRaidDamage"
-    },
-    {
-      "name": "Mega Holy",
-      "description": "Significant raidwide damage.",
-      "category": "SignificantRaidDamage"
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
     },
     {
       "name": "Summon Alexander",
@@ -310,12 +320,14 @@
     {
       "name": "J Storm",
       "description": "Large raidwide damage when Brute Justice enters the arena.",
-      "category": "SignificantRaidDamage"
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
     },
     {
       "name": "J Wave",
       "description": "Raidwide damage caused by Brute Justice. He gets a stacking damage buff throughout, so each J-Wave will hit harder.",
-      "category": "SignificantRaidDamage"
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
     },
     {
       "name": "The Final Word",
@@ -330,7 +342,8 @@
     {
       "name": "Optical Sight (Perfect Alex)",
       "description": "Either 4-player stacks on 2 random players or 8-player spreads. Stacks are survivable with 3 players with mit and shields.",
-      "category": "SignificantRaidDamage"
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
     },
     {
       "name": "Fate Calibration Alpha (Start)",
@@ -345,17 +358,20 @@
     {
       "name": "Fate Calibration Alpha Debuffs",
       "description": "The debuffs going out during Fate Calibration Alpha resolve, dealing light damage if resolved correctly.",
-      "category": "RaidDamage"
+      "category": "RaidDamage",
+      "damageType": "Magical"
     },
     {
       "name": "Ordained Capital Punishment",
       "description": "3 hit shared, heavy-hitting tank buster.",
-      "category": "SignificantTankDamage"
+      "category": "SignificantTankDamage",
+      "damageType": "Magical"
     },
     {
       "name": "Ordained Punishment",
       "description": "Heavy hitting tank buster on top aggro. Applies a physical debuff after.",
-      "category": "SignificantTankDamage"
+      "category": "SignificantTankDamage",
+      "damageType": "Magical"
     },
     {
       "name": "Fate Calibration Beta (Start)",
@@ -370,12 +386,14 @@
     {
       "name": "Fate Calibration Beta Debuffs",
       "description": "The debuffs going out during Fate Calibration Beta resolve, dealing light damage if resolved correctly.",
-      "category": "RaidDamage"
+      "category": "RaidDamage",
+      "damageType": "Magical"
     },
     {
       "name": "J Jump",
       "description": "Minor damage on the 3 furthest players from the Brute Justice clones.",
-      "category": "RaidDamage"
+      "category": "RaidDamage",
+      "damageType": "Physical"
     },
     {
       "name": "Radiant Sacrament",
@@ -390,12 +408,14 @@
     {
       "name": "Irresistible Grace",
       "description": "Major raidwide damage. Requires significant mitigation and shields to survive.",
-      "category": "SignificantRaidDamage"
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
     },
     {
       "name": "Divine Judgement",
       "description": "Major raidwide damage before transition. Requires tank LB3 and some minor mitigation/shields.",
-      "category": "SignificantRaidDamage"
+      "category": "SignificantRaidDamage",
+      "damageType": "Magical"
     },
     {
       "name": "Perfect Alexander Targetable",
