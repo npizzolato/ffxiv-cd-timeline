@@ -333,8 +333,13 @@
       "category": "SignificantRaidDamage"
     },
     {
-      "name": "Fate Calibration Alpha",
-      "description": "Clones spawn on each player and Alexander shows mechanics happening on your clones.",
+      "name": "Fate Calibration Alpha (Start)",
+      "description": "Start of the Alpha cast bar. Clones spawn on each player and Alexander shows mechanics happening on your clones.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Fate Calibration Alpha (End)",
+      "description": "End of the Alpha cast bar. Clones spawn on each player and Alexander shows mechanics happening on your clones.",
       "category": "Mechanics"
     },
     {
@@ -353,8 +358,13 @@
       "category": "SignificantTankDamage"
     },
     {
-      "name": "Fate Calibration Beta",
-      "description": "Clones spawn on each player and Alexander shows mechanics happening on your clones.",
+      "name": "Fate Calibration Beta (Start)",
+      "description": "Start of the Beta cast bar. Clones spawn on each player and Alexander shows mechanics happening on your clones.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Fate Calibration Beta (End)",
+      "description": "End of the Beta cast bar. Clones spawn on each player and Alexander shows mechanics happening on your clones.",
       "category": "Mechanics"
     },
     {
@@ -381,6 +391,41 @@
       "name": "Irresistible Grace",
       "description": "Major raidwide damage. Requires significant mitigation and shields to survive.",
       "category": "SignificantRaidDamage"
+    },
+    {
+      "name": "Divine Judgement",
+      "description": "Major raidwide damage before transition. Requires tank LB3 and some minor mitigation/shields.",
+      "category": "SignificantRaidDamage"
+    },
+    {
+      "name": "Perfect Alexander Targetable",
+      "description": "Perfect Alexander is targetable.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Perfect Alexander Untargetable",
+      "description": "Perfect Alexander goes untargetable, beginning a trio mechanic.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Forced Movement Start",
+      "description": "The start of a forced movement mechanic. Cannot input commands until it is over.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Forced Movement End",
+      "description": "The end of a forced movement mechanic. Can input commands again.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Temporal Prison (Start)",
+      "description": "The start of Perfect Alexander's enrage sequence. Will lock people into jails 1 at a time.",
+      "category": "Mechanics"
+    },
+    {
+      "name": "Temporal Displacement",
+      "description": "Locks a player into a jail where they can take no further actions.",
+      "category": "Mechanics"
     }
   ],
   "timeline": [
@@ -853,6 +898,14 @@
       "name": "J Wave"
     },
     {
+      "effectTime": "00:10:36",
+      "name": "Divine Judgement"
+    },
+    {
+      "effectTime": "00:11:35",
+      "name": "Perfect Alexander Targetable"
+    },
+    {
       "effectTime": "00:11:48",
       "name": "The Final Word"
     },
@@ -861,7 +914,15 @@
       "name": "Ordained Motion/Stillness"
     },
     {
-      "effectTime": "00:12:06",
+      "effectTime": "00:11:59",
+      "name": "Forced Movement Start"
+    },
+    {
+      "effectTime": "00:12:04",
+      "name": "Forced Movement End"
+    },
+    {
+      "effectTime": "00:12:05",
       "name": "Ordained Motion/Stillness"
     },
     {
@@ -873,8 +934,16 @@
       "name": "Optical Sight (Perfect Alex)"
     },
     {
+      "effectTime": "00:12:38",
+      "name": "Fate Calibration Alpha (Start)"
+    },
+    {
       "effectTime": "00:13:03",
-      "name": "Fate Calibration Alpha"
+      "name": "Fate Calibration Alpha (End)"
+    },
+    {
+      "effectTime": "00:13:06",
+      "name": "Perfect Alexander Untargetable"
     },
     {
       "effectTime": "00:13:10",
@@ -889,6 +958,10 @@
       "name": "Fate Calibration Alpha Debuffs"
     },
     {
+      "effectTime": "00:13:21",
+      "name": "Perfect Alexander Targetable"
+    },
+    {
       "effectTime": "00:13:32",
       "name": "Ordained Capital Punishment"
     },
@@ -901,12 +974,28 @@
       "name": "Ordained Capital Punishment"
     },
     {
-      "effectTime": "00:13:38",
+      "effectTime": "00:13:39",
       "name": "Ordained Punishment"
     },
     {
+      "effectTime": "00:13:47",
+      "name": "Fate Calibration Beta (Start)"
+    },
+    {
       "effectTime": "00:14:31",
-      "name": "Fate Calibration Beta"
+      "name": "Fate Calibration Beta (End)"
+    },
+    {
+      "effectTime": "00:14:34",
+      "name": "Perfect Alexander Untargetable"
+    },
+    {
+      "effectTime": "00:14:35",
+      "name": "Forced Movement Start"
+    },
+    {
+      "effectTime": "00:14:41",
+      "name": "Forced Movement End"
     },
     {
       "effectTime": "00:14:43",
@@ -921,8 +1010,12 @@
       "name": "Optical Sight (Perfect Alex)"
     },
     {
-      "effectTime": "00:14:56",
+      "effectTime": "00:14:55",
       "name": "Radiant Sacrament"
+    },
+    {
+      "effectTime": "00:15:00",
+      "name": "Perfect Alexander Targetable"
     },
     {
       "effectTime": "00:15:12",
@@ -957,10 +1050,6 @@
       "name": "Irresistible Grace"
     },
     {
-      "effectTime": "00:15:57",
-      "name": "Ordained Capital Punishment"
-    },
-    {
       "effectTime": "00:15:58",
       "name": "Ordained Capital Punishment"
     },
@@ -969,8 +1058,12 @@
       "name": "Ordained Capital Punishment"
     },
     {
-      "effectTime": "00:16:03",
+      "effectTime": "00:16:00",
       "name": "Ordained Capital Punishment"
+    },
+    {
+      "effectTime": "00:16:04",
+      "name": "Ordained Punishment"
     },
     {
       "effectTime": "00:16:24",
@@ -987,6 +1080,42 @@
     {
       "effectTime": "00:16:30",
       "name": "Irresistible Grace"
+    },
+    {
+      "effectTime": "00:16:47",
+      "name": "Temporal Prison (Start)"
+    },
+    {
+      "effectTime": "00:16:58",
+      "name": "Temporal Displacement"
+    },
+    {
+      "effectTime": "00:17:03",
+      "name": "Temporal Displacement"
+    },
+    {
+      "effectTime": "00:17:08",
+      "name": "Temporal Displacement"
+    },
+    {
+      "effectTime": "00:17:13",
+      "name": "Temporal Displacement"
+    },
+    {
+      "effectTime": "00:17:18",
+      "name": "Temporal Displacement"
+    },
+    {
+      "effectTime": "00:17:23",
+      "name": "Temporal Displacement"
+    },
+    {
+      "effectTime": "00:17:28",
+      "name": "Temporal Displacement"
+    },
+    {
+      "effectTime": "00:17:32",
+      "name": "Temporal Displacement"
     }
   ]
 }
