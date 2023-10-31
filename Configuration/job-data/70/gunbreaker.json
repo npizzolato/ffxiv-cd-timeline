@@ -3,7 +3,7 @@
     "abilities": [
         {
             "name": "Camouflage",
-            "duration": "00:00:10",
+            "duration": "00:00:20",
             "cooldown": "00:01:30",
             "mitigation": 0.10,
             "type": "TankMitigation"
