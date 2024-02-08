@@ -4,7 +4,7 @@ using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using System.ComponentModel;
 
-public class BlobTimelineSaver
+public class BlobTimelineSaver : ITimelineSaver
 {
     private BlobServiceClient client;
     private readonly IOptions<BlobTimelineSaverOptions> options;

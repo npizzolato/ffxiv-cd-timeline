@@ -3,6 +3,7 @@ using Azure.Storage.Blobs.Models;
 using Azure.Identity;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using FfxivCdTimeline_Server.Providers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,7 +42,8 @@ var blobClient = new BlobServiceClient(
             }
     }));
 builder.Services.AddSingleton<BlobServiceClient>(blobClient);
-builder.Services.AddSingleton<BlobTimelineSaver>();
+//builder.Services.AddSingleton<BlobTimelineSaver>();
+builder.Services.AddSingleton<ITimelineSaver, NoOpTimelineSaver>();
 
 var app = builder.Build();
 
